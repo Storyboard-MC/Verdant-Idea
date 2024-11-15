@@ -1,0 +1,15 @@
+{
+  "type": "productivebees:bee_spawning",
+  "ingredient": {
+    "item": "productivebees:gravel_nest"
+  },
+  "spawn_item": {
+    "item": "mysticalagriculture:diamond_essence"
+  },
+  "results": [
+    {
+      "bee": "productivebees:digger_bee"
+    }
+  ],
+  "biomes": "#productivebees:is_beach_or_river"
+}

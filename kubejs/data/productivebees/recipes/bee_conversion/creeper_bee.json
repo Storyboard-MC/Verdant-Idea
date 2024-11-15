@@ -1,0 +1,8 @@
+{
+  "type": "productivebees:bee_conversion",
+  "source": "productivebees:experience",
+  "result": "productivebees:creeper_bee",
+  "item": {
+    "item": "minecraft:tnt"
+  }
+}

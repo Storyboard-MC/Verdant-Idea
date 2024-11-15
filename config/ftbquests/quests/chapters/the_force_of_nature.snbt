@@ -1,0 +1,667 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_force_of_nature"
+	group: ""
+	icon: {
+		Count: 1
+		id: "botania:lexicon"
+		tag: {
+			"botania:elven_unlock": 1b
+		}
+	}
+	id: "6DF3479CB287DC6F"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["205CE0D9BE74A372"]
+			description: ["As the name suggests, runic altar is mainly used to create runes... Although this may be the case, it is also required for most mystical seeds."]
+			id: "6A87706B9FF0A830"
+			rewards: [
+				{
+					id: "5576A4EBA60CD1EA"
+					item: "botania:mana_pearl"
+					type: "item"
+				}
+				{
+					id: "4E07F5C7B97A1C83"
+					item: "botania:blacker_lotus"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "694A763C444ADDDB"
+				item: "botania:runic_altar"
+				type: "item"
+			}]
+			title: "Not Just Runes"
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6A87706B9FF0A830"]
+			description: ["The runic altar is designed mainly for runecrafting. Why not create a few runes?"]
+			icon: "botania:rune_water"
+			id: "51B12E020D6163F4"
+			rewards: [
+				{
+					count: 6
+					id: "7FED1BCC00173D2E"
+					item: "mysticalagriculture:prudentium_essence"
+					type: "item"
+				}
+				{
+					count: 16
+					id: "38F7A253B495074B"
+					item: "botania:livingrock"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "26385D2D84471B0F"
+					item: "botania:rune_air"
+					type: "item"
+				}
+				{
+					id: "66EC0DCA764CB81E"
+					item: "botania:rune_earth"
+					type: "item"
+				}
+				{
+					id: "148A90D250B68C09"
+					item: "botania:rune_fire"
+					type: "item"
+				}
+				{
+					id: "76B29F879F156284"
+					item: "botania:rune_water"
+					type: "item"
+				}
+				{
+					id: "274D81A3DE4F7032"
+					item: "botania:rune_mana"
+					type: "item"
+				}
+			]
+			title: "Basic Runecrafting"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["62B9C9C3F4DE0287"]
+			description: ["All the mana you just got can be used for mana infusion. While expensive at times, it's incredibely useful. The most basic mana-infused item is manasteel, so maybe try making a few ingots."]
+			id: "205CE0D9BE74A372"
+			rewards: [{
+				count: 8
+				id: "2DEC179FCCBFA359"
+				item: "botania:hydroangeas"
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				count: 8L
+				id: "66474943EAE2A298"
+				item: "botania:manasteel_ingot"
+				type: "item"
+			}]
+			title: "Simple Mana Infusion"
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["75FD12942A606F3E"]
+			description: ["Crafty crate is a very handy item when it comes to simple recipes, such as crafting most resources from essences. Whenever all item slots get filled, crafty crate will instantly attempt to craft and output an item. Since some recipes require empty slots, you can right-click with a crafting pattern and the red slots will be skipped."]
+			icon: "botania:crafty_crate"
+			id: "541293A07DA4B582"
+			rewards: [{
+				count: 8
+				id: "79F9A80FA2312834"
+				item: "botania:dreamwood_log"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "74ADA93035958D01"
+					item: "botania:crafty_crate"
+					type: "item"
+				}
+				{
+					id: "14D1A2AC2782027C"
+					item: "botania:pattern_donut"
+					type: "item"
+				}
+			]
+			title: "Crafty Crafting"
+			x: 2.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7CE69D3568675BD8"]
+			description: ["Drum of the wild works just like the horn, except it needs a mana pulse. Guess what a pulse mana spreader can be used for?"]
+			id: "199EF69AA140EF29"
+			rewards: [{
+				count: 8
+				id: "5325798C99CBE22E"
+				item: "botania:livingwood_log"
+				type: "item"
+			}]
+			tasks: [{
+				id: "496F9785CED063D5"
+				item: "botania:drum_wild"
+				type: "item"
+			}]
+			title: "Prepare for the Harvest"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["51B12E020D6163F4"]
+			description: ["More complex runes made out of elemental runes. They appear to represent the seasons, something you fondly remember from the old world..."]
+			icon: "botania:rune_summer"
+			id: "3EAB7C96F32116A7"
+			rewards: [
+				{
+					count: 6
+					id: "0DC2F52DDDA0E8A7"
+					item: "mysticalagriculture:tertium_essence"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "57AB90B149E13B94"
+					item: "botania:blacker_lotus"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "0C079C50F85F85E5"
+					item: "botania:rune_spring"
+					type: "item"
+				}
+				{
+					id: "362A1EE86B4343DA"
+					item: "botania:rune_summer"
+					type: "item"
+				}
+				{
+					id: "525460DC03112D69"
+					item: "botania:rune_autumn"
+					type: "item"
+				}
+				{
+					id: "46E4761D31A3E87D"
+					item: "botania:rune_winter"
+					type: "item"
+				}
+			]
+			title: "Seasons of the Old World"
+			x: -0.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3EAB7C96F32116A7"]
+			description: ["It turns out seasonal runes can be infused even further.... This time, however, they don't bring back any good memories. Can infusions go too far?"]
+			icon: "botania:rune_envy"
+			id: "5F68106BC841C5AE"
+			rewards: [
+				{
+					count: 6
+					id: "1E9BE77AC7F56F3A"
+					item: "mysticalagriculture:imperium_essence"
+					type: "item"
+				}
+				{
+					count: 9
+					id: "632E97F32C0820E6"
+					item: "botania:blacker_lotus"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "78B44D7C63D88AFB"
+					item: "botania:rune_gluttony"
+					type: "item"
+				}
+				{
+					id: "4318B027792C8B81"
+					item: "botania:rune_lust"
+					type: "item"
+				}
+				{
+					id: "0B8E702CBB56933B"
+					item: "botania:rune_greed"
+					type: "item"
+				}
+				{
+					id: "268293CE453E71EE"
+					item: "botania:rune_envy"
+					type: "item"
+				}
+				{
+					id: "696177359C0CC0AB"
+					item: "botania:rune_wrath"
+					type: "item"
+				}
+				{
+					id: "0BCE4F07DCA801ED"
+					item: "botania:rune_sloth"
+					type: "item"
+				}
+				{
+					id: "5889E3C7ECF00621"
+					item: "botania:rune_pride"
+					type: "item"
+				}
+			]
+			title: "Seven Deadly Sins"
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["51B12E020D6163F4"]
+			description: [
+				"Lexica Botania talks about a useful but complex alloy, terrasteel. It can only be synthesized on a terrestrial agglomeration plate, which requires a small checkered base out of lapis blocks and livingrocks to work. "
+				""
+				"To create a terrasteel ingot, drop a mana pearl, a manasteel ingot and a mana diamond on the plate and supply it with A LOT of mana using sparks. To do that, place a spark on the plate and the other one on a mana pool nearby."
+			]
+			icon: "botania:terrasteel_ingot"
+			id: "2114E594FBF8CB6E"
+			rewards: [
+				{
+					count: 3
+					id: "6F40E747BCD2A782"
+					item: "botania:manasteel_ingot"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "386909C5B7C4E5DE"
+					item: "botania:mana_pearl"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "21F1A693F203AAE2"
+					item: "botania:mana_diamond"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					id: "26807BA131235404"
+					item: "botania:terra_plate"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "63976B59F698D354"
+					item: { Count: 5, id: "botania:livingrock" }
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "5821B602EB033726"
+					item: { Count: 4, id: "minecraft:lapis_block" }
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "0F1230A2995577DA"
+					item: { Count: 2, id: "botania:spark" }
+					type: "item"
+				}
+			]
+			title: "No Radiation Here"
+			x: 1.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["205CE0D9BE74A372"]
+			description: ["Sometimes it's not worth sending mana all the time. Pulse mana spreader will only send a pulse when powered by redstone, and hovering hourglass will send a signal every so often, depending on how much sand or soul sand has been placed in it."]
+			icon: "botania:hourglass"
+			id: "7CE69D3568675BD8"
+			rewards: [{
+				count: 4
+				id: "552789DFC95C103F"
+				item: "botania:manasteel_ingot"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "169F27C5D8CA1C31"
+					item: "botania:hourglass"
+					type: "item"
+				}
+				{
+					id: "5667A6DE5686CF81"
+					item: "botania:redstone_spreader"
+					type: "item"
+				}
+			]
+			title: "Sands of Time"
+			x: -0.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["205CE0D9BE74A372"]
+			description: ["Why build 15 bookshelves when just 2 mana pylons will do the job just fine? Not only they are fancier, you don't really need any books, well... Maybe except for the one needed for enchanting table."]
+			icon: "botania:mana_pylon"
+			id: "0CD67904DF5762BF"
+			rewards: [{
+				count: 6
+				id: "5689A2394FD28339"
+				item: "minecraft:book"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "7A3C713B9B8D5A23"
+					item: "minecraft:enchanting_table"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "46E5F713114DD50E"
+					item: { Count: 2, id: "botania:mana_pylon" }
+					type: "item"
+				}
+			]
+			title: "No Books Required*"
+			x: 1.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["76859CD938E06888"]
+			description: ["The portal seems to be too weak to transfer any living being. That's too bad. Fortunately, it looks like items can transfered, making contact with the elves possible. Hopefully, sending them Lexica Botania will make them share some of their knowledge. "]
+			id: "4EA204B2488F20C1"
+			rewards: [{
+				count: 2
+				id: "133C71B0D55D71CB"
+				item: "botania:blacker_lotus"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6EFD1BC263F3D383"
+				item: {
+					Count: 1
+					id: "botania:lexicon"
+					tag: {
+						"botania:elven_unlock": 1b
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			title: "Sharing is Caring"
+			x: 2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"0CD67904DF5762BF"
+				"2114E594FBF8CB6E"
+			]
+			description: ["Terrasteel is powerful. It may look like a simple ingot, but it seems powerful enough to create a portal. Lexica Botania contains enough information to build one, so it might be worth checking it out."]
+			icon: "botania:natura_pylon"
+			id: "76859CD938E06888"
+			rewards: [
+				{
+					count: 4
+					id: "6C75B126C7063D67"
+					item: "botania:mana_pearl"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "2CAEF57E59942333"
+					item: "botania:mana_diamond"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "5373F7A469F106AC"
+					item: "botania:blacker_lotus"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "496E51E64FC7F6F2"
+					item: "botania:natura_pylon"
+					type: "item"
+				}
+				{
+					id: "0B2F516CA7F1DE26"
+					item: "botania:alfheim_portal"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "38F7EAE7B77494D1"
+					item: { Count: 3, id: "botania:glimmering_livingwood" }
+					type: "item"
+				}
+			]
+			title: "Connecting With Elves"
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["75FD12942A606F3E"]
+			description: ["A normal mana spreader is quite slow, especially when you need to move a lot of mana. Elven mana spreader seems to be a lot quicker, so it might be worth a try. "]
+			id: "4845C3814D5F3B29"
+			rewards: [{
+				count: 8
+				id: "23B52249CE382EA4"
+				item: "botania:elementium_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0A591305B8DFB229"
+				item: "botania:elven_spreader"
+				type: "item"
+			}]
+			title: "Spreading More Mana"
+			x: 4.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4EA204B2488F20C1"]
+			description: ["Woah! Elves shared an immense amount of invaluable knowledge. Not only that, they also want to trade! The materials they offer seem quite useful, so why not get some?"]
+			icon: "botania:elementium_ingot"
+			id: "75FD12942A606F3E"
+			rewards: [{
+				count: 8
+				id: "5688C4CA02553316"
+				item: "botania:elementium_ingot"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 8L
+					id: "3B19C964FB6A011C"
+					item: "botania:elementium_ingot"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "0F6C5EC1DCBE46F0"
+					item: "botania:pixie_dust"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "1768B512DB28BD20"
+					item: "botania:dreamwood_log"
+					type: "item"
+				}
+			]
+			title: "Expanding Trade Routes"
+			x: 3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["6A87706B9FF0A830"]
+			description: ["Runic altar is useful, but it's not the only way to get new items using mana. alchemy catalyst can be crafted and placed directly under a mana pool, which will make it transform items into others of similar value."]
+			id: "1A1D658DD0100A99"
+			rewards: [{
+				count: 4
+				id: "2061D2887532216E"
+				item: "minecraft:slime_ball"
+				type: "item"
+			}]
+			tasks: [{
+				id: "613D46620C67580D"
+				item: "botania:alchemy_catalyst"
+				type: "item"
+			}]
+			title: "Equivalent Exchange"
+			x: -1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4845C3814D5F3B29"]
+			description: [
+				"Elven materials are good, but there is something better. Gaia spirits can be used to craft even more powerful spreaders and artifacts."
+				""
+				"To get them, one has to build an altar with a beacon and 4 gaia pylons, and then use a terrasteel ingot on the beacon. A fight will start, and if successful, gaia spirits will be dropped."
+			]
+			icon: "botania:gaia_pylon"
+			id: "209F12591250D16F"
+			rewards: [{
+				count: 4
+				id: "268816C95D2CBAC6"
+				item: "botania:life_essence"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 4L
+					id: "7265991C2A3D11DE"
+					item: "botania:gaia_pylon"
+					type: "item"
+				}
+				{
+					entity: "botania:doppleganger"
+					icon: "botania:life_essence"
+					id: "3E19F3DD55CF0498"
+					title: "Kill Guardian of Gaia"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Fighting the Spirits"
+			x: 4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["209F12591250D16F"]
+			description: ["The first fight was successful, but it seems there is another. Instead of terrsteel however, a gaia spirit ingot is required."]
+			icon: "botania:gaia_ingot"
+			id: "42C67344DB37BC23"
+			rewards: [{
+				count: 8
+				id: "317AF8D6F355424F"
+				item: "botania:life_essence"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "670E7D0EE4BC9B84"
+					item: "botania:gaia_ingot"
+					type: "item"
+				}
+				{
+					id: "4D79C395970E382A"
+					item: "botania:dice"
+					type: "item"
+				}
+			]
+			title: "Full Power of Gaia"
+			x: 5.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["26A166A99959A8ED"]
+			description: ["These enchanted books you can make can be applied in an anvil, but why stop there? If you build a mana enchanter, these books can be applied using mana! What's more, the books applied this way will not be consumed."]
+			icon: "botania:enchanter"
+			id: "45B7EAB7484662E4"
+			rewards: [
+				{
+					id: "1E80C80BBE88E123"
+					item: {
+						Count: 1
+						id: "minecraft:enchanted_book"
+						tag: {
+							StoredEnchantments: [{
+								id: "minecraft:feather_falling"
+								lvl: 3s
+							}]
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 6
+					id: "7C075CDCD92FF64D"
+					item: "botania:blacker_lotus"
+					type: "item"
+				}
+			]
+			tasks: [
+				{
+					count: 6L
+					id: "056A2867F500C76F"
+					item: "botania:mana_pylon"
+					type: "item"
+				}
+				{
+					id: "2BFEEBB157E5F3D4"
+					item: "minecraft:lapis_block"
+					type: "item"
+				}
+				{
+					id: "79E94F3DB658BA82"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "botania:mystical_flowers"
+						}
+					}
+					title: "10 Mystical Flowers"
+					type: "item"
+				}
+			]
+			title: "Enchanting With Mana"
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["0CD67904DF5762BF"]
+			description: ["Books may not have been needed for an enchanting setup, but they are still quite useful. Instead of applying random enchantments, you could use experience essence to create enchanted books with the enchantments of your choice."]
+			id: "26A166A99959A8ED"
+			rewards: [{
+				count: 64
+				id: "36E8D19A51B18707"
+				item: "mysticalagriculture:experience_essence"
+				type: "item"
+			}]
+			tasks: [{
+				id: "79C7C29D8525452B"
+				item: "mysticalagriculture:enchanter"
+				type: "item"
+			}]
+			title: "Enchanting with Essence"
+			x: 1.5d
+			y: 1.5d
+		}
+	]
+	title: "The Force of Nature"
+}

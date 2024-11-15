@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "default": "wasteland:cut_spruce",
+    "features": [
+      {
+        "chance": 0.33333334,
+        "feature": "wasteland:cut_mega_spruce"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1174 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_drive_for_progress"
+	group: ""
+	icon: {
+		Count: 1
+		id: "mysticalagriculture:watering_can"
+		tag: {
+			Water: 0b
+		}
+	}
+	id: "2BE92FD1F7221D58"
+	order_index: 4
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["3A30098A667E6413"]
+			description: ["Increases the production output of bees."]
+			id: "3E2885CE74457610"
+			rewards: [{
+				id: "638565B31B82237F"
+				item: "productivebees:upgrade_productivity"
+				type: "item"
+			}]
+			tasks: [{
+				id: "742866037A1E28DB"
+				item: "productivebees:upgrade_productivity"
+				type: "item"
+			}]
+			x: -4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3E2885CE74457610"]
+			description: ["Increases the production output of bees even more."]
+			id: "57A8DF6685B48AD9"
+			rewards: [{
+				id: "7EE7036DFD76F202"
+				item: "productivebees:upgrade_productivity_2"
+				type: "item"
+			}]
+			tasks: [{
+				id: "64BBBB963605CE94"
+				item: "productivebees:upgrade_productivity_2"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"57A8DF6685B48AD9"
+				"7F126DE50F58AB64"
+			]
+			description: ["Greatly increases the production output of bees. Contains simulation upgrade."]
+			id: "12299BD5B67D6ACE"
+			rewards: [{
+				id: "5CD322E325049FB3"
+				item: "productivebees:upgrade_productivity_3"
+				type: "item"
+			}]
+			tasks: [{
+				id: "27BD686374BFFC02"
+				item: "productivebees:upgrade_productivity_3"
+				type: "item"
+			}]
+			x: -5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"658FD254C4F16728"
+				"12299BD5B67D6ACE"
+			]
+			description: ["HUGELY increases the production output of bees. Contains simulation and block upgrades."]
+			id: "42433AABA28C566A"
+			rewards: [{
+				id: "1C441A587C4CDD0E"
+				item: "productivebees:upgrade_productivity_4"
+				type: "item"
+			}]
+			tasks: [{
+				id: "364EFE6775A32F6C"
+				item: "productivebees:upgrade_productivity_4"
+				type: "item"
+			}]
+			x: -6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["57A8DF6685B48AD9"]
+			description: ["Makes bees produce comb blocks instead of honeycombs."]
+			id: "658FD254C4F16728"
+			rewards: [{
+				id: "668C2C60D75360C1"
+				item: "productivebees:upgrade_comb_block"
+				type: "item"
+			}]
+			tasks: [{
+				id: "47FE26DFBD7FB055"
+				item: "productivebees:upgrade_comb_block"
+				type: "item"
+			}]
+			x: -5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3A30098A667E6413"]
+			description: ["Stops the bees from teleporting. Not really useful, unless you have ender bees."]
+			id: "5158B37FE5968204"
+			rewards: [{
+				id: "7EA0B357C520894A"
+				item: "productivebees:upgrade_anti_teleport"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5C0DD722C4391B70"
+				item: "productivebees:upgrade_anti_teleport"
+				type: "item"
+			}]
+			x: -5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["5158B37FE5968204"]
+			description: ["It's all... a simulation?! If there's a flower block or a feeding slab with it in front of the hive, bee trips will be simulated."]
+			id: "7F126DE50F58AB64"
+			rewards: [{
+				id: "07AAE6BDEC3F7734"
+				item: "productivebees:upgrade_simulator"
+				type: "item"
+			}]
+			tasks: [{
+				id: "613B2E346059B1A8"
+				item: "productivebees:upgrade_simulator"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["64B96D52C20E63B2"]
+			description: ["Not very useful on its own, but a necessary part of all upgrades."]
+			id: "3A30098A667E6413"
+			rewards: [{
+				count: 4
+				id: "0EEA11D3B8D4A160"
+				item: "productivebees:upgrade_base"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2F94F9CDBA1C1EE6"
+				item: "productivebees:upgrade_base"
+				type: "item"
+			}]
+			x: -4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["33C83C96A4846CF5"]
+			description: [
+				"Advanced beehives are way better than normal ones. Not only they have a big inventory for bee produce, they also can be harvested without a campfire. It's also easy to pick it up even with bees inside, since it doesn't require silk touch to be used."
+				""
+				"Right-click an advanced beehive to open its inventory."
+			]
+			id: "6A6C96BB37FB3C52"
+			rewards: [{
+				count: 12
+				id: "265DA00AB1002807"
+				item: "minecraft:honeycomb"
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				icon: "productivebees:advanced_oak_beehive"
+				id: "6AF34865806D9340"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "productivebees:advanced_beehives"
+					}
+				}
+				title: "Any Advanced Beehive"
+				type: "item"
+			}]
+			title: "Advanced Beekeeping"
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6A6C96BB37FB3C52"]
+			description: ["Centrifuge is an essential tool for any beekeper. It allows you to process honeycombs into different resources, based on their type. Keep in mind that some comb blocks may have different drops than their comb counterparts."]
+			id: "2AF13477EEAE0930"
+			rewards: [{
+				count: 8
+				id: "78CCE57CF3939682"
+				item: {
+					Count: 1
+					id: "productivebees:configurable_honeycomb"
+					tag: {
+						EntityTag: {
+							type: "productivebees:iron"
+						}
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "11176499CA07FFBE"
+				item: "productivebees:centrifuge"
+				type: "item"
+			}]
+			title: "Comb Processing"
+			x: -2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6A6C96BB37FB3C52"]
+			description: ["Honey treats can be used to boost bee growth, as well as to spawn bees in various nests. Honey treats are also an ingredient of all upgrades."]
+			id: "64B96D52C20E63B2"
+			rewards: [{
+				count: 4
+				id: "171BB98DE10EAF5C"
+				item: "productivebees:honey_treat"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0F168EA3297A7AC8"
+				item: "productivebees:honey_treat"
+				type: "item"
+			}]
+			title: "Bee Treats"
+			x: -4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["62CF3B3B6E63FB1E"]
+			description: ["In the world full of nothing, sustainability is key. Getting reusable bee cages would be a good idea."]
+			id: "7C6F3AE62CB4916D"
+			rewards: [{
+				id: "36F26C455C145324"
+				item: "productivebees:sturdy_bee_cage"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1DE0D27B93EF53A2"
+				item: "productivebees:sturdy_bee_cage"
+				type: "item"
+			}]
+			title: "Reusable Bee Caging"
+			x: -5.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6A6C96BB37FB3C52"]
+			description: ["Every advanced beehive can be expanded using a single expansion box. Expanded beehives can house 2 more bees and have 4 upgrade slots."]
+			id: "5D2285F05FE77C44"
+			rewards: [{
+				count: 4
+				id: "12E5D48AADA9B25A"
+				item: "minecraft:honeycomb"
+				type: "item"
+			}]
+			tasks: [{
+				icon: "productivebees:expansion_box_oak"
+				id: "68BD13E54A9CA1F3"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "productivebees:expansion_boxes"
+					}
+				}
+				title: "Any Expansion Box"
+				type: "item"
+			}]
+			title: "Beexpansion"
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["62CF3B3B6E63FB1E"]
+			description: ["Now that you have an effective way to catch bees, it's time to get some useful ones! Many bees originate from the nether, so it's a good idea to get there."]
+			icon: "minecraft:netherrack"
+			id: "1692E52F82EDDF27"
+			rewards: [{
+				count: 4
+				id: "47EF3B2E86C5D246"
+				item: "productivebees:bee_cage"
+				type: "item"
+			}]
+			tasks: [{
+				dimension: "minecraft:the_nether"
+				id: "040F91F213674422"
+				title: "Visit the Nether"
+				type: "dimension"
+			}]
+			title: "Bees You've Nether Seen Before"
+			x: -4.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["5F8393C6C51EFCD5"]
+			description: ["Chisel can be used to get cool looking variants out of some of the existing blocks."]
+			id: "56C370BD3B7AF95A"
+			rewards: [{
+				count: 4
+				id: "517D86DF37066DB8"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "73F24334AD9355BE"
+				item: {
+					Count: 1
+					id: "rechiseled:chisel"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Fancy Blocks"
+			x: 5.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["5F8393C6C51EFCD5"]
+			description: ["Chipped adds multiple tables used to make cool looking variants out of many different blocks."]
+			id: "30C01D2A1A25E9A3"
+			rewards: [{
+				count: 4
+				id: "389F45383ADA3513"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "53E27918ADF7BF82"
+				item: "chipped:mason_table"
+				type: "item"
+			}]
+			title: "Fancier Blocks"
+			x: 6.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["6C9908EA8B380134"]
+			description: ["Sometimes you have a lot of one item that just clogs up your storage space. A good way to counter that is a drawer, which can store a lot of one specific item."]
+			icon: "functionalstorage:oak_1"
+			id: "7C79D5AC3635BBB6"
+			rewards: [{
+				count: 4
+				id: "5CE60E95AF7D4546"
+				item: "functionalstorage:oak_1"
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "4C323D4C695F9E0F"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "functionalstorage:drawer"
+					}
+				}
+				title: "Any Drawer"
+				type: "item"
+			}]
+			title: "Bulk Storage"
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7C79D5AC3635BBB6"]
+			description: ["A bigger chest for all your needs."]
+			icon: "ironchest:iron_chest"
+			id: "44323479D3B6EDD6"
+			rewards: [{
+				id: "777B43E38EAA190A"
+				item: "ironchest:wood_to_iron_chest_upgrade"
+				type: "item"
+			}]
+			tasks: [{
+				id: "25BBD0E11335B65B"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ironchest:iron_chest"
+							}
+							{
+								Count: 1b
+								id: "ironchest:wood_to_iron_chest_upgrade"
+							}
+						]
+					}
+				}
+				title: "Iron Chest or Upgrade"
+				type: "item"
+			}]
+			title: "Iron Chest"
+			x: 4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["44323479D3B6EDD6"]
+			description: ["A huge chest for all your needs."]
+			icon: "ironchest:gold_chest"
+			id: "2FD61F4A5C1B6038"
+			rewards: [{
+				id: "26678ED1365245A6"
+				item: "ironchest:iron_to_gold_chest_upgrade"
+				type: "item"
+			}]
+			tasks: [{
+				id: "672AE19A8A16837B"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ironchest:iron_to_gold_chest_upgrade"
+							}
+							{
+								Count: 1b
+								id: "ironchest:gold_chest"
+							}
+						]
+					}
+				}
+				title: "Gold Chest or Upgrade"
+				type: "item"
+			}]
+			title: "Gold Chest"
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2FD61F4A5C1B6038"]
+			description: ["An enormous chest for all your needs."]
+			icon: "ironchest:diamond_chest"
+			id: "05464A4107613991"
+			rewards: [{
+				id: "6CD5FDB7D356B46F"
+				item: "ironchest:gold_to_diamond_chest_upgrade"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7D0C928710726372"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "ironchest:gold_to_diamond_chest_upgrade"
+							}
+							{
+								Count: 1b
+								id: "ironchest:diamond_chest"
+							}
+						]
+					}
+				}
+				title: "Diamond Chest or Upgrade"
+				type: "item"
+			}]
+			title: "Diamond Chest"
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7C79D5AC3635BBB6"]
+			description: ["Ever wanted to connect tens of drawers with just one pipe? A controller allows you to input and output items from all connected drawers."]
+			id: "11BA0DC282FAF4F4"
+			rewards: [{
+				count: 4
+				id: "72AF1253C946BFDC"
+				item: "functionalstorage:oak_1"
+				type: "item"
+			}]
+			tasks: [{
+				id: "77082AF146E085AC"
+				item: "functionalstorage:storage_controller"
+				type: "item"
+			}]
+			title: "Compact Drawers"
+			x: 3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["44323479D3B6EDD6"]
+			description: ["Compacting drawers can output compacted variants of resources, eg. iron nuggets, ingots and blocks."]
+			id: "6A013C45BB8F48CB"
+			rewards: [{
+				id: "22C57ED8CD3010CD"
+				item: "functionalstorage:compacting_drawer"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5E4056CF6FDEE6BD"
+				item: "functionalstorage:compacting_drawer"
+				type: "item"
+			}]
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5F8393C6C51EFCD5"]
+			description: ["Crops are growing slowly? A watering can be filled and used to water your plants, causing them to grow waaay faster."]
+			id: "23DA908F48CC17CC"
+			rewards: [{
+				count: 32
+				id: "0CCA39DABB8C471A"
+				item: "minecraft:bone_meal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "57E3641465CDEC18"
+				item: {
+					Count: 1
+					id: "mysticalagriculture:watering_can"
+					tag: {
+						Water: 0b
+					}
+				}
+				type: "item"
+			}]
+			title: "Crop Care"
+			x: 2.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["0F6072BA87FF228C"]
+			description: ["Portable storage, quite useful."]
+			id: "0E6201923C4FC79A"
+			rewards: [{
+				count: 4
+				id: "603F8C132CE4F3C2"
+				item: "immersiveengineering:ersatz_leather"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4774AA97E54CAF2C"
+				item: "sophisticatedbackpacks:backpack"
+				type: "item"
+			}]
+			x: -2.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7C79D5AC3635BBB6"]
+			description: ["Larger drawer storage."]
+			id: "71014E3FA79B29DF"
+			rewards: [{
+				id: "717774C1FD949143"
+				item: "functionalstorage:copper_upgrade"
+				type: "item"
+			}]
+			tasks: [{
+				id: "41086F9A4EAE8D1C"
+				item: "functionalstorage:copper_upgrade"
+				type: "item"
+			}]
+			title: "Copper Drawer Upgrade"
+			x: 3.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["71014E3FA79B29DF"]
+			description: ["Even larger drawer storage."]
+			id: "693993DF19CD27C4"
+			rewards: [{
+				id: "02300FDAF47E72DE"
+				item: "functionalstorage:gold_upgrade"
+				type: "item"
+			}]
+			tasks: [{
+				id: "57A80A1F72E02064"
+				item: "functionalstorage:gold_upgrade"
+				type: "item"
+			}]
+			title: "Gold Drawer Upgrade"
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["693993DF19CD27C4"]
+			description: ["Huuuge drawer storage."]
+			id: "5212BE4ADE4243CC"
+			rewards: [{
+				id: "6DCE32598010F910"
+				item: "functionalstorage:diamond_upgrade"
+				type: "item"
+			}]
+			tasks: [{
+				id: "334B6989B5B86067"
+				item: "functionalstorage:diamond_upgrade"
+				type: "item"
+			}]
+			title: "Diamond Drawer Upgrade"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5212BE4ADE4243CC"]
+			description: ["The biggest drawer storage you can get."]
+			id: "1FF7474DBF0F0FD0"
+			rewards: [{
+				id: "31D015831880EAD6"
+				item: "functionalstorage:netherite_upgrade"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3438B6B3D3BA87FF"
+				item: "functionalstorage:netherite_upgrade"
+				type: "item"
+			}]
+			title: "Netherite Drawer Upgrade"
+			x: 5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["71014E3FA79B29DF"]
+			description: ["Drawers overflowing with items? Just delete them!"]
+			id: "3B8F3962958809BF"
+			rewards: [{
+				id: "3A31CE9EB8022A12"
+				item: "functionalstorage:void_upgrade"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4C3517EA41CB2C4B"
+				item: "functionalstorage:void_upgrade"
+				type: "item"
+			}]
+			title: "Void Drawer Upgrade"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0E6201923C4FC79A"]
+			description: ["A bigger backpack."]
+			id: "21742FA169FCD205"
+			rewards: [{
+				count: 4
+				id: "126F11216AC14AB8"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "359FD7F21E46263A"
+				item: "sophisticatedbackpacks:iron_backpack"
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["21742FA169FCD205"]
+			description: ["A giant backpack."]
+			id: "108F5FFDCAB757EB"
+			rewards: [{
+				count: 4
+				id: "66E5C2C17C652A15"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7E85CEE05E382F82"
+				item: "sophisticatedbackpacks:gold_backpack"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["108F5FFDCAB757EB"]
+			description: ["A huge backpack."]
+			id: "17010AF6D4CDDED7"
+			rewards: [{
+				count: 4
+				id: "32F7FD7801EB2322"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			tasks: [{
+				id: "37A26CA0B00C6FF7"
+				item: "sophisticatedbackpacks:diamond_backpack"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["17010AF6D4CDDED7"]
+			description: ["An enormous backpack with 7 upgrade slots!"]
+			id: "5959CD4FEE810F3C"
+			rewards: [{
+				count: 2
+				id: "41DA4D0A23B8AED9"
+				item: "minecraft:ancient_debris"
+				type: "item"
+			}]
+			tasks: [{
+				id: "34C709D1C6BC4C07"
+				item: "sophisticatedbackpacks:netherite_backpack"
+				type: "item"
+			}]
+			x: 0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["693993DF19CD27C4"]
+			description: ["Configuration tool allows you to lock drawers, and also can change their look."]
+			id: "2F8FF63FE6AA4B99"
+			rewards: [{
+				count: 4
+				id: "2AA4171D1A148AA8"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5ADBE43AF11E63E2"
+				item: "functionalstorage:configuration_tool"
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2AF13477EEAE0930"]
+			description: ["While a bottler can be used to bottle liquid honeycomb drops, it also has a different use. When a bee gets squashed with a bottler using a piston, it creates a squashed bee material. The bee inside the bottle is totally fine... Right? Remember to have the bottler stocked with bottles when trying to squash bees."]
+			icon: "productivebees:bottler"
+			id: "6968D0EB28E67846"
+			rewards: [{
+				count: 16
+				id: "55AB78894B69EA0D"
+				item: "minecraft:glass_bottle"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "5CE13C6830632382"
+					item: "productivebees:bottler"
+					type: "item"
+				}
+				{
+					id: "3F9294C248B054BD"
+					item: {
+						Count: 1
+						id: "productivebees:gene_bottle"
+						tag: {
+							productivebees_genes: {
+								AbsorptionAmount: 0.0f
+								Age: 0
+								Air: 300s
+								AngerTime: 0
+								ArmorDropChances: [
+									0.085f
+									0.085f
+									0.085f
+									0.085f
+								]
+								ArmorItems: [
+									{ }
+									{ }
+									{ }
+									{ }
+								]
+								Attributes: [
+									{
+										Base: 0.08d
+										Name: "forge:entity_gravity"
+									}
+									{
+										Base: 10.0d
+										Modifiers: [{
+											Amount: -0.30000001192092896d
+											Name: "Health mod weak"
+											Operation: 1
+											UUID: [I;
+												-1443908537
+												-1008126746
+												-1981446423
+												-1931220683
+											]
+										}]
+										Name: "minecraft:generic.max_health"
+									}
+									{
+										Base: 0.30000001192092896d
+										Name: "minecraft:generic.movement_speed"
+									}
+									{
+										Base: 0.0d
+										Name: "forge:step_height_addition"
+									}
+								]
+								BalmData: { }
+								Brain: {
+									memories: { }
+								}
+								CanPickUpLoot: 0b
+								CanUpdate: 1b
+								CannotEnterHiveTicks: 0
+								CropsGrownSincePollination: 0
+								DeathTime: 0s
+								FallDistance: 0.0f
+								FallFlying: 0b
+								Fire: -1s
+								ForcedAge: 0
+								ForgeCaps: {
+									"curios:inventory": {
+										Curios: [ ]
+									}
+									"mekanism:radiation": {
+										radiation: 1.0E-7d
+									}
+									"pneumaticcraft:hacking": { }
+								}
+								HandDropChances: [
+									0.085f
+									0.085f
+								]
+								HandItems: [
+									{ }
+									{ }
+								]
+								HasConverted: 0b
+								HasNectar: 0b
+								HasStung: 0b
+								Health: 10.0f
+								HurtByTimestamp: 495
+								HurtTime: 0s
+								InLove: 0
+								Invulnerable: 0b
+								LeftHanded: 0b
+								MaxHealth: 7.0f
+								Motion: [
+									0.0d
+									0.0d
+									0.0d
+								]
+								NoGravity: 1b
+								OnGround: 1b
+								PersistenceRequired: 0b
+								PortalCooldown: 0
+								Pos: [
+									-7029.929999999702d
+									79.25d
+									7277.929999999702d
+								]
+								Rotation: [
+									45.0f
+									0.0f
+								]
+								TicksSincePollination: 824
+								UUID: [I;
+									-362078550
+									240337063
+									-1723170827
+									-1115577841
+								]
+								bee_behavior: 0
+								bee_endurance: 0
+								bee_productivity: 3
+								bee_temper: 3
+								bee_type: "hive"
+								bee_weather_tolerance: 0
+								breathCollectionCooldown: 600
+								name: "KamikazBee"
+								type: "productivebees:kamikaz"
+							}
+						}
+					}
+					match_nbt: false
+					type: "item"
+				}
+			]
+			title: "Bee Bottling"
+			x: -1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["6968D0EB28E67846"]
+			description: ["Squashed bee material can be processed in a centrifuge to create gene samples. These can be crafted with honey treats, which will then change the genes of the bee which they are used on. Since gene samples have a low success chance, they can be combined in a gene sampler up to 100%."]
+			icon: "productivebees:gene_indexer"
+			id: "16F6C24B9733C030"
+			rewards: [{
+				count: 8
+				id: "0A7AEB9095CE001C"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5E806DF4D8123342"
+				item: "productivebees:gene_indexer"
+				type: "item"
+			}]
+			title: "Beenetics"
+			x: -0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["64B96D52C20E63B2"]
+			description: ["Leashing bees to move them is not only risky, but it's also annoying. Bee cages are the best way to move bees, just keep in mind they break after use."]
+			id: "62CF3B3B6E63FB1E"
+			rewards: [{
+				count: 8
+				id: "06B5E31E29EA0A8B"
+				item: "productivebees:bee_cage"
+				type: "item"
+			}]
+			tasks: [{
+				count: 8L
+				id: "67CA406023E1C7A7"
+				item: "productivebees:bee_cage"
+				type: "item"
+			}]
+			title: "Moving Bees"
+			x: -4.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["16F6C24B9733C030"]
+			description: ["When attacked while wearing a bee nest helmet, there's a chance for a kamikazbee to spawn. Kamikazbees posess a very high productivity trait, and can be squashed."]
+			icon: {
+				Count: 1
+				id: "productivebees:gene"
+				tag: {
+					productivebees_gene_attribute: "productivity"
+					productivebees_gene_purity: 100
+					productivebees_gene_value: 3
+				}
+			}
+			id: "26B1FC5166FE2DD5"
+			rewards: [{
+				id: "54267D19E07FF53F"
+				item: {
+					Count: 1
+					id: "productivebees:gene"
+					tag: {
+						productivebees_gene_attribute: "productivity"
+						productivebees_gene_purity: 100
+						productivebees_gene_value: 3
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "01BF68B4289BA600"
+					item: {
+						Count: 1
+						id: "productivebees:bee_nest_diamond_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1F3A578AD126DB4D"
+					item: {
+						Count: 1
+						id: "productivebees:gene"
+						tag: {
+							productivebees_gene_attribute: "productivity"
+							productivebees_gene_purity: 100
+							productivebees_gene_value: 3
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Even More Productive Bees"
+			x: -1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["16F6C24B9733C030"]
+			description: [
+				"Bees attached to a lead for the entire night will develop a nocturnal, and later a metaturnal trait."
+				""
+				"Be careful, bees leashed in hostile environments can take damage!"
+			]
+			icon: {
+				Count: 1
+				id: "productivebees:gene"
+				tag: {
+					productivebees_gene_attribute: "behavior"
+					productivebees_gene_purity: 100
+					productivebees_gene_value: 2
+				}
+			}
+			id: "30695EB1017963B0"
+			rewards: [{
+				id: "73A9E6A088F01F33"
+				item: {
+					Count: 1
+					id: "productivebees:gene"
+					tag: {
+						productivebees_gene_attribute: "behavior"
+						productivebees_gene_purity: 100
+						productivebees_gene_value: 2
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "3D8444F85C6C71E9"
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "forge:fences"
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7AB5649777363A44"
+					item: "minecraft:lead"
+					type: "item"
+				}
+				{
+					id: "64F986EC7832D4B9"
+					item: {
+						Count: 1
+						id: "productivebees:gene"
+						tag: {
+							productivebees_gene_attribute: "behavior"
+							productivebees_gene_purity: 100
+							productivebees_gene_value: 2
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Overtime Bees"
+			x: 0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["16F6C24B9733C030"]
+			description: [
+				"Bees leashed during rain or storm have a chance to become tolerant to any weather. If you can't wait for that, try fishing a water bee."
+				""
+				"Be careful, bees leashed in hostile environments can take damage!"
+			]
+			icon: {
+				Count: 1
+				id: "productivebees:gene"
+				tag: {
+					productivebees_gene_attribute: "weather_tolerance"
+					productivebees_gene_purity: 100
+					productivebees_gene_value: 2
+				}
+			}
+			id: "44B7492B409F2958"
+			rewards: [{
+				id: "0D09987B909C2ECE"
+				item: {
+					Count: 1
+					id: "productivebees:gene"
+					tag: {
+						productivebees_gene_attribute: "weather_tolerance"
+						productivebees_gene_purity: 100
+						productivebees_gene_value: 2
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "7B55325A15976B7A"
+				item: {
+					Count: 1
+					id: "productivebees:gene"
+					tag: {
+						productivebees_gene_attribute: "weather_tolerance"
+						productivebees_gene_purity: 100
+						productivebees_gene_value: 2
+					}
+				}
+				type: "item"
+			}]
+			title: "Fearless Bees"
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["2AF13477EEAE0930"]
+			description: ["Breeding bees has never been this easy. A breeding chamber allows you to choose which bee you want to get from breeding if there are multiple bees that can be bred. Besides that, bred bees will be placed in cages, and you can speed up the process with speed upgrades."]
+			id: "79470047D54705D8"
+			rewards: [
+				{
+					count: 8
+					id: "23BC63D88DAD8CB6"
+					item: "minecraft:poppy"
+					type: "item"
+				}
+				{
+					count: 4
+					id: "7B912FD13F55B1BA"
+					item: "productivebees:bee_cage"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "50548D492D8E4CA9"
+				item: "productivebees:breeding_chamber"
+				type: "item"
+			}]
+			title: "Babees"
+			x: -3.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["6C9908EA8B380134"]
+			description: ["Framed blocks allow you to make slabs and other variants out of almost every single block. Have fun!"]
+			icon: "framedblocks:framed_cube"
+			id: "38145A021822970E"
+			rewards: [{
+				count: 16
+				id: "6430EB2A09E8983B"
+				item: "framedblocks:framed_cube"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 8L
+					id: "4E72EF432F2939A8"
+					item: "framedblocks:framed_cube"
+					type: "item"
+				}
+				{
+					id: "68C3D282856D03E2"
+					item: "framedblocks:framed_hammer"
+					type: "item"
+				}
+			]
+			title: "Fancy Slabs"
+			x: 4.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["3A30098A667E6413"]
+			description: ["Increases the speed of beehives and many different machines."]
+			id: "66AC8C6A7C70EEAE"
+			rewards: [{
+				id: "4765363449D41CCC"
+				item: "productivebees:upgrade_time"
+				type: "item"
+			}]
+			tasks: [{
+				id: "37BCFBDEF3CA6381"
+				item: "productivebees:upgrade_time"
+				type: "item"
+			}]
+			x: -6.0d
+			y: -3.0d
+		}
+	]
+	title: "The Drive for Progress"
+}

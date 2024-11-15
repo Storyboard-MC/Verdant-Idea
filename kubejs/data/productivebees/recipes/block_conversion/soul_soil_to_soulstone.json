@@ -1,0 +1,17 @@
+{
+  "type": "productivebees:block_conversion",
+  "bee": "productivebees:soulium",
+  "from": {
+    "Name": "minecraft:raw_copper_block"
+  },
+  "to": {
+    "Name": "mysticalagriculture:soulium_ore"
+  },
+  "chance": 70,
+  "conditions": [
+    {
+      "type": "productivebees:bee_exists",
+      "bee": "productivebees:soulium"
+    }
+  ]
+}

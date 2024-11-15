@@ -1,0 +1,749 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "how_engineering_works"
+	group: ""
+	icon: {
+		Count: 1
+		id: "immersiveengineering:hammer"
+		tag: {
+			Damage: 0
+		}
+	}
+	id: "5ED58A8D34ABB233"
+	order_index: 5
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["0F6072BA87FF228C"]
+			description: ["Engineering is not an easy job, so learning a few things might be a good way to start."]
+			id: "31B1983DCEEFE143"
+			rewards: [{
+				count: 4
+				id: "08B9D268AA95134F"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "76CF5E5ACDFAF175"
+				item: "immersiveengineering:manual"
+				type: "item"
+			}]
+			title: "How All Engineers Started"
+			x: -2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["31B1983DCEEFE143"]
+			description: ["It seems that the best way to start is to build a coke oven. It allows you to make coal coke out of coal, which can smelt twice as many items."]
+			icon: "immersiveengineering:coal_coke"
+			id: "239FC962323FBD90"
+			rewards: [{
+				count: 8
+				id: "26E95A3E62803C94"
+				item: "minecraft:coal"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 27L
+					id: "51655F065AE63929"
+					item: "immersiveengineering:cokebrick"
+					type: "item"
+				}
+				{
+					id: "1D895EBE96E0CD3B"
+					item: "immersiveengineering:coal_coke"
+					type: "item"
+				}
+			]
+			title: "Better Than Coal"
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["239FC962323FBD90"]
+			description: ["These harsh conditions are in no way ideal for wood. To be able to make more durable items, it needs to be treated using the leftover creosote from coal coke production."]
+			icon: "immersiveengineering:creosote_bucket"
+			id: "23EC7A22C3FC6B8E"
+			rewards: [{
+				count: 8
+				id: "07038D04F8F64B9C"
+				item: "minecraft:coal"
+				type: "item"
+			}]
+			tasks: [{
+				count: 16L
+				id: "1177B8C37018DAC3"
+				item: "immersiveengineering:treated_wood_horizontal"
+				type: "item"
+			}]
+			title: "Wood Preservation"
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"799AA901A1A9EA90"
+				"75CB84E195CA1849"
+			]
+			description: [
+				"Generating power is fun and all, but how about giving it a use?"
+				""
+				"Please note that the metal press multiblock requires a &mheavy&r &alight engineering block&r."
+			]
+			icon: "immersiveengineering:mold_gear"
+			id: "0F17A2485BE8C4C5"
+			rewards: [{
+				count: 8
+				id: "2D9C2C78D276FE12"
+				item: "immersiveengineering:ingot_steel"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "114CB6BFD820886C"
+					item: "immersiveengineering:mold_plate"
+					type: "item"
+				}
+				{
+					id: "026274DF5DAD4576"
+					item: "immersiveengineering:mold_gear"
+					type: "item"
+				}
+				{
+					id: "4F3D4B419152D9A3"
+					item: "immersiveengineering:mold_wire"
+					type: "item"
+				}
+			]
+			title: "A Pressing Problem"
+			x: 0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["23EC7A22C3FC6B8E"]
+			description: ["Complex machines require steel. To get it, iron needs to be processed in a blast furnace."]
+			icon: "immersiveengineering:ingot_steel"
+			id: "799AA901A1A9EA90"
+			rewards: [{
+				count: 4
+				id: "6F0E654E1B2CBA52"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 27L
+					id: "21560901DE928558"
+					item: "immersiveengineering:blastbrick"
+					type: "item"
+				}
+				{
+					id: "4D72760B33B49441"
+					item: "immersiveengineering:ingot_steel"
+					type: "item"
+				}
+			]
+			title: "What a Blast"
+			x: -0.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0F17A2485BE8C4C5"]
+			description: ["While technically not necessary, an improved blast furnace will greatly help with steel production. It lets you automate inputs and outputs and has the option of installing blast furnace preheaters. When installed on the left and right sides and fed power from the top, they will triple the speed of steel production. "]
+			icon: "immersiveengineering:blastbrick_reinforced"
+			id: "48BAF0F09004F68D"
+			rewards: [{
+				count: 16
+				id: "14D8AA976BA78CF2"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 27L
+					id: "085E962B10742070"
+					item: "immersiveengineering:blastbrick_reinforced"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "6989F32A23C5ACDB"
+					item: { Count: 2, id: "immersiveengineering:blastfurnace_preheater" }
+					type: "item"
+				}
+			]
+			title: "Improved Steel Production"
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["23EC7A22C3FC6B8E"]
+			description: ["Water wheels generate power from water movement. In order to use the generated power, a kinetic dynamo must be placed next to the center of the wheel. A single kinetic dynamo can work with up to 3 water wheels."]
+			icon: "immersiveengineering:watermill"
+			id: "717347329B4E6119"
+			rewards: [{
+				count: 4
+				id: "1C4941AD1E9676B5"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 3L
+					id: "3737028BFAA73450"
+					item: "immersiveengineering:watermill"
+					type: "item"
+				}
+				{
+					id: "2B794B59DE7DA7C9"
+					item: "immersiveengineering:dynamo"
+					type: "item"
+				}
+			]
+			title: "A Powerful Wheel"
+			x: -0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["717347329B4E6119"]
+			description: ["To move energy from one machine to another, a wire connector needs to be placed next to both machines. When that's done, you can click both wire connectors with a wire coil to connect them. If you need a longer wire, but want to save some connectors, relays can be used instead."]
+			icon: "immersiveengineering:wirecoil_copper"
+			id: "692F5D1310643D54"
+			rewards: [{
+				count: 8
+				id: "5A52CEDB00397AED"
+				item: "minecraft:copper_ingot"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 8L
+					id: "334DDD14FB1940B0"
+					item: "immersiveengineering:wirecoil_copper"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "51CFDA63AC00ADBE"
+					item: { Count: 2, id: "immersiveengineering:connector_lv" }
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "31367C2C7374E812"
+					item: { Count: 8, id: "immersiveengineering:connector_lv_relay" }
+					type: "item"
+				}
+			]
+			title: "LV Transmission"
+			x: 0.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["692F5D1310643D54"]
+			description: ["Some machines use more power than you generate, but instead of building more generators you can get an accumulator! It will store some power, meaning all machines can work without running out of power."]
+			id: "75CB84E195CA1849"
+			rewards: [{
+				count: 4
+				id: "420269261C5F9E96"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6C4DEFE7CB4DB600"
+				item: "immersiveengineering:capacitor_lv"
+				type: "item"
+			}]
+			title: "LV Storage"
+			x: 1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"7992E56DED3E38D4"
+				"042EFF3151BB82A2"
+			]
+			description: ["Creating any state-of-the-art machine requires a PCB, so make sure to build a sustainable production chain. PCBs are required to progress in Mekanism and Applied Energistics 2."]
+			id: "3A1B39A460C4313D"
+			rewards: [{
+				count: 4
+				id: "19485EDDBACC801E"
+				item: "pneumaticcraft:unassembled_pcb"
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				count: 4L
+				id: "765896F201A8C5F0"
+				item: "pneumaticcraft:printed_circuit_board"
+				type: "item"
+			}]
+			title: "An Engineering Marvel"
+			x: 5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["11971F809A2FCFDA"]
+			description: ["Pressure chamber is a cube multiblock that can be 3, 4 or 5 blocks wide. It can store pressure, which can be used to compress a few items."]
+			icon: "pneumaticcraft:pressure_gauge"
+			id: "042EFF3151BB82A2"
+			rewards: [{
+				count: 8
+				id: "5C7693CAA939A1D6"
+				item: "pneumaticcraft:ingot_iron_compressed"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 32L
+					icon: "pneumaticcraft:pressure_chamber_wall"
+					id: "3C853A65CF71DEE5"
+					item: "pneumaticcraft:pressure_chamber_wall"
+					type: "item"
+				}
+				{
+					id: "41EE847677AF5AC6"
+					item: "pneumaticcraft:pressure_chamber_valve"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "4AEDAECD0FA1477C"
+					item: { Count: 2, id: "pneumaticcraft:pressure_chamber_interface" }
+					type: "item"
+				}
+			]
+			title: "Under Pressure"
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["79975339A927E2AF"]
+			description: ["PCB production requires a pressure chamber, but it is not enough. Empty PCBs need to be exposed in a UV light box and etched in an etching tank. Only when both are done, PCBs can finally be assembled."]
+			icon: "pneumaticcraft:unassembled_pcb"
+			id: "7992E56DED3E38D4"
+			rewards: [{
+				count: 4
+				id: "46E260D41968A593"
+				item: "pneumaticcraft:plastic"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "7AEFB0A4EA8C91C4"
+					item: "pneumaticcraft:etching_acid_bucket"
+					type: "item"
+				}
+				{
+					id: "59C838462411C5F4"
+					item: "pneumaticcraft:etching_tank"
+					type: "item"
+				}
+				{
+					id: "61437D8096B1F4ED"
+					item: "pneumaticcraft:uv_light_box"
+					type: "item"
+				}
+			]
+			title: "PCB Preparation"
+			x: 5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6239FF3B7DBB24E9"]
+			description: ["Pneumatic machines can explode, so learning a thing or two about them wouldn't be a bad idea. Don't worry though, the explosions can break 1 block at most."]
+			id: "151F01F053144441"
+			rewards: [{
+				count: 4
+				id: "2F26868353119E96"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5188DE6214FACF12"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "pneumaticcraft:book"
+					}
+				}
+				type: "item"
+			}]
+			title: "How Not To Explode"
+			x: 2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"3A622F692480B127"
+				"0000AF9A14F8BD79"
+				"7ABD05B78201DE96"
+			]
+			description: ["Now that all resources are ready, it's time to mix them in a refinery. "]
+			id: "64269BEAA28956F7"
+			rewards: [{
+				count: 8
+				id: "0A7D9F74C62F2E14"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7F60CACA7B939B67"
+				item: "immersiveengineering:biodiesel_bucket"
+				type: "item"
+			}]
+			title: "Who Needs Oil?"
+			x: 2.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["692F5D1310643D54"]
+			description: ["Various plants can be processed into ethanol in a fermenter."]
+			id: "0000AF9A14F8BD79"
+			rewards: [{
+				count: 16
+				id: "1ABE2D12BF7F5405"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3CF768A7004A6298"
+				item: "immersiveengineering:ethanol_bucket"
+				type: "item"
+			}]
+			title: "Fermentation"
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["692F5D1310643D54"]
+			description: ["Various seeds can be processed into plant oil in a squeezer."]
+			id: "3A622F692480B127"
+			rewards: [{
+				count: 16
+				id: "1A8591919D50B937"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1961EE680199F1DA"
+				item: "immersiveengineering:plantoil_bucket"
+				type: "item"
+			}]
+			title: "Squeezing Seeds"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["48BAF0F09004F68D"]
+			description: ["Steel created in the blast furnace can be used to make compressed iron. Just throw it on the ground and explode it with TNT... Yeah, it's a bit dangerous, and about 20% of Steel will be lost, but this is the only way to get compressed iron before building a pressure chamber."]
+			icon: "minecraft:tnt"
+			id: "6239FF3B7DBB24E9"
+			rewards: [{
+				count: 8
+				id: "1BB3541C859D51D5"
+				item: "minecraft:iron_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				count: 4L
+				id: "79B6986A7DC9FD6E"
+				item: "pneumaticcraft:ingot_iron_compressed"
+				type: "item"
+			}]
+			title: "Safety First"
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["151F01F053144441"]
+			description: ["Pneumatic machines require pressure to work. It can be generated using various generators, the simplest of which is an air compressor."]
+			icon: "pneumaticcraft:air_compressor"
+			id: "11971F809A2FCFDA"
+			rewards: [{
+				count: 4
+				id: "669F1081826F33BD"
+				item: "pneumaticcraft:ingot_iron_compressed"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "2A1B250F447ECA2E"
+					item: "pneumaticcraft:air_compressor"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "725991559EEC30DD"
+					item: "pneumaticcraft:pressure_tube"
+					type: "item"
+				}
+			]
+			title: "A Weird Generator"
+			x: 3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["692F5D1310643D54"]
+			description: ["Nitrate can be made in 2 ways: it's a byproduct from crushing sandstone in a crusher; it can also be processed from nitrate slurry made in mixer from compost and bone meal."]
+			id: "7ABD05B78201DE96"
+			rewards: [{
+				count: 8
+				id: "580989D021498560"
+				item: "immersiveengineering:dust_saltpeter"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0A253ECA305D9833"
+				item: "immersiveengineering:dust_saltpeter"
+				type: "item"
+			}]
+			title: "Nitrate Processing"
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3B483D35A3951F1B"]
+			description: ["Even though the entire world is now a wasteland, Amadron's orbital warehouses may still be intact. They've always been fully automated, so why not try placing an order....?"]
+			icon: {
+				Count: 1
+				id: "pneumaticcraft:amadron_tablet"
+				tag: {
+					"pneumaticcraft:air": 30000
+				}
+			}
+			id: "79975339A927E2AF"
+			rewards: [{
+				count: 4
+				id: "6B9A26DFCD2AEDEE"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "7031AAB18A9C12C0"
+					item: "pneumaticcraft:charging_station"
+					type: "item"
+				}
+				{
+					id: "37BC096E4A134E3B"
+					item: "pneumaticcraft:amadron_tablet"
+					type: "item"
+				}
+			]
+			title: "Orbital Shopping"
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"64269BEAA28956F7"
+				"38C359272A55668C"
+			]
+			description: ["Now that biodiesel is ready, it's time to process it into molten plastic. To do that, place a thermopneumatic processing plant and provide it with heat using a vortex tube. After that, the molten plastic needs to be cooled, which can be done automatically using a liquid hopper with a dispenser upgrade."]
+			icon: "pneumaticcraft:plastic"
+			id: "3B483D35A3951F1B"
+			rewards: [{
+				count: 4
+				id: "058215FA8DFC232A"
+				item: "pneumaticcraft:plastic"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4EE591D95C2B7FBB"
+					item: "pneumaticcraft:liquid_hopper"
+					type: "item"
+				}
+				{
+					id: "161F597509992CCD"
+					item: "pneumaticcraft:dispenser_upgrade"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "46B7269137492381"
+					item: "pneumaticcraft:plastic"
+					type: "item"
+				}
+			]
+			title: "Producing Plastic"
+			x: 3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["11971F809A2FCFDA"]
+			description: ["Some pneumatic machines need to be heated or cooled. This can be done with a vortex tube, which will release temperature when provided with pressure. The orange side will release high temperature, and the blue side low. The unused side should be covered with a heat sink, so that the temperature won't affect the vortex tube."]
+			icon: "pneumaticcraft:vortex_tube"
+			id: "38C359272A55668C"
+			rewards: [{
+				count: 8
+				id: "55A0E33C3C5EA233"
+				item: "pneumaticcraft:ingot_iron_compressed"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "6D5B6114500C77D4"
+					item: "pneumaticcraft:vortex_tube"
+					type: "item"
+				}
+				{
+					id: "5802BD1F05E2DC08"
+					item: "pneumaticcraft:heat_sink"
+					type: "item"
+				}
+			]
+			title: "Climate Control"
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["11971F809A2FCFDA"]
+			description: ["Sometimes the easiest way to keep your system from exploding is to craft a security update and place it in your machines. It will make them release overflow pressure, preventing an explosion."]
+			id: "43619419A8A1F971"
+			rewards: [{
+				count: 16
+				id: "3DA3C79D3B1A9E2C"
+				item: "minecraft:obsidian"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1557A3C37484CCA8"
+				item: "pneumaticcraft:security_upgrade"
+				type: "item"
+			}]
+			title: "No Worries Mate"
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["79975339A927E2AF"]
+			description: ["There isn't much stock left, but at least there are a few presses. They might be useful later, so why not get a few."]
+			icon: "ae2:silicon_press"
+			id: "63C725E4D3A725F0"
+			rewards: [{
+				count: 8
+				id: "6340DC16208B47B3"
+				item: "minecraft:emerald"
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [
+				{
+					id: "777A3F32FD903661"
+					item: "ae2:calculation_processor_press"
+					type: "item"
+				}
+				{
+					id: "395F06ABE04C55CB"
+					item: "ae2:engineering_processor_press"
+					type: "item"
+				}
+				{
+					id: "2B7B08652680A480"
+					item: "ae2:logic_processor_press"
+					type: "item"
+				}
+				{
+					id: "299CB983B3692A3C"
+					item: "ae2:silicon_press"
+					type: "item"
+				}
+			]
+			title: "Out of Stock"
+			x: 3.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["1A32D3BCA4A6000C"]
+			description: ["A crafting terminal works as an interface to all connected chests. It makes it easy to request items from the network, and has a cool crafting grid."]
+			id: "4849D4573EA81970"
+			rewards: [{
+				count: 16
+				id: "0930A5AA5CF14891"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0C36A3F9F1D3F986"
+				item: "prettypipes:crafting_terminal"
+				type: "item"
+			}]
+			title: "All in One"
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["799AA901A1A9EA90"]
+			description: ["Pretty pipes can be used to move items from one place to another. Additionally, a wrench can be used to stop pipes connecting."]
+			icon: "prettypipes:pipe"
+			id: "1A32D3BCA4A6000C"
+			rewards: [{
+				count: 8
+				id: "5597F8BE05CF34EE"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 16L
+					id: "758495B5602079C5"
+					item: "prettypipes:pipe"
+					type: "item"
+				}
+				{
+					id: "61E85132D3439FCF"
+					item: "prettypipes:wrench"
+					type: "item"
+				}
+			]
+			title: "A Pretty Pipe"
+			x: -1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4849D4573EA81970"]
+			description: ["Crafting modules are the way to bring autocrafting to your network. Sadly, crafting module doesn't craft by itself, so an additional block for processing is needed."]
+			id: "0B6CDB481D720EC8"
+			rewards: [{
+				count: 4
+				id: "6AC665A846837FE3"
+				item: "prettypipes:blank_module"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2224E881D95EF8F0"
+				item: "prettypipes:low_crafting_module"
+				type: "item"
+			}]
+			title: "Pretty Autocrafting"
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1A32D3BCA4A6000C"]
+			description: ["To use pretty pipes to transport items from one inventory to another, add an extraction or retrieval module to a pipe."]
+			id: "7DA224400E742DF8"
+			rewards: [{
+				count: 4
+				id: "1948859366A7FA0A"
+				item: "prettypipes:blank_module"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0592364D86676AC0"
+				item: "prettypipes:low_extraction_module"
+				type: "item"
+			}]
+			title: "Pretty Automation"
+			x: -0.5d
+			y: 2.0d
+		}
+	]
+	title: "How Engineering Works"
+}

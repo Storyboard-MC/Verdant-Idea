@@ -1,0 +1,32 @@
+{
+  "type": "productivebees:centrifuge",
+  "ingredient": {
+    "type": "forge:nbt",
+    "item": "productivebees:configurable_comb",
+    "nbt": {
+      "EntityTag": {
+        "type": "productivebees:obsidian"
+      }
+    }
+  },
+  "outputs": [
+    {
+      "item": {
+        "item": "minecraft:obsidian"
+      },
+      "min": 1,
+      "max": 2
+    },
+    {
+      "item": {
+        "tag": "forge:wax"
+      }
+    },
+    {
+      "fluid": {
+        "fluid": "productivebees:honey"
+      },
+      "amount": 50
+    }
+  ]
+}

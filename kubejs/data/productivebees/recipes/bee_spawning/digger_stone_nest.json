@@ -1,0 +1,14 @@
+{
+  "type": "productivebees:bee_spawning",
+  "ingredient": {
+    "item": "productivebees:stone_nest"
+  },
+  "spawn_item": {
+    "item": "mysticalagriculture:diamond_essence"
+  },
+  "results": [
+    {
+      "bee": "productivebees:digger_bee"
+    }
+  ]
+}

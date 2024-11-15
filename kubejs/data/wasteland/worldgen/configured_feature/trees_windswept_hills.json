@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "default": "wasteland:dead_spruce_checked",
+    "features": [
+      {
+        "chance": 0.2,
+        "feature": "wasteland:dead_oak_checked"
+      }
+    ]
+  }
+}

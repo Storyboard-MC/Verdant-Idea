@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "default": "wasteland:cut_super_birch",
+    "features": [
+      {
+        "chance": 0.5,
+        "feature": "wasteland:dead_oak_checked"
+      }
+    ]
+  }
+}

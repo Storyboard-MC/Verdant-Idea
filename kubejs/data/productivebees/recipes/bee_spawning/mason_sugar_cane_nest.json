@@ -1,0 +1,14 @@
+{
+  "type": "productivebees:bee_spawning",
+  "ingredient": {
+    "item": "productivebees:sugar_cane_nest"
+  },
+  "spawn_item": {
+    "item": "mysticalagriculture:tin_essence"
+  },
+  "results": [
+    {
+      "bee": "productivebees:mason_bee"
+    }
+  ]
+}

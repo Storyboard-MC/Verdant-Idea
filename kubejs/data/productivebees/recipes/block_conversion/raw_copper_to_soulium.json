@@ -1,0 +1,17 @@
+{
+  "type": "productivebees:block_conversion",
+  "bee": "productivebees:soulium",
+  "from": {
+    "Name": "minecraft:soul_soil"
+  },
+  "to": {
+    "Name": "mysticalagriculture:soulstone"
+  },
+  "chance": 50,
+  "conditions": [
+    {
+      "type": "productivebees:bee_exists",
+      "bee": "productivebees:soulium"
+    }
+  ]
+}

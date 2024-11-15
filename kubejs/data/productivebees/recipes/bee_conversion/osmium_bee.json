@@ -1,0 +1,8 @@
+{
+  "type": "productivebees:bee_conversion",
+  "source": "productivebees:iron",
+  "result": "productivebees:osmium",
+  "item": {
+    "item": "mekanism:clump_osmium"
+  }
+}

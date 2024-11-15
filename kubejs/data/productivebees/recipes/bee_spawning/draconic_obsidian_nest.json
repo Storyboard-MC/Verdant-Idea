@@ -1,0 +1,27 @@
+{
+  "type": "productivebees:bee_spawning",
+  "ingredient": {
+    "item": "productivebees:obsidian_nest"
+  },
+  "results": [
+    {
+      "bee": "productivebees:draconic"
+    }
+  ],
+  "spawn_item": {
+    "type": "forge:nbt",
+    "item": "productivebees:configurable_honeycomb",
+    "nbt": {
+      "EntityTag": {
+        "type": "productivebees:ender"
+      }
+    }
+  },
+  "biomes": "#minecraft:is_end",
+  "conditions": [
+    {
+      "type": "productivebees:bee_exists",
+      "bee": "productivebees:draconic"
+    }
+  ]
+}

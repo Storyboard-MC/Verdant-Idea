@@ -1,0 +1,18 @@
+{
+  "type": "productivebees:bee_conversion",
+  "source": "minecraft:bee",
+  "result": "productivebees:soulium",
+  "item": {
+    "item": "minecraft:soul_sand"
+  },
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "mysticalagriculture"
+    },
+    {
+      "type": "productivebees:bee_exists",
+      "bee": "productivebees:soulium"
+    }
+  ]
+}
