@@ -66,9 +66,38 @@ ServerEvents.recipes(event => {
     }
   }
 
+  function agri_seed_partial(name) {
+    return {
+      type: 'forge:partial_nbt',
+      item: 'agricraft:seed',
+      nbt: {
+        genes: {
+          species: {
+            rec: `${name}`, 
+            dom: `${name}`
+          }
+        }
+      }
+    }
+  }
+
   //
   // Mystical Seeds
   //
+
+  // Prosperity seed base
+  event.shaped(
+    'mysticalagriculture:prosperity_seed_base',
+    [
+      " P ",
+      "PSP",
+      " P "
+    ],
+    {
+      P: 'mysticalagriculture:prosperity_shard',
+      S: agri_seed_partial('minecraft:wheat')
+    }
+  )
 
   //
   // Inferium
@@ -78,7 +107,7 @@ ServerEvents.recipes(event => {
 
   event.remove({id: 'mysticalagriculture:inferium_seeds'})
   event.recipes.botania.mana_infusion('mysticalagriculture:inferium_seeds', 'minecraft:wheat_seeds', manaCost)
-  event.recipes.botania.mana_infusion('mysticalagriculture:inferium_seeds', agri_seed('minecraft:wheat'), manaCost)
+  event.recipes.botania.mana_infusion('mysticalagriculture:inferium_seeds', agri_seed_partial('minecraft:wheat'), manaCost)
 
   //
   // Prudentium

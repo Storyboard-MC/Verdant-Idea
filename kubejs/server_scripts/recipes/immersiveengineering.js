@@ -32,7 +32,10 @@ ServerEvents.recipes(event => {
     })
   }
 
-  event.replaceInput({id: "immersiveengineering:crafting/manual"}, "minecraft:book", "minecraft:paper")
+  event.replaceInput({id: "immersiveengineering:crafting/manual"}, "minecraft:lever", "immersiveengineering:hammer")
+
+  event.remove({id: "immersiveengineering:crafting/paper_from_sawdust"})
+  event.shapeless('2x minecraft:paper', ['#forge:dusts/wood', '#forge:dusts/wood', '#forge:dusts/wood', '#forge:dusts/wood', {"type": "bucketlib:fluid", "fluid": "minecraft:water"}])
 
   let plate_types = ['bullet_casing', 'gear', 'packing_4', 'packing_9', 'plate', 'rod', 'unpacking', 'wire']
   for (let type in plate_types) {

@@ -3,6 +3,6 @@
   "forge:ingots/aluminum": "null",
   "forge:ingots/lead": "mekanism:ingot_lead",
   "forge:ingots/tin": "mekanism:ingot_tin",
-  "forge:ingots/nickel": "null",
-  "forge:ingots/silver": "null"
+  "forge:ingots/nickel": "immersiveengineering:ingot_nickel",
+  "forge:ingots/silver": "immersiveengineering:ingot_silver"
 }
