@@ -35,13 +35,18 @@ ServerEvents.recipes(event => {
   checked_2x2('mysticalagriculture:earth_essence', 'mysticalagriculture:water_essence', '8x minecraft:clay_ball')
 
   // Add missing ore recipes and change ingots to raw resources
+  event.remove({id: 'mysticalagriculture:essence/common/aluminum_ingot'})
   donut('mysticalagriculture:aluminum_essence', '2x immersiveengineering:raw_aluminum')
   event.replaceOutput({mod: 'mysticalagriculture', output: 'minecraft:iron_ingot'}, 'minecraft:iron_ingot', 'minecraft:raw_iron')
   event.replaceOutput({mod: 'mysticalagriculture', output: 'minecraft:copper_ingot'}, 'minecraft:copper_ingot', 'minecraft:raw_copper')
+  event.remove({id: 'mysticalagriculture:essence/common/tin_ingot'})
   donut('mysticalagriculture:tin_essence', '2x mekanism:raw_tin')
+  event.remove({id: 'mysticalagriculture:essence/common/silver_ingot'})
   donut('mysticalagriculture:silver_essence', '4x immersiveengineering:raw_silver')
+  event.remove({id: 'mysticalagriculture:essence/common/lead_ingot'})
   donut('mysticalagriculture:lead_essence', '2x immersiveengineering:raw_lead')
   event.replaceOutput({mod: 'mysticalagriculture', output: 'minecraft:gold_ingot'}, 'minecraft:gold_ingot', 'minecraft:raw_gold')
+  event.remove({id: 'mysticalagriculture:essence/common/nickel_ingot'})
   donut('mysticalagriculture:nickel_essence', '2x immersiveengineering:raw_nickel')
   event.replaceOutput({mod: 'mysticalagriculture', output: 'mekanism:ingot_osmium'}, 'mekanism:ingot_osmium', 'mekanism:raw_osmium')
   event.replaceOutput({mod: 'mysticalagriculture', output: 'minecraft:netherite_ingot'}, 'minecraft:netherite_ingot', 'minecraft:ancient_debris')

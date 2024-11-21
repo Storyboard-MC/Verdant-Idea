@@ -8,7 +8,13 @@
       "bee": "productivebees:chocolate_mining_bee"
     }
   ],
-  "spawn_item": {
-    "item": "mysticalagriculture:redstone_essence"
-  }
+  "conditions": [
+    {
+        "type": "forge:not",
+        "value": {
+            "type": "forge:mod_loaded",
+            "modid": "productivebees"
+        }
+    }
+  ]
 }

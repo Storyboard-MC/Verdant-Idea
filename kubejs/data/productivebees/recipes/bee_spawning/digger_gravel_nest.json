@@ -11,5 +11,13 @@
       "bee": "productivebees:digger_bee"
     }
   ],
-  "biomes": "#productivebees:is_beach_or_river"
+  "conditions": [
+    {
+        "type": "forge:not",
+        "value": {
+            "type": "forge:mod_loaded",
+            "modid": "productivebees"
+        }
+    }
+  ]
 }

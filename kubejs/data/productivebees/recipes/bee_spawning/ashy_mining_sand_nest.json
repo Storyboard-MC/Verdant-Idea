@@ -1,11 +1,11 @@
 {
   "type": "productivebees:bee_spawning",
   "ingredient": {
-    "item": "productivebees:coarse_dirt_nest"
+    "item": "productivebees:sand_nest"
   },
   "results": [
     {
-      "bee": "productivebees:chocolate_mining_bee"
+      "bee": "productivebees:ashy_mining_bee"
     }
   ],
   "conditions": [

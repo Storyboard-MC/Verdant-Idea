@@ -65,9 +65,11 @@ ServerEvents.recipes(event => {
   event.remove({id: 'immersiveengineering:crafting/plate_gold_hammering'})
   event.shapeless('immersiveengineering:plate_iron', ['#forge:ingots/iron', '#forge:ingots/iron', 'immersiveengineering:hammer'])
 
-  //
+  // Make LV Capacitor possible to make early game
   event.replaceInput({id: "immersiveengineering:crafting/capacitor_lv"}, "#forge:plates/lead", "#forge:plates/gold")
 
+  // Change blast brick recipe to require nether
+  event.replaceInput({id: 'immersiveengineering:crafting/blastbrick'}, "minecraft:magma_block", "minecraft:blaze_powder")
 
   // Nitrate Slurry
   mixer(3200, {"amount": 500, "tag": "minecraft:water"}, [{"base_ingredient": {"item": "wasteland:compost"}, "count":2}, {"item": "minecraft:bone_meal"}], {"amount": 500,"fluid": "wasteland:nitrate_slurry"})

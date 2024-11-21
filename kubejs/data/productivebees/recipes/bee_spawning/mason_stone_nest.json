@@ -10,5 +10,14 @@
     {
       "bee": "productivebees:mason_bee"
     }
+  ],
+  "conditions": [
+    {
+        "type": "forge:not",
+        "value": {
+            "type": "forge:mod_loaded",
+            "modid": "productivebees"
+        }
+    }
   ]
 }

@@ -130,13 +130,13 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["704B30E0C6BFCE49"]
+			dependencies: ["6C563A93CC19034C"]
 			id: "2324DBDF19EF6E81"
 			rewards: [
 				{
 					count: 2
 					id: "31601EEFBE4CED35"
-					item: "mysticalagriculture:imperium_essence"
+					item: "mysticalagriculture:supremium_essence"
 					type: "item"
 				}
 				{
@@ -151,8 +151,8 @@
 				item: "mysticalagriculture:aluminum_seeds"
 				type: "item"
 			}]
-			x: 11.5d
-			y: -2.0d
+			x: 18.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["60AB48169195063E"]
@@ -479,14 +479,14 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["6C563A93CC19034C"]
+			dependencies: ["704B30E0C6BFCE49"]
 			hide_dependent_lines: true
 			id: "6C8256CABC21645C"
 			rewards: [
 				{
 					count: 2
 					id: "47B155560EB45706"
-					item: "mysticalagriculture:supremium_essence"
+					item: "mysticalagriculture:imperium_essence"
 					type: "item"
 				}
 				{
@@ -501,8 +501,8 @@
 				item: "mysticalagriculture:nickel_seeds"
 				type: "item"
 			}]
-			x: 18.0d
-			y: 1.0d
+			x: 10.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["6C563A93CC19034C"]
@@ -700,8 +700,8 @@
 				item: "mysticalagriculture:gold_seeds"
 				type: "item"
 			}]
-			x: 10.5d
-			y: 0.0d
+			x: 10.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["704B30E0C6BFCE49"]
@@ -725,7 +725,7 @@
 				item: "mysticalagriculture:emerald_seeds"
 				type: "item"
 			}]
-			x: 12.0d
+			x: 13.0d
 			y: 1.0d
 		}
 		{
@@ -750,8 +750,8 @@
 				item: "mysticalagriculture:creeper_seeds"
 				type: "item"
 			}]
-			x: 11.5d
-			y: 2.0d
+			x: 12.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["704B30E0C6BFCE49"]
@@ -776,8 +776,8 @@
 				item: "mysticalagriculture:enderman_seeds"
 				type: "item"
 			}]
-			x: 13.0d
-			y: 1.0d
+			x: 11.5d
+			y: -2.0d
 		}
 		{
 			dependencies: ["6A6C96BB37FB3C52"]
@@ -1476,8 +1476,8 @@
 				item: "mysticalagriculture:blaze_seeds"
 				type: "item"
 			}]
-			x: 10.0d
-			y: -1.0d
+			x: 11.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["51D11A68071D136A"]
@@ -1601,8 +1601,8 @@
 				item: "mysticalagriculture:end_seeds"
 				type: "item"
 			}]
-			x: 10.0d
-			y: 1.0d
+			x: 10.5d
+			y: 0.0d
 		}
 		{
 			dependencies: ["6C563A93CC19034C"]
@@ -1746,8 +1746,8 @@
 				}
 				type: "item"
 			}]
-			x: 4.0d
-			y: -5.0d
+			x: 9.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["5247EBABF2552934"]
@@ -1780,8 +1780,8 @@
 				}
 				type: "item"
 			}]
-			x: 9.0d
-			y: -3.0d
+			x: 4.0d
+			y: -5.0d
 		}
 		{
 			dependencies: ["1261E6D048DE0810"]

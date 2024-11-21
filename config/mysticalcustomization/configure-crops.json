@@ -20,7 +20,7 @@
     "mysticalagriculture:lapis_lazuli": {
         "tier": "mysticalagriculture:3"
     },
-    "mysticalagriculture:aluminum": {
+    "mysticalagriculture:nickel": {
         "tier": "mysticalagriculture:4"
     },
     "mysticalagriculture:creeper": {
@@ -41,7 +41,7 @@
     "mysticalagriculture:lead": {
         "tier": "mysticalagriculture:5"
     },
-    "mysticalagriculture:nickel": {
+    "mysticalagriculture:aluminum": {
         "tier": "mysticalagriculture:5"
     },
     "mysticalagriculture:osmium": {
