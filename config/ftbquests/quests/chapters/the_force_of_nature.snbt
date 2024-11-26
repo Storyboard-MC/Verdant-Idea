@@ -444,7 +444,14 @@
 				{
 					count: 3L
 					id: "38F7EAE7B77494D1"
-					item: { Count: 3, id: "botania:glimmering_livingwood" }
+					item: {
+						Count: 1
+						id: "itemfilters:tag"
+						tag: {
+							value: "botania:glimmering_livingwood_logs"
+						}
+					}
+					title: "3x Glimmering Livingwood"
 					type: "item"
 				}
 			]

@@ -379,11 +379,11 @@
 		}
 		{
 			dependencies: [
-				"3A622F692480B127"
 				"0000AF9A14F8BD79"
 				"7ABD05B78201DE96"
 			]
 			description: ["Now that all resources are ready, it's time to mix them in a refinery. "]
+			icon: "immersiveengineering:biodiesel_bucket"
 			id: "64269BEAA28956F7"
 			rewards: [{
 				count: 8
@@ -392,17 +392,20 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "7F60CACA7B939B67"
-				item: "immersiveengineering:biodiesel_bucket"
-				type: "item"
+				advancement: "immersiveengineering:multiblocks/mb_refinery"
+				criterion: ""
+				id: "33365BBC5F0FF388"
+				title: "Build a Refinery"
+				type: "advancement"
 			}]
 			title: "Who Needs Oil?"
 			x: 2.5d
 			y: -2.0d
 		}
 		{
-			dependencies: ["692F5D1310643D54"]
+			dependencies: ["3A622F692480B127"]
 			description: ["Various plants can be processed into ethanol in a fermenter."]
+			icon: "immersiveengineering:ethanol_bucket"
 			id: "0000AF9A14F8BD79"
 			rewards: [{
 				count: 16
@@ -411,17 +414,20 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "3CF768A7004A6298"
-				item: "immersiveengineering:ethanol_bucket"
-				type: "item"
+				advancement: "immersiveengineering:multiblocks/mb_fermenter"
+				criterion: ""
+				id: "7816FB7815EAD11A"
+				title: "Build an Industrial Fermenter"
+				type: "advancement"
 			}]
 			title: "Fermentation"
-			x: 1.0d
+			x: 2.0d
 			y: -3.0d
 		}
 		{
 			dependencies: ["692F5D1310643D54"]
 			description: ["Various seeds can be processed into plant oil in a squeezer."]
+			icon: "immersiveengineering:plantoil_bucket"
 			id: "3A622F692480B127"
 			rewards: [{
 				count: 16
@@ -430,13 +436,15 @@
 				type: "item"
 			}]
 			tasks: [{
-				id: "1961EE680199F1DA"
-				item: "immersiveengineering:plantoil_bucket"
-				type: "item"
+				advancement: "immersiveengineering:multiblocks/mb_squeezer"
+				criterion: ""
+				id: "08AE3461E37136D2"
+				title: "Build an Industrial Squeezer"
+				type: "advancement"
 			}]
 			title: "Squeezing Seeds"
-			x: 2.0d
-			y: -1.0d
+			x: 1.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["48BAF0F09004F68D"]
@@ -488,8 +496,9 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["692F5D1310643D54"]
-			description: ["Nitrate can be made in 2 ways: it's a byproduct from crushing sandstone in a crusher; it can also be processed from nitrate slurry made in mixer from compost and bone meal."]
+			dependencies: ["75CB84E195CA1849"]
+			description: ["Nitrate is a byproduct of crushing sandstone in a crusher. It is used as a catalyst in biodiesel production."]
+			icon: "immersiveengineering:dust_saltpeter"
 			id: "7ABD05B78201DE96"
 			rewards: [{
 				count: 8
@@ -497,14 +506,23 @@
 				item: "immersiveengineering:dust_saltpeter"
 				type: "item"
 			}]
-			tasks: [{
-				id: "0A253ECA305D9833"
-				item: "immersiveengineering:dust_saltpeter"
-				type: "item"
-			}]
+			tasks: [
+				{
+					advancement: "immersiveengineering:multiblocks/mb_crusher"
+					criterion: ""
+					id: "49E904EDAB5EB420"
+					title: "Build a Crusher"
+					type: "advancement"
+				}
+				{
+					id: "51951997CBE7F2A2"
+					item: "immersiveengineering:dust_saltpeter"
+					type: "item"
+				}
+			]
 			title: "Nitrate Processing"
 			x: 2.0d
-			y: -3.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["3B483D35A3951F1B"]

@@ -36,23 +36,6 @@ ServerEvents.recipes(event => {
   pressure_chamber("forge:ingots/steel", 2.0, "pneumaticcraft:ingot_iron_compressed")
   pressure_chamber("forge:storage_blocks/steel", 2.0, "pneumaticcraft:compressed_iron_block")
 
-  // Nitrate
-  event.custom({
-    type: "pneumaticcraft:thermo_plant",
-    exothermic: false,
-    fluid_input: {
-      "type": "pneumaticcraft:fluid",
-      "amount": 1000,
-      "fluid": "wasteland:nitrate_slurry"
-    },
-    "item_output": {
-      "item": "immersiveengineering:dust_saltpeter"
-    },
-    "temperature": {
-      "min_temp": 373
-    }
-  })
-
   // Remove duplicate fluids
   event.remove({id: 'pneumaticcraft:fluid_mixer/biodiesel'})
   event.remove({id: 'pneumaticcraft:thermo_plant/ethanol_from_sugar'})
