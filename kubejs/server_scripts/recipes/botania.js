@@ -29,4 +29,21 @@ ServerEvents.recipes(event => {
   )
 
   event.recipes.botania.orechid("ae2:sky_stone_block", "minecraft:deepslate", 16)
+
+  // Move Cocoon recipe to endgame
+  event.remove({id: 'botania:cocoon'})
+  event.shaped(
+    'botania:cocoon',
+    [
+      "SSS",
+      "MFM",
+      "SAS"
+    ],
+    {
+      A: 'mekanism:pellet_antimatter',
+      F: 'botania:fel_pumpkin',
+      M: 'botania:manaweave_cloth',
+      S: 'minecraft:string'
+    }
+  )
 })

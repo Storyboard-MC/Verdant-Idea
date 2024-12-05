@@ -4,5 +4,6 @@
   "forge:ingots/lead": "mekanism:ingot_lead",
   "forge:ingots/tin": "mekanism:ingot_tin",
   "forge:ingots/nickel": "immersiveengineering:ingot_nickel",
-  "forge:ingots/silver": "immersiveengineering:ingot_silver"
+  "forge:ingots/silver": "immersiveengineering:ingot_silver",
+  "forge:ingots/lumium": "null"
 }

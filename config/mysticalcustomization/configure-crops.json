@@ -214,5 +214,23 @@
     },
     "mysticalagriculture:glowstone": {
         "enabled": false
+    },
+    "mysticalagriculture:blizz": {
+        "enabled": false
+    },
+    "mysticalagriculture:blitz": {
+        "enabled": false
+    },
+    "mysticalagriculture:basalz": {
+        "enabled": false
+    },
+    "mysticalagriculture:signalum": {
+        "enabled": false
+    },
+    "mysticalagriculture:lumium": {
+        "enabled": false
+    },
+    "mysticalagriculture:enderium": {
+        "enabled": false
     }
 }

@@ -5,11 +5,11 @@
 	group: ""
 	icon: "mekanism:advanced_control_circuit"
 	id: "460BC39D649E0D53"
-	order_index: 6
+	order_index: 7
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["3A1B39A460C4313D"]
+			dependencies: ["7206BF3CB73BECE8"]
 			id: "2D9B18AE4AABF2CD"
 			size: 1.25d
 			tasks: [{

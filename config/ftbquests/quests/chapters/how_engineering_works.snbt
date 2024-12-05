@@ -762,6 +762,198 @@
 			x: -0.5d
 			y: 2.0d
 		}
+		{
+			dependencies: ["3A1B39A460C4313D"]
+			description: [
+				"PCBs are the beginning of a new era. Despite the unlimited possibilities, they have a drawback: everything suddenly needs way more processing."
+				""
+				"Luckily, assembly can be used to make some of the processes easier. It can also be used to create a few things that wouldn't be possible without it."
+			]
+			icon: "pneumaticcraft:assembly_io_unit_export"
+			id: "69C26AE20B21EFD2"
+			rewards: [{
+				count: 8
+				id: "3EDE3E4C04585438"
+				item: "pneumaticcraft:plastic"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "22C285AA1D2F5EEB"
+					item: "pneumaticcraft:assembly_controller"
+					type: "item"
+				}
+				{
+					id: "6E523E3CA585E156"
+					item: "pneumaticcraft:assembly_platform"
+					type: "item"
+				}
+				{
+					id: "5688D9A732DEA1AD"
+					item: "pneumaticcraft:assembly_io_unit_import"
+					type: "item"
+				}
+				{
+					id: "397218DE76269EEA"
+					item: "pneumaticcraft:assembly_io_unit_export"
+					type: "item"
+				}
+				{
+					id: "584BF0EB042C1C69"
+					item: "pneumaticcraft:assembly_laser"
+					type: "item"
+				}
+				{
+					id: "14088273CEC07B25"
+					item: "pneumaticcraft:assembly_drill"
+					type: "item"
+				}
+			]
+			title: "Automated Assembly"
+			x: 6.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4DC3A6F0E0BA6166"]
+			description: ["Better pipes can also be used for advanced compressors. These can generate much higher pressures, but they produce heat, so they need to be cooled."]
+			icon: "pneumaticcraft:flux_compressor"
+			id: "4C51CAA0EDD7260D"
+			rewards: [{
+				count: 16
+				id: "12520B76A6EF7114"
+				item: "pneumaticcraft:advanced_pressure_tube"
+				type: "item"
+			}]
+			tasks: [{
+				id: "70B97A6569AF1D25"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "pneumaticcraft:advanced_air_compressor"
+							}
+							{
+								Count: 1b
+								id: "pneumaticcraft:advanced_liquid_compressor"
+							}
+							{
+								Count: 1b
+								id: "pneumaticcraft:flux_compressor"
+							}
+						]
+					}
+				}
+				title: "Any Advanced Compressor"
+				type: "item"
+			}]
+			title: "Advanced Compression"
+			x: 6.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["69C26AE20B21EFD2"]
+			description: ["It is becoming obvious that 5 bar is no longer enough. Better tubes allow higher pressures, which means they can be used with newer machines."]
+			id: "4DC3A6F0E0BA6166"
+			rewards: [{
+				count: 20
+				id: "5186B4F549AE1EC0"
+				item: "pneumaticcraft:pressure_chamber_valve"
+				type: "item"
+			}]
+			tasks: [{
+				count: 8L
+				id: "5EDB13CB0DADF579"
+				item: "pneumaticcraft:advanced_pressure_tube"
+				type: "item"
+			}]
+			title: "More pressure"
+			x: 7.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6A562D01891F04FA"]
+			description: [
+				"What if drones were able to do much more? Well, they can! These drones are programmable, meaning that you can do almost anything with them."
+				""
+				"To program a drone, you need a programmer and a few programming puzzle pieces. A GPS tool will also be useful to select a specific place."
+			]
+			icon: {
+				Count: 1
+				id: "pneumaticcraft:drone"
+				tag: {
+					"pneumaticcraft:air": 120000
+				}
+			}
+			id: "1B06DA1D7EAB7FC6"
+			rewards: [{
+				count: 16
+				id: "10F47FC06F2C8435"
+				item: "pneumaticcraft:programming_puzzle"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "6F16BF130C0ADD63"
+					item: "pneumaticcraft:drone"
+					type: "item"
+				}
+				{
+					id: "63987A184E0D868E"
+					item: "pneumaticcraft:programmer"
+					type: "item"
+				}
+				{
+					id: "08F6E53DCC4A6773"
+					item: "pneumaticcraft:gps_tool"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "5F0113FDFA774883"
+					item: { Count: 8, id: "pneumaticcraft:programming_puzzle" }
+					type: "item"
+				}
+			]
+			title: "Built From Scratch"
+			x: 8.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["69C26AE20B21EFD2"]
+			description: ["Amadron's drones somehow work even after the end of the world. Maybe making a few drones wouldn't be such a bad idea?"]
+			icon: {
+				Count: 1
+				id: "pneumaticcraft:harvesting_drone"
+				tag: {
+					"pneumaticcraft:air": 120000
+				}
+			}
+			id: "6A562D01891F04FA"
+			rewards: [{
+				count: 4
+				id: "419C2DE161ABF291"
+				item: "pneumaticcraft:turbine_rotor"
+				type: "item"
+			}]
+			tasks: [{
+				id: "3812045A62D706B1"
+				item: {
+					Count: 1
+					id: "itemfilters:tag"
+					tag: {
+						value: "pneumaticcraft:basic_drones"
+					}
+				}
+				title: "Basic Drone"
+				type: "item"
+			}]
+			title: "Not Quite a Bee"
+			x: 7.0d
+			y: -3.0d
+		}
 	]
 	title: "How Engineering Works"
 }

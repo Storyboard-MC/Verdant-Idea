@@ -20,12 +20,8 @@ ServerEvents.recipes(event => {
   // Remove all vanilla Mystical Agriculture seeds recipes
   event.remove({type: 'mysticalagriculture:infusion', output: '#forge:seeds'})
   
-  // Remove seed reprocessor and its recipes
-  event.remove({id: 'mysticalagriculture:seed_reprocessor'})
+  // Remove seed reprocessor recipes
   event.remove({type: 'mysticalagriculture:reprocessor'})
-
-  // Remove harvester
-  event.remove({id: 'mysticalagriculture:harvester'})
 
   //
   // Infusion Crystals

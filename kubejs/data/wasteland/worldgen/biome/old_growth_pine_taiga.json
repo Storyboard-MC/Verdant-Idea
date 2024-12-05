@@ -93,12 +93,6 @@
         "weight": 100
       },
       {
-        "type": "minecraft:zombie_villager",
-        "maxCount": 1,
-        "minCount": 1,
-        "weight": 25
-      },
-      {
         "type": "minecraft:skeleton",
         "maxCount": 4,
         "minCount": 4,

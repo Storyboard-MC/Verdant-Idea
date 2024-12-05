@@ -23,6 +23,7 @@ ServerEvents.recipes(event => {
     {
       namespace: 'dusts',
       honeycombs: [
+        'niter',
         'saltpeter'
       ]
     },
@@ -30,7 +31,11 @@ ServerEvents.recipes(event => {
       namespace: 'gems',
       honeycombs: [
         'amethyst',
-        'fluorite'
+        'apatite',
+        'cinnabar_dust',
+        'fluorite',
+        'ruby',
+        'sapphire'
       ]
     },
     {
@@ -72,6 +77,23 @@ ServerEvents.recipes(event => {
         'red_shroom',
         'warped'
       ]
+    },
+    {
+      namespace: 'tconstruct',
+      honeycombs: [
+        'rose_gold'
+      ]
+    },
+    {
+      namespace: 'thermal',
+      honeycombs: [
+        'basalz',
+        'blitz',
+        'blizz',
+        'destabilized_redstone',
+        'energized_glowstone',
+        'resonant_ender'
+      ]
     }
   ]
 
@@ -84,9 +106,6 @@ ServerEvents.recipes(event => {
   })
 
   event.remove({ id: 'productivebees:centrifuge/honeycomb_frosty' })
-  
-
-
 
   event.remove({id: 'productivebees:upgrades/base'})
   event.shaped(
@@ -106,4 +125,21 @@ ServerEvents.recipes(event => {
 
   event.replaceInput({id: 'productivebees:upgrades/productivity'}, 'productivebees:draconic_chunk', 'minecraft:emerald')
   event.replaceInput({id: 'productivebees:upgrades/filter'}, 'minecraft:writable_book', 'minecraft:hopper')
+
+  // Update powered centrifuge recipe
+  event.remove({id: 'productivebees:powered_centrifuge/mekanism'})
+  event.remove({id: 'productivebees:powered_centrifuge/thermal'})
+  event.shaped(
+    'productivebees:powered_centrifuge',
+    [
+      "S S",
+      "SCS",
+      "STS"
+    ],
+    {
+      C: 'productivebees:centrifuge',
+      S: '#forge:plates/steel',
+      T: 'thermal:machine_centrifuge'
+    }
+  )
 })
