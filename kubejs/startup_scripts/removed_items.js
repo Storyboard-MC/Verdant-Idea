@@ -168,6 +168,10 @@ global.removed_items = {
     'rose_gold_dust',
     'rose_gold_gear',
     'rose_gold_plate',
-    'rose_gold_coin'
+    'rose_gold_coin',
+    'device_composter',
+    'compost',
+    'drill_head',
+    'steel_coin'
   ]
 }

@@ -1,0 +1,9 @@
+{
+  "type": "patchouli:shapeless_book_recipe",
+  "ingredients": [
+    { "item": "minecraft:book" },
+    { "item": "minecraft:poppy" },
+    { "item": "minecraft:dandelion" }
+  ],
+  "book": "enchanted:herbology"
+}

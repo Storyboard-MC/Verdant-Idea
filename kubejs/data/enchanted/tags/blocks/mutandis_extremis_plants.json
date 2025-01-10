@@ -1,0 +1,9 @@
+{
+  "replace": true,
+  "values": [
+    "#enchanted:mutandis_plants",
+    "minecraft:sugar_cane",
+    "minecraft:cactus",
+    "enchanted:blood_poppy"
+  ]
+}

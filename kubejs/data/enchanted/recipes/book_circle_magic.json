@@ -1,0 +1,9 @@
+{
+  "type": "patchouli:shapeless_book_recipe",
+  "ingredients": [
+    { "item": "minecraft:book" },
+    { "item": "enchanted:rowan_berries" },
+    { "item": "enchanted:whiff_of_magic" }
+  ],
+  "book": "enchanted:circle_magic"
+}

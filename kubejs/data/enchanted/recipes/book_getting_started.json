@@ -1,0 +1,8 @@
+{
+  "type": "patchouli:shapeless_book_recipe",
+  "ingredients": [
+    { "item": "minecraft:book" },
+    { "item": "enchanted:belladonna_flower" }
+  ],
+  "book": "enchanted:getting_started"
+}

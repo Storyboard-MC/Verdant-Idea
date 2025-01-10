@@ -1,0 +1,6 @@
+{
+  "chance": 0.5,
+  "child": "enchanted:garlic",
+  "parent1": "minecraft:allium",
+  "parent2": "farmersdelight:onion"
+}

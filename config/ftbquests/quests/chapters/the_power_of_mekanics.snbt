@@ -5,7 +5,7 @@
 	group: ""
 	icon: "mekanism:advanced_control_circuit"
 	id: "460BC39D649E0D53"
-	order_index: 7
+	order_index: 8
 	quest_links: [ ]
 	quests: [
 		{

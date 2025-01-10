@@ -1,0 +1,383 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "the_energy_of_flora"
+	group: ""
+	icon: "enchanted:attuned_stone"
+	id: "57E3B0DF48451B31"
+	order_index: 6
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["4FFA2881BDF3F4AE"]
+			description: [
+				"Anointing paste used on a cauldron will transform it into a witch's cauldron. For the cauldron to work, a campfire must be placed under it."
+				""
+				"A witch's cauldron can be used to brew multiple items. First, fill it with 4 buckets of water. After that, throw all the ingredients in the correct order. When the item finishes brewing, it can be taken out of the cauldron."
+			]
+			icon: "enchanted:witch_cauldron"
+			id: "515943DB22086086"
+			rewards: [{
+				id: "0F26221A0FEF8C16"
+				item: "minecraft:water_bucket"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "5F0035901D442590"
+					item: "enchanted:anointing_paste"
+					type: "item"
+				}
+				{
+					id: "4FE6D4B839709FCA"
+					item: "enchanted:witch_cauldron"
+					type: "item"
+				}
+			]
+			title: "A Better Cauldron"
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4FFA2881BDF3F4AE"]
+			description: ["Witch's Oven can be used just like a furnace, but in addition, it can capture fumes produced while smelting certain items. To obtain these fumes, you need a &eclay jar&r. Without any upgrades, about 1/3 of the fumes will be captured into clay jars."]
+			id: "08D256BF0969D5F6"
+			rewards: [{
+				count: 4
+				id: "0DAE19A4E804FF04"
+				item: "enchanted:clay_jar"
+				type: "item"
+			}]
+			tasks: [{
+				id: "52AB2C5D5147977C"
+				item: "enchanted:witch_oven"
+				type: "item"
+			}]
+			title: "Carbon Capture"
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["08D256BF0969D5F6"]
+			description: ["Adding a fume funnel on &eboth&r sides of the oven will double the amount of fumes captured!"]
+			id: "3691957811B57666"
+			rewards: [{
+				count: 8
+				id: "0A80D178680A8B72"
+				item: "enchanted:clay_jar"
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "04BE740C446F96B6"
+				item: "enchanted:fume_funnel"
+				type: "item"
+			}]
+			title: "Fume Funnelling"
+			x: -2.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"08D256BF0969D5F6"
+				"6CF1983DF3517C40"
+			]
+			description: ["Many magical recipes require energy, which can only be collected with an altar. When placed as a 2x3 structure, it will passively collect the energy from nearby flora. The more plants around it, the greater the power. "]
+			id: "3BEDB18AF4386D6C"
+			rewards: [{
+				count: 32
+				id: "30EF76FC56EDD149"
+				item: "minecraft:dirt"
+				type: "item"
+			}]
+			tasks: [{
+				count: 6L
+				id: "21FD87E1A8616FBC"
+				item: "enchanted:altar"
+				type: "item"
+			}]
+			title: "Harnessing Nature"
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3A55B097550F2093"]
+			description: ["Distillery lets you separate certain fumes into their components. It is the only source of some of the fumes required for brewing."]
+			id: "76E6ADB613585553"
+			rewards: [{
+				count: 8
+				id: "646A070C6C343BB6"
+				item: "enchanted:clay_jar"
+				type: "item"
+			}]
+			tasks: [{
+				id: "68A3051A7B51B686"
+				item: "enchanted:distillery"
+				type: "item"
+			}]
+			title: "Fumier Fumes"
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["76E6ADB613585553"]
+			description: [
+				"Chalk is used to create circles required for circle magic."
+				""
+				"A single chalk can be used to write 40 symbols, except for golden chalk, which only has 3 uses."
+			]
+			icon: {
+				Count: 1
+				id: "enchanted:ritual_chalk"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "35DAF111740A8579"
+			rewards: [{
+				count: 8
+				id: "495CE951CAA72ADB"
+				item: "enchanted:clay_jar"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "441CA43C7FFA3EF8"
+					item: {
+						Count: 1
+						id: "enchanted:ritual_chalk"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1FED294D289DF0C5"
+					item: {
+						Count: 1
+						id: "enchanted:golden_chalk"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "A Bit Like School"
+			x: 2.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["515943DB22086086"]
+			description: ["It seems that one of the uses of the witch's cauldron is to create mutandis, a powerful mixture of compost and a few magical items. If compost could help saplings grow, what is mutandis capable of?"]
+			icon: "enchanted:mutandis"
+			id: "6D85E6821A82CFB5"
+			rewards: [{
+				count: 8
+				id: "6F56EC08D9AF5482"
+				item: "enchanted:mutandis"
+				type: "item"
+			}]
+			tasks: [{
+				count: 12L
+				id: "19B98242148E71E4"
+				item: "enchanted:mutandis"
+				type: "item"
+			}]
+			title: "Mutating Plants"
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["2863C64767ABFA74"]
+			description: ["If storing poppets in your inventory is not an option, you can use a poppet shelf instead. Since it works even when in a different dimension, it can be extremly powerful in some scenarios."]
+			id: "29844A3D88F6CBB3"
+			rewards: [{
+				count: 8
+				id: "2B8C56B64A287EFF"
+				item: "enchanted:spanish_moss"
+				type: "item"
+			}]
+			tasks: [{
+				id: "66EEDEEF776358F5"
+				item: "enchanted:poppet_shelf"
+				type: "item"
+			}]
+			title: "Poppet Storage"
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3A55B097550F2093"]
+			description: ["One of the uses of the plants created by mutandis is to create poppets. These can be used as a protection against different kinds of death when stored in inventory."]
+			id: "2863C64767ABFA74"
+			rewards: [{
+				count: 4
+				id: "2BD1005F7968BE74"
+				item: "enchanted:spanish_moss"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5EB2E20148E4D67C"
+				item: "enchanted:spinning_wheel"
+				type: "item"
+			}]
+			title: "Poppetry"
+			x: 1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1ED16F33848B4D9A"]
+			description: ["Some of the magic seems to be a bit darker than the magical flowers... However, witchcraft still relies heavily on nature. It might be worth learning its possibilities."]
+			id: "4FFA2881BDF3F4AE"
+			rewards: [{
+				count: 8
+				id: "3AA6FE84D2C827C8"
+				item: "minecraft:bone_meal"
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "5629E79EDFB9DC63"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "enchanted:getting_started"
+					}
+				}
+				type: "item"
+			}]
+			title: "The Art of Witchcraft"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3BEDB18AF4386D6C"]
+			description: [
+				"Decorations sound like something purely cosmetic, but in this case they have incredible power. There are 3 types of decorations you may place."
+				""
+				"Chalice increases the amount of power an altar can store. It can be filled with redstone soup for even greater power."
+				""
+				"Torch, candle or a candelabra increases the speed at which the altar accumulates power."
+				""
+				"Skeleton, wither skeleton or player skull increases both. "
+			]
+			icon: "enchanted:candelabra"
+			id: "7C65317924FAE6E7"
+			rewards: [{
+				id: "15A3EECA5949A7FF"
+				item: "mysticalagriculture:blank_skull"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "1186CA1A116C85DB"
+					item: "enchanted:candelabra"
+					type: "item"
+				}
+				{
+					id: "2837316F9B695E5B"
+					item: "enchanted:chalice"
+					type: "item"
+				}
+			]
+			title: "Altar Decoration"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6D85E6821A82CFB5"]
+			description: ["Apparently, not all types of trees are extinct. Somehow mutandis is able to mutate plants into a few more saplings. Maybe they have some magical capabilities?"]
+			icon: "enchanted:rowan_sapling"
+			id: "6CF1983DF3517C40"
+			rewards: [{
+				count: 8
+				id: "45C223FBCA088B2A"
+				item: "enchanted:mutandis"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "281FD652D00AE1AA"
+					item: "enchanted:alder_sapling"
+					type: "item"
+				}
+				{
+					id: "7A91FB331C588A18"
+					item: "enchanted:hawthorn_sapling"
+					type: "item"
+				}
+				{
+					id: "2FD615994901A471"
+					item: "enchanted:rowan_sapling"
+					type: "item"
+				}
+			]
+			title: "Terrific Trees"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3691957811B57666"]
+			description: ["Adding a fume filter to fume funnels will cause the oven to capture &eALL&r fumes! If only we had these before..."]
+			id: "242A1BDE582940FD"
+			rewards: [{
+				count: 16
+				id: "01A483636CBAB207"
+				item: "enchanted:clay_jar"
+				type: "item"
+			}]
+			tasks: [{
+				count: 2L
+				id: "09453A57A84FD6CB"
+				item: "enchanted:fume_funnel_filtered"
+				type: "item"
+			}]
+			title: "No Fumes Allowed"
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["6CF1983DF3517C40"]
+			description: ["These new trees seem to produce different fumes... Whiff of magic, which comes from smelting rowan saplings, is used to make an attuned stone, one of the main items used in the creation of advanced magical tools."]
+			id: "3A55B097550F2093"
+			rewards: [{
+				count: 4
+				id: "5D7FAB40765CCC46"
+				item: "minecraft:diamond"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7EFA9204ABBCB703"
+				item: "enchanted:attuned_stone"
+				type: "item"
+			}]
+			title: "Infusing Diamonds"
+			x: 1.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["35DAF111740A8579"]
+			description: ["One of the rites should be able to make another interesting sapling. Maybe it's worth a try."]
+			id: "42D12DACA7AFEC63"
+			rewards: [{
+				count: 16
+				id: "0E6824771A6F3FE9"
+				item: "minecraft:bone_meal"
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "20B0E0E3BDAE1FDC"
+				item: "thermal:rubberwood_sapling"
+				type: "item"
+			}]
+			title: "Sticky Sticks"
+			x: 3.0d
+			y: -2.0d
+		}
+	]
+	title: "The Energy of Flora"
+}

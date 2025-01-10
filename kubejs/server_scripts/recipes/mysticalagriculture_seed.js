@@ -1,4 +1,43 @@
 ServerEvents.recipes(event => {
+  const seedTypes = [
+    'inferium',
+    'coal',
+    'copper',
+    'dye',
+    'iron',
+    'nether',
+    'skeleton',
+    'zombie',
+    'experience',
+    'lapis_lazuli',
+    'nether_quartz',
+    'redstone',
+    'tin',
+    'spider',
+    'air',
+    'earth',
+    'fire',
+    'water',
+    'diamond',
+    'emerald',
+    'end',
+    'gold',
+    'nickel',
+    'silver',
+    'blaze',
+    'creeper',
+    'enderman',
+    'aluminum',
+    'certus_quartz',
+    'fluorite',
+    'lead',
+    'netherite',
+    'osmium',
+    'ghast',
+    'slime',
+    'wither_skeleton'
+  ]
+
   function multi(item, count) {
     return Array(count).fill(item)
   }
@@ -196,4 +235,9 @@ ServerEvents.recipes(event => {
   event.recipes.botania.runic_altar('mysticalagriculture:ghast_seeds', ['mysticalagriculture:soulium_seed_base', 'botania:light_gray_petal_block', 'botania:white_petal_block', 'minecraft:ghast_tear', 'minecraft:ghast_tear'].concat('botania:rune_winter').concat('botania:rune_envy').concat('botania:rune_wrath').concat(multi(essence, 4)), manaCost)
   event.recipes.botania.runic_altar('mysticalagriculture:slime_seeds', ['mysticalagriculture:soulium_seed_base', combBlock('slimy'), 'botania:lime_petal_block', 'minecraft:slime_block', 'minecraft:slime_block'].concat('botania:rune_summer').concat('botania:rune_gluttony').concat('botania:rune_sloth').concat(multi(essence, 4)), manaCost)
   event.recipes.botania.runic_altar('mysticalagriculture:wither_skeleton_seeds', ['mysticalagriculture:soulium_seed_base', 'mysticalagriculture:skeleton_essence', 'minecraft:wither_rose', 'productivebees:wither_skull_chip', 'productivebees:wither_skull_chip'].concat('botania:rune_spring').concat('botania:rune_pride').concat('botania:rune_wrath').concat(multi('mysticalagriculture:supremium_essence', 4)), 25000)
+
+  // AgriCraft seeds into MA seeds
+  seedTypes.forEach(type => {
+    event.shapeless(`mysticalagriculture:${type}_seeds`, [agri_seed_partial(`mysticalagriculture:${type}`)])
+  })
 })

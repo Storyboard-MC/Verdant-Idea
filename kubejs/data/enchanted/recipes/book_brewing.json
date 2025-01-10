@@ -1,0 +1,9 @@
+{
+  "type": "patchouli:shapeless_book_recipe",
+  "ingredients": [
+    { "item": "minecraft:book" },
+    { "item": "enchanted:belladonna_flower" },
+    { "item": "enchanted:exhale_of_the_horned_one" }
+  ],
+  "book": "enchanted:brewing"
+}

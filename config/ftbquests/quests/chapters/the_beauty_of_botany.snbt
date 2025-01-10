@@ -329,8 +329,8 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 1.0d
-			y: 0.5d
+			x: 1.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["09AEA4429719C8AA"]
@@ -681,42 +681,7 @@
 			rewards: [{
 				count: 4
 				id: "13986E906158ADEB"
-				item: {
-					Count: 1
-					id: "agricraft:seed"
-					tag: {
-						genes: {
-							fertility: {
-								dom: 1
-								rec: 1
-							}
-							gain: {
-								dom: 1
-								rec: 1
-							}
-							growth: {
-								dom: 1
-								rec: 1
-							}
-							mutativity: {
-								dom: 1
-								rec: 1
-							}
-							resistance: {
-								dom: 1
-								rec: 1
-							}
-							species: {
-								dom: "farmersdelight:onion"
-								rec: "farmersdelight:onion"
-							}
-							strength: {
-								dom: 1
-								rec: 1
-							}
-						}
-					}
-				}
+				item: "farmersdelight:onion"
 				type: "item"
 			}]
 			tasks: [{
@@ -959,6 +924,193 @@
 			}]
 			x: -6.0d
 			y: 0.5d
+		}
+		{
+			dependencies: ["21FEE4F0F326AB2A"]
+			description: ["Grown from &adandelion&r and &apumpkin&r."]
+			id: "1ED16F33848B4D9A"
+			rewards: [{
+				count: 4
+				id: "0F96E8F924572DA3"
+				item: "enchanted:belladonna_flower"
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				id: "7A422DD60625562F"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "enchanted:belladonna"
+								rec: "enchanted:belladonna"
+							}
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: -2.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1ED16F33848B4D9A"]
+			description: ["Grown from &abelladonna&r and &apotato&r."]
+			id: "10680AFEA9F6BB1B"
+			rewards: [{
+				count: 4
+				id: "3D44E3CA51536DBD"
+				item: "enchanted:mandrake_root"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5925864E6BCCEA00"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "enchanted:mandrake"
+								rec: "enchanted:mandrake"
+							}
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: -2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1ED16F33848B4D9A"]
+			description: ["Grown from &asugar cane&r and &abelladonna&r. Requires clay to grow and needs to be placed underwater."]
+			id: "16B006AD8FAC96DA"
+			rewards: [{
+				count: 4
+				id: "50D85098C262968D"
+				item: "enchanted:water_artichoke"
+				type: "item"
+			}]
+			tasks: [{
+				id: "02C6571C930E78C2"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "enchanted:water_artichoke"
+								rec: "enchanted:water_artichoke"
+							}
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: -3.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["1BA0D0B893F3F327"]
+			description: ["Grown from &asweet berry&r and &abelladonna&r."]
+			id: "2C55AEADA12820B7"
+			rewards: [{
+				count: 2
+				id: "6D905585BA4E2306"
+				item: "enchanted:icy_needle"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4553DB959EC35C3B"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "enchanted:snowbell"
+								rec: "enchanted:snowbell"
+							}
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: -6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["5FE104AA67D14E69"]
+			description: ["Grown from &alily of the valley&r and &abelladonna&r."]
+			id: "3E9D97E77BF5ABAC"
+			rewards: [{
+				count: 4
+				id: "351DB57D3FA11BB7"
+				item: "enchanted:wolfsbane_flower"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0C8D2F94FD8B5063"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "enchanted:wolfsbane"
+								rec: "enchanted:wolfsbane"
+							}
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4C6755200FAEA5B9"]
+			description: ["Grown from &aallium&r and &aonion&r."]
+			id: "6DA835B253968067"
+			rewards: [{
+				count: 8
+				id: "3E2637A1AF0B582D"
+				item: "enchanted:garlic"
+				type: "item"
+			}]
+			tasks: [{
+				id: "76A343F02004ED10"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "enchanted:garlic"
+								rec: "enchanted:garlic"
+							}
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: -3.0d
+			y: 2.5d
 		}
 	]
 	title: "The Beauty of Botany"

@@ -64,7 +64,7 @@ ServerEvents.recipes(event => {
   event.remove({id: 'thermal:rubber_from_vine'})
   event.remove({id: 'thermal:rubber_from_dandelion'})
   
-  // event.remove({id: 'thermal:devices/tree_extractor/tree_extractor_jungle'})
+  event.remove({id: 'thermal:devices/tree_extractor/tree_extractor_jungle'})
 
   // Add a new way to get rubber from latex
   event.remove({id: 'thermal:rubber_3'})
@@ -98,6 +98,9 @@ ServerEvents.recipes(event => {
     event.remove({input: `thermal:${blend}`, type: 'thermal:centrifuge'})
   )
 
+  // Remove induction smelter steel recipe
+  event.remove({id: 'thermal:machines/smelter/smelter_alloy_steel'})
+
   // Change machine frame recipe
   event.remove({id: 'thermal:machine_frame'})
   event.shaped('thermal:machine_frame', 
@@ -113,9 +116,6 @@ ServerEvents.recipes(event => {
       S: '#forge:plates/steel'
     })
 
-  // Change hardened integral components recipe
-  event.replaceInput({id: 'thermal:augments/upgrade_augment_1'}, '#forge:gears/gold', 'thermal:machine_frame')
-
   // Change machine recipes
   event.replaceInput({id: 'thermal:machine_crafter'}, 'thermal:machine_frame', 'thermal:upgrade_augment_1')
   event.replaceInput({id: 'thermal:machine_crafter'}, 'minecraft:crafting_table', 'botania:crafty_crate')
@@ -130,14 +130,43 @@ ServerEvents.recipes(event => {
   event.replaceInput({id: 'thermal:machine_insolator'}, 'thermal:machine_frame', 'thermal:upgrade_augment_3')
   event.replaceInput({id: 'thermal:machine_press'}, 'thermal:machine_frame', 'thermal:upgrade_augment_3')
 
+  event.replaceInput({id: 'thermal:machine_crystallizer'}, 'thermal:signalum_plate', 'thermal:bronze_plate')
+  event.replaceInput({id: 'thermal:machine_crystallizer'}, '#thermal:glass/hardened', 'minecraft:quartz')
+
   // Make dynamos use signalum gears
   event.replaceInput({id: 'thermal:dynamo_stirling'}, '#forge:gears/iron', '#forge:gears/signalum')
   event.replaceInput({id: 'thermal:dynamo_compression'}, '#forge:gears/bronze', '#forge:gears/signalum')
   event.replaceInput({id: 'thermal:dynamo_magmatic'}, '#forge:gears/invar', '#forge:gears/signalum')
 
-  // Enderium
+  // Hardened Tier - Invar, Apatite
+  event.replaceInput({id: 'thermal:augments/upgrade_augment_1'}, '#forge:gears/gold', 'thermal:machine_frame')
+  event.replaceInput({id: 'thermal:augments/upgrade_augment_1'}, 'minecraft:redstone', 'thermal:apatite')
+
+  // Add a way to get apatite from basalt
+  event.custom({
+    "type": "thermal:pyrolyzer",
+    "ingredient": {
+      "item": "minecraft:basalt"
+    },
+    "result": [
+      {
+        "item": "thermal:apatite_dust",
+        "chance": 0.125
+      },
+      {
+        "fluid": "minecraft:lava",
+        "amount": 125
+      }
+    ],
+    "energy": 16000
+  })
+
+  // Reinforced Tier - Signalum, Electrum
+
+  // Resonant Tier - Enderium, Lumium
   event.remove({id: 'thermal:machines/smelter/smelter_alloy_enderium'})
-  event.recipes.thermal.chiller('thermal:enderium_ingot', [Fluid.of('thermal:ender', 1000), '3x #forge:ingots/lead'])
+  event.recipes.thermal.smelter('kubejs:ender_alloy', ['3x #forge:ingots/lead', '#forge:ingots/silver', '4x minecraft:end_stone'])
+  event.recipes.thermal.chiller('thermal:enderium_ingot', [Fluid.of('thermal:ender', 1000), 'kubejs:ender_alloy'])
 
   // Replace unused gears
   event.replaceInput({id: 'thermal:device_xp_condenser'}, '#forge:gears/lapis', '#forge:gears/iron')

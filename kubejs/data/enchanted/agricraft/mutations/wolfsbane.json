@@ -1,0 +1,6 @@
+{
+  "chance": 0.5,
+  "child": "enchanted:wolfsbane",
+  "parent1": "minecraft:lily_of_the_valley",
+  "parent2": "enchanted:belladonna"
+}

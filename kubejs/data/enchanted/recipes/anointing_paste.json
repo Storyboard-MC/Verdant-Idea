@@ -1,0 +1,53 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "type": "forge:partial_nbt",
+      "item": "agricraft:seed",
+      "nbt": {
+        "genes": {
+          "species": {
+            "dom": "enchanted:water_artichoke"
+          }
+        }
+      }
+    },
+    {
+      "type": "forge:partial_nbt",
+      "item": "agricraft:seed",
+      "nbt": {
+        "genes": {
+          "species": {
+            "dom": "enchanted:mandrake"
+          }
+        }
+      }
+    },
+    {
+      "type": "forge:partial_nbt",
+      "item": "agricraft:seed",
+      "nbt": {
+        "genes": {
+          "species": {
+            "dom": "enchanted:belladonna"
+          }
+        }
+      }
+    },
+    {
+      "type": "forge:partial_nbt",
+      "item": "agricraft:seed",
+      "nbt": {
+        "genes": {
+          "species": {
+            "dom": "enchanted:snowbell"
+          }
+        }
+      }
+    }
+  ],
+  "result": {
+    "item": "enchanted:anointing_paste"
+  }
+}

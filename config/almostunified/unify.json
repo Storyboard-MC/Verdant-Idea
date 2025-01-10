@@ -93,7 +93,12 @@
   "ignoredTags": [],
   "ignoredItems": [],
   "ignoredRecipeTypes": [
-    "cucumber:shaped_tag"
+    "cucumber:shaped_tag",
+    "enchanted:distilling",   
+    "enchanted:byproduct",   
+    "enchanted:kettle", 
+    "enchanted:witch_cauldron",   
+    "enchanted:spinning"
   ],
   "ignoredRecipes": [],
   "itemsHidingJeiRei": true
