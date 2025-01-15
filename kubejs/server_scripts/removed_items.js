@@ -1,3 +1,5 @@
+// priority: -1
+
 ServerEvents.recipes(event => {
   Object.keys(global.removed_items).forEach(modid => {
     global.removed_items[modid].forEach(item => {

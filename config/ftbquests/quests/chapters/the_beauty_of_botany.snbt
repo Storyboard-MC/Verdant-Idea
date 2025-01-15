@@ -66,7 +66,6 @@
 						genes: {
 							species: {
 								dom: "minecraft:carrot"
-								rec: "minecraft:carrot"
 							}
 						}
 					}
@@ -97,7 +96,6 @@
 						genes: {
 							species: {
 								dom: "minecraft:pumpkin"
-								rec: "minecraft:pumpkin"
 							}
 						}
 					}
@@ -128,7 +126,6 @@
 						genes: {
 							species: {
 								dom: "minecraft:sugar_cane"
-								rec: "minecraft:sugar_cane"
 							}
 						}
 					}
@@ -162,7 +159,6 @@
 						genes: {
 							species: {
 								dom: "minecraft:melon"
-								rec: "minecraft:melon"
 							}
 						}
 					}
@@ -193,7 +189,6 @@
 						genes: {
 							species: {
 								dom: "minecraft:poppy"
-								rec: "minecraft:poppy"
 							}
 						}
 					}
@@ -224,7 +219,6 @@
 						genes: {
 							species: {
 								dom: "minecraft:dandelion"
-								rec: "minecraft:dandelion"
 							}
 						}
 					}
@@ -258,7 +252,6 @@
 						genes: {
 							species: {
 								dom: "minecraft:blue_orchid"
-								rec: "minecraft:blue_orchid"
 							}
 						}
 					}
@@ -289,7 +282,6 @@
 						genes: {
 							species: {
 								dom: "minecraft:oxeye_daisy"
-								rec: "minecraft:oxeye_daisy"
 							}
 						}
 					}
@@ -320,7 +312,6 @@
 						genes: {
 							species: {
 								dom: "minecraft:wither_rose"
-								rec: "minecraft:wither_rose"
 							}
 						}
 					}
@@ -351,7 +342,6 @@
 						genes: {
 							species: {
 								dom: "minecraft:white_tulip"
-								rec: "minecraft:white_tulip"
 							}
 						}
 					}
@@ -382,7 +372,6 @@
 						genes: {
 							species: {
 								dom: "minecraft:lily_of_the_valley"
-								rec: "minecraft:lily_of_the_valley"
 							}
 						}
 					}
@@ -413,7 +402,6 @@
 						genes: {
 							species: {
 								dom: "minecraft:cornflower"
-								rec: "minecraft:cornflower"
 							}
 						}
 					}
@@ -444,7 +432,6 @@
 						genes: {
 							species: {
 								dom: "minecraft:azure_bluet"
-								rec: "minecraft:azure_bluet"
 							}
 						}
 					}
@@ -475,7 +462,6 @@
 						genes: {
 							species: {
 								dom: "minecraft:allium"
-								rec: "minecraft:allium"
 							}
 						}
 					}
@@ -506,7 +492,6 @@
 						genes: {
 							species: {
 								dom: "minecraft:red_tulip"
-								rec: "minecraft:red_tulip"
 							}
 						}
 					}
@@ -537,7 +522,6 @@
 						genes: {
 							species: {
 								dom: "minecraft:pink_tulip"
-								rec: "minecraft:pink_tulip"
 							}
 						}
 					}
@@ -568,7 +552,6 @@
 						genes: {
 							species: {
 								dom: "minecraft:orange_tulip"
-								rec: "minecraft:orange_tulip"
 							}
 						}
 					}
@@ -599,7 +582,6 @@
 						genes: {
 							species: {
 								dom: "minecraft:cactus"
-								rec: "minecraft:cactus"
 							}
 						}
 					}
@@ -630,7 +612,6 @@
 						genes: {
 							species: {
 								dom: "minecraft:bamboo"
-								rec: "minecraft:bamboo"
 							}
 						}
 					}
@@ -662,7 +643,6 @@
 						genes: {
 							species: {
 								dom: "immersiveengineering:hemp"
-								rec: "immersiveengineering:hemp"
 							}
 						}
 					}
@@ -693,7 +673,6 @@
 						genes: {
 							species: {
 								dom: "farmersdelight:onion"
-								rec: "farmersdelight:onion"
 							}
 						}
 					}
@@ -724,7 +703,6 @@
 						genes: {
 							species: {
 								dom: "minecraft:seagrass"
-								rec: "minecraft:seagrass"
 							}
 						}
 					}
@@ -758,7 +736,6 @@
 						genes: {
 							species: {
 								dom: "farmersdelight:cabbage"
-								rec: "farmersdelight:cabbage"
 							}
 						}
 					}
@@ -789,7 +766,6 @@
 						genes: {
 							species: {
 								dom: "farmersdelight:rice"
-								rec: "farmersdelight:rice"
 							}
 						}
 					}
@@ -820,7 +796,6 @@
 						genes: {
 							species: {
 								dom: "farmersdelight:tomato"
-								rec: "farmersdelight:tomato"
 							}
 						}
 					}
@@ -851,7 +826,6 @@
 						genes: {
 							species: {
 								dom: "minecraft:kelp"
-								rec: "minecraft:kelp"
 							}
 						}
 					}
@@ -882,7 +856,6 @@
 						genes: {
 							species: {
 								dom: "minecraft:sea_pickle"
-								rec: "minecraft:sea_pickle"
 							}
 						}
 					}
@@ -913,7 +886,6 @@
 						genes: {
 							species: {
 								dom: "minecraft:sweet_berries"
-								rec: "minecraft:sweet_berries"
 							}
 						}
 					}
@@ -945,7 +917,6 @@
 						genes: {
 							species: {
 								dom: "enchanted:belladonna"
-								rec: "enchanted:belladonna"
 							}
 						}
 					}
@@ -976,7 +947,6 @@
 						genes: {
 							species: {
 								dom: "enchanted:mandrake"
-								rec: "enchanted:mandrake"
 							}
 						}
 					}
@@ -1007,7 +977,6 @@
 						genes: {
 							species: {
 								dom: "enchanted:water_artichoke"
-								rec: "enchanted:water_artichoke"
 							}
 						}
 					}
@@ -1038,7 +1007,6 @@
 						genes: {
 							species: {
 								dom: "enchanted:snowbell"
-								rec: "enchanted:snowbell"
 							}
 						}
 					}
@@ -1069,7 +1037,6 @@
 						genes: {
 							species: {
 								dom: "enchanted:wolfsbane"
-								rec: "enchanted:wolfsbane"
 							}
 						}
 					}
@@ -1100,7 +1067,6 @@
 						genes: {
 							species: {
 								dom: "enchanted:garlic"
-								rec: "enchanted:garlic"
 							}
 						}
 					}

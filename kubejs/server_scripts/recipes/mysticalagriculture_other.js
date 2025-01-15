@@ -3,6 +3,16 @@ ServerEvents.tags('item', event => {
   event.add('matc:prudentium', 'matc:supremium_crystal')
   event.add('matc:tertium', 'matc:supremium_crystal')
   event.add('matc:imperium', 'matc:supremium_crystal')
+
+  event.remove('matc:inferium', 'mysticalagriculture:infusion_crystal')
+  event.remove('matc:prudentium', 'mysticalagriculture:infusion_crystal')
+  event.remove('matc:tertium', 'mysticalagriculture:infusion_crystal')
+  event.remove('matc:imperium', 'mysticalagriculture:infusion_crystal')
+  
+  event.remove('matc:inferium', 'mysticalagriculture:master_infusion_crystal')
+  event.remove('matc:prudentium', 'mysticalagriculture:master_infusion_crystal')
+  event.remove('matc:tertium', 'mysticalagriculture:master_infusion_crystal')
+  event.remove('matc:imperium', 'mysticalagriculture:master_infusion_crystal')
 })
 
 ServerEvents.recipes(event => {

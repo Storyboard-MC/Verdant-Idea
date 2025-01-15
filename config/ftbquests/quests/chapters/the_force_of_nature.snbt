@@ -15,7 +15,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["205CE0D9BE74A372"]
+			dependencies: ["62B9C9C3F4DE0287"]
 			description: ["As the name suggests, runic altar is mainly used to create runes... Although this may be the case, it is also required for most mystical seeds."]
 			id: "6A87706B9FF0A830"
 			rewards: [
@@ -30,6 +30,7 @@
 					type: "item"
 				}
 			]
+			size: 1.25d
 			tasks: [{
 				id: "694A763C444ADDDB"
 				item: "botania:runic_altar"
@@ -90,7 +91,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["62B9C9C3F4DE0287"]
+			dependencies: ["6A87706B9FF0A830"]
 			description: ["All the mana you just got can be used for mana infusion. While expensive at times, it's incredibely useful. The most basic mana-infused item is manasteel, so maybe try making a few ingots."]
 			id: "205CE0D9BE74A372"
 			rewards: [{
@@ -99,7 +100,6 @@
 				item: "botania:hydroangeas"
 				type: "item"
 			}]
-			size: 1.25d
 			tasks: [{
 				count: 8L
 				id: "66474943EAE2A298"
