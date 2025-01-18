@@ -29,7 +29,7 @@ def parse_input_item(item):
         return {"id": item_id, "Count": count}
     return item
 
-def generate_rite(input_items, output_items, shapes):
+def generate_rite(input_items, output_items, shapes, power):
     parsed_input_items = [
         parse_input_item(item) if isinstance(item, str) else item
         for item in input_items
@@ -41,32 +41,84 @@ def generate_rite(input_items, output_items, shapes):
         "factory": {
             "type": "enchanted:create_item",
             "items": output_items
-        }
+        },
+        "power": power
     }
 
-    # Use the id of the first species in output items for the file name
     output_filename = "output.json"
     if parsed_input_items:
         first_input_id = parsed_input_items[0]["id"].split(":")[1]
         output_filename = f"upgrade_{first_input_id}.json"
 
-    # Save the JSON data to a file
     with open(output_filename, "w") as json_file:
         json.dump(data, json_file, indent=4)
 
     print(f"JSON file '{output_filename}' has been created.")
     return data
 
+def upgrade_seed_rite(seed_type, parent1, parent2, shapes, power):
+    generate_rite([f'{seed_type}_seeds', maxed_seed(parent1), maxed_seed(parent2)], [maxed_seed(seed_type)], shapes, power)
+
+
 if __name__ == "__main__":
+    power = 1000
     shapes = {
-        "wasteland:flower": "botania:blue_buried_petals"
+        "enchanted:small_circle": "enchanted:ritual_chalk",
+        "enchanted:medium_circle": "enchanted:ritual_chalk"
+        # "wasteland:flower": "enchanted:ritual_chalk"
     }
 
-    generate_rite(["mysticalagriculture:inferium_seeds", maxed_seed("minecraft:sugar_cane"), maxed_seed("minecraft:pumpkin")], [maxed_seed("mysticalagriculture:inferium")], shapes)
-    generate_rite(["mysticalagriculture:coal_seeds", maxed_seed("minecraft:melon"), maxed_seed("minecraft:cactus")], [maxed_seed("mysticalagriculture:coal")], shapes)
-    generate_rite(["mysticalagriculture:copper_seeds", maxed_seed("minecraft:dandelion"), maxed_seed("minecraft:poppy")], [maxed_seed("mysticalagriculture:copper")], shapes)
-    generate_rite(["mysticalagriculture:dye_seeds", maxed_seed("minecraft:blue_orchid"), maxed_seed("minecraft:sweet_berries")], [maxed_seed("mysticalagriculture:dye")], shapes)
-    generate_rite(["mysticalagriculture:iron_seeds", maxed_seed("minecraft:dandelion"), maxed_seed("minecraft:pumpkin")], [maxed_seed("mysticalagriculture:iron")], shapes)
-    generate_rite(["mysticalagriculture:nether_seeds", maxed_seed("minecraft:sweet_berries"), maxed_seed("farmersdelight:tomato")], [maxed_seed("mysticalagriculture:nether")], shapes)
-    generate_rite(["mysticalagriculture:skeleton_seeds", maxed_seed("minecraft:sugar_cane"), maxed_seed("minecraft:pumpkin")], [maxed_seed("mysticalagriculture:skeleton")], shapes)
-    generate_rite(["mysticalagriculture:zombie_seeds", maxed_seed("minecraft:cactus"), maxed_seed("immersiveengineering:hemp")], [maxed_seed("mysticalagriculture:zombie")], shapes)
+    upgrade_seed_rite('mysticalagriculture:inferium', 'minecraft:sugar_cane', 'minecraft:pumpkin', shapes, power)
+
+    power = 2000
+
+    upgrade_seed_rite('mysticalagriculture:coal', 'minecraft:melon', 'minecraft:cactus', shapes, power)
+    upgrade_seed_rite('mysticalagriculture:copper', 'minecraft:dandelion', 'minecraft:poppy', shapes, power)
+    upgrade_seed_rite('mysticalagriculture:dye', 'minecraft:blue_orchid', 'minecraft:sweet_berries', shapes, power)
+    upgrade_seed_rite('mysticalagriculture:iron', 'minecraft:dandelion', 'minecraft:pumpkin', shapes, power)
+    upgrade_seed_rite('mysticalagriculture:nether', 'minecraft:sweet_berries', 'farmersdelight:tomato', shapes, power)
+    upgrade_seed_rite('mysticalagriculture:skeleton', 'minecraft:sugar_cane', 'minecraft:pumpkin', shapes, power)
+    upgrade_seed_rite('mysticalagriculture:zombie', 'minecraft:cactus', 'immersiveengineering:hemp', shapes, power)
+    
+    power = 3500
+    # shapes = {
+        # "wasteland:flower": "enchanted:nether_chalk"
+    # }
+    
+    upgrade_seed_rite('mysticalagriculture:air', 'minecraft:oxeye_daisy', 'minecraft:dandelion', shapes, power)
+    upgrade_seed_rite('mysticalagriculture:earth', 'farmersdelight:onion', 'minecraft:bamboo', shapes, power)
+    upgrade_seed_rite('mysticalagriculture:fire', 'minecraft:orange_tulip', 'minecraft:sweet_berries', shapes, power)
+    upgrade_seed_rite('mysticalagriculture:water', 'minecraft:seagrass', 'minecraft:melon', shapes, power)
+    upgrade_seed_rite('mysticalagriculture:experience', 'minecraft:bamboo', 'minecraft:cactus', shapes, power)
+    upgrade_seed_rite('mysticalagriculture:lapis_lazuli', 'minecraft:blue_orchid', 'minecraft:cornflower', shapes, power)
+    upgrade_seed_rite('mysticalagriculture:nether_quartz', 'minecraft:white_tulip', 'minecraft:azure_bluet', shapes, power)
+    upgrade_seed_rite('mysticalagriculture:redstone', 'minecraft:red_tulip', 'minecraft:poppy', shapes, power)
+    upgrade_seed_rite('mysticalagriculture:spider', 'minecraft:white_tulip', 'minecraft:pink_tulip', shapes, power)
+    upgrade_seed_rite('mysticalagriculture:tin', 'minecraft:blue_orchid', 'minecraft:oxeye_daisy', shapes, power)
+
+    power = 5000
+
+    upgrade_seed_rite('mysticalagriculture:blaze', 'botania:orange_mystical_flower', 'minecraft:torchflower', shapes, power)
+    upgrade_seed_rite('mysticalagriculture:creeper', 'botania:lime_mystical_flower', 'botania:gray_mystical_flower', shapes, power)
+    upgrade_seed_rite('mysticalagriculture:diamond', 'botania:light_blue_mystical_flower', 'mysticalagriculture:tin', shapes, power)
+    upgrade_seed_rite('mysticalagriculture:emerald', 'botania:green_mystical_flower', 'botania:lime_mystical_flower', shapes, power)
+    upgrade_seed_rite('mysticalagriculture:end', 'botania:magenta_mystical_flower', 'botania:yellow_mystical_flower', shapes, power)
+    upgrade_seed_rite('mysticalagriculture:enderman', 'botania:purple_mystical_flower', 'botania:magenta_mystical_flower', shapes, power)
+    upgrade_seed_rite('mysticalagriculture:gold', 'botania:yellow_mystical_flower', 'botania:orange_mystical_flower', shapes, power)
+    upgrade_seed_rite('mysticalagriculture:nickel', 'botania:pink_mystical_flower', 'botania:brown_mystical_flower', shapes, power)
+    upgrade_seed_rite('mysticalagriculture:silver', 'mysticalagriculture:iron', 'botania:light_gray_mystical_flower', shapes, power)
+
+    power = 7000
+    # shapes = {
+        # "wasteland:flower": "enchanted:otherwhere_chalk"
+    # }
+
+    upgrade_seed_rite('mysticalagriculture:aluminum', 'botania:white_mystical_flower', 'botania:light_gray_mystical_flower', shapes, power)
+    upgrade_seed_rite('mysticalagriculture:certus_quartz', 'botania:light_blue_mystical_flower', 'enchanted:snowbell', shapes, power)
+    upgrade_seed_rite('mysticalagriculture:fluorite', 'botania:purple_mystical_flower', 'botania:light_blue_mystical_flower', shapes, power)
+    upgrade_seed_rite('mysticalagriculture:ghast', 'botania:white_mystical_flower', 'minecraft:lily_of_the_valley', shapes, power)
+    upgrade_seed_rite('mysticalagriculture:lead', 'botania:blue_mystical_flower', 'botania:gray_mystical_flower', shapes, power)
+    upgrade_seed_rite('mysticalagriculture:osmium', 'botania:cyan_mystical_flower', 'botania:light_gray_mystical_flower', shapes, power)
+    upgrade_seed_rite('mysticalagriculture:netherite', 'mysticalagriculture:gold', 'botania:brown_mystical_flower', shapes, power)
+    upgrade_seed_rite('mysticalagriculture:slime', 'botania:lime_mystical_flower', 'botania:green_mystical_flower', shapes, power)
+    upgrade_seed_rite('mysticalagriculture:wither_skeleton', 'botania:black_mystical_flower', 'mysticalagriculture:skeleton', shapes, power)
