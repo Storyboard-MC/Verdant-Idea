@@ -63,4 +63,34 @@ ServerEvents.recipes(event => {
   event.recipes.botania.runic_altar('matc:imperium_crystal', ['mysticalagriculture:nickel_essence', 'mysticalagriculture:diamond_essence', 'mysticalagriculture:emerald_essence', 'mysticalagriculture:end_essence', 'mysticalagriculture:gold_essence', 'mysticalagriculture:silver_essence', 'mysticalagriculture:blaze_essence', 'mysticalagriculture:creeper_essence', 'mysticalagriculture:enderman_essence'].concat(multi('mysticalagriculture:imperium_essence', 4)), 50000)
   event.recipes.botania.runic_altar('matc:supremium_crystal', ['matc:inferium_crystal', 'matc:prudentium_crystal', 'matc:tertium_crystal', 'matc:imperium_crystal', 'mysticalagriculture:osmium_essence', 'mysticalagriculture:certus_quartz_essence', 'mysticalagriculture:lead_essence', 'mysticalagriculture:aluminum_essence'].concat(multi('mysticalagriculture:supremium_essence', 4)), 100000)
 
+  // Add a recipe for wooden watering can
+  event.shaped(
+    'kubejs:wooden_watering_can',
+    [
+      ' MP',
+      'PCP',
+      ' P '
+    ],
+    {
+      C: 'ceramicbucket:ceramic_bucket',
+      M: 'mysticalagriculture:mystical_fertilizer',
+      P: '#minecraft:planks'
+    }
+  )
+
+  // Update iron watering can recipe
+  event.remove({id: 'mysticalagriculture:watering_can'})
+  event.shaped(
+    'mysticalagriculture:watering_can',
+    [
+      'FIF',
+      'ICI',
+      'FIF'
+    ],
+    {
+      C: 'kubejs:wooden_watering_can',
+      F: 'mysticalagriculture:mystical_fertilizer',
+      I: 'minecraft:iron_ingot'
+    }
+  )
 })

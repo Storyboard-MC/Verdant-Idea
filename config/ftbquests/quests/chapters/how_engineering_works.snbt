@@ -36,13 +36,13 @@
 		}
 		{
 			dependencies: ["31B1983DCEEFE143"]
-			description: ["It seems that the best way to start is to build a coke oven. It allows you to make coal coke out of coal, which can smelt twice as many items."]
-			icon: "immersiveengineering:coal_coke"
+			description: ["It seems like the best way to start engineering is to build a coke oven. It allows you to make creosote oil out of various fuels, which is needed to get treated wood. Other than that, coal can be processed into coal coke, which can smelt twice as many items."]
+			icon: "immersiveengineering:cokebrick"
 			id: "239FC962323FBD90"
 			rewards: [{
 				count: 8
 				id: "26E95A3E62803C94"
-				item: "minecraft:coal"
+				item: "minecraft:iron_ingot"
 				type: "item"
 			}]
 			tasks: [
@@ -54,11 +54,24 @@
 				}
 				{
 					id: "1D895EBE96E0CD3B"
-					item: "immersiveengineering:coal_coke"
+					item: {
+						Count: 1
+						id: "immersiveengineering:hammer"
+						tag: {
+							Damage: 0
+						}
+					}
 					type: "item"
 				}
+				{
+					advancement: "immersiveengineering:main/mb_cokeoven"
+					criterion: ""
+					id: "141E1214660AAF18"
+					title: "Build a Coke Oven"
+					type: "advancement"
+				}
 			]
-			title: "Better Than Coal"
+			title: "Pyrolysis"
 			x: -2.0d
 			y: -1.0d
 		}
@@ -68,9 +81,9 @@
 			icon: "immersiveengineering:creosote_bucket"
 			id: "23EC7A22C3FC6B8E"
 			rewards: [{
-				count: 8
+				count: 32
 				id: "07038D04F8F64B9C"
-				item: "minecraft:coal"
+				item: "immersiveengineering:treated_wood_horizontal"
 				type: "item"
 			}]
 			tasks: [{
@@ -98,22 +111,29 @@
 			rewards: [{
 				count: 8
 				id: "2D9C2C78D276FE12"
-				item: "immersiveengineering:ingot_steel"
+				item: "thermal:steel_ingot"
 				type: "item"
 			}]
 			tasks: [
 				{
-					id: "114CB6BFD820886C"
+					advancement: "immersiveengineering:multiblocks/mb_metalpress"
+					criterion: ""
+					id: "45D07D1FF8637BC4"
+					title: "Build a Metal Press"
+					type: "advancement"
+				}
+				{
+					id: "47586E329BDE5A5E"
 					item: "immersiveengineering:mold_plate"
 					type: "item"
 				}
 				{
-					id: "026274DF5DAD4576"
+					id: "35640CAE2B1F119A"
 					item: "immersiveengineering:mold_gear"
 					type: "item"
 				}
 				{
-					id: "4F3D4B419152D9A3"
+					id: "5AE2F7EFA87E8726"
 					item: "immersiveengineering:mold_wire"
 					type: "item"
 				}
@@ -125,7 +145,7 @@
 		{
 			dependencies: ["23EC7A22C3FC6B8E"]
 			description: ["Complex machines require steel. To get it, iron needs to be processed in a blast furnace."]
-			icon: "immersiveengineering:ingot_steel"
+			icon: "thermal:steel_ingot"
 			id: "799AA901A1A9EA90"
 			rewards: [{
 				count: 4
@@ -141,8 +161,15 @@
 					type: "item"
 				}
 				{
-					id: "4D72760B33B49441"
-					item: "immersiveengineering:ingot_steel"
+					advancement: "immersiveengineering:main/mb_blastfurnace"
+					criterion: ""
+					id: "49582A9C8994DBF9"
+					title: "Build a Blast Furnace"
+					type: "advancement"
+				}
+				{
+					id: "5BFAAA089BB80746"
+					item: "thermal:steel_ingot"
 					type: "item"
 				}
 			]
@@ -173,6 +200,13 @@
 					id: "6989F32A23C5ACDB"
 					item: { Count: 2, id: "immersiveengineering:blastfurnace_preheater" }
 					type: "item"
+				}
+				{
+					advancement: "immersiveengineering:multiblocks/mb_improvedblastfurnace"
+					criterion: ""
+					id: "650756D38186A03A"
+					title: "Build an Improved Blast Furnace"
+					type: "advancement"
 				}
 			]
 			title: "Improved Steel Production"
@@ -359,7 +393,7 @@
 			rewards: [{
 				count: 4
 				id: "2F26868353119E96"
-				item: "minecraft:iron_ingot"
+				item: "thermal:steel_ingot"
 				type: "item"
 			}]
 			tasks: [{
@@ -454,7 +488,7 @@
 			rewards: [{
 				count: 8
 				id: "1BB3541C859D51D5"
-				item: "minecraft:iron_ingot"
+				item: "thermal:steel_ingot"
 				type: "item"
 			}]
 			tasks: [{
@@ -678,8 +712,8 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["1A32D3BCA4A6000C"]
-			description: ["A crafting terminal works as an interface to all connected chests. It makes it easy to request items from the network, and has a cool crafting grid."]
+			dependencies: ["1EB14A344655F7B5"]
+			description: ["A fancy item terminal upgrade that adds some crafting space to its interface."]
 			id: "4849D4573EA81970"
 			rewards: [{
 				count: 16
@@ -693,8 +727,8 @@
 				type: "item"
 			}]
 			title: "All in One"
-			x: -2.0d
-			y: 1.0d
+			x: -2.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["799AA901A1A9EA90"]
@@ -725,7 +759,7 @@
 			y: 1.0d
 		}
 		{
-			dependencies: ["4849D4573EA81970"]
+			dependencies: ["1EB14A344655F7B5"]
 			description: ["Crafting modules are the way to bring autocrafting to your network. Sadly, crafting module doesn't craft by itself, so an additional block for processing is needed."]
 			id: "0B6CDB481D720EC8"
 			rewards: [{
@@ -953,6 +987,25 @@
 			title: "Not Quite a Bee"
 			x: 7.0d
 			y: -3.0d
+		}
+		{
+			dependencies: ["1A32D3BCA4A6000C"]
+			description: ["Tired of searching for all your items? An item terminal allows you to easily access all of your items from inventories connected by pipes."]
+			id: "1EB14A344655F7B5"
+			rewards: [{
+				count: 4
+				id: "59BF2FE210D2E483"
+				item: "minecraft:ender_pearl"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7BA7DE1AAF2FDFE2"
+				item: "prettypipes:item_terminal"
+				type: "item"
+			}]
+			title: "Easy Item Access"
+			x: -2.0d
+			y: 1.0d
 		}
 	]
 	title: "How Engineering Works"

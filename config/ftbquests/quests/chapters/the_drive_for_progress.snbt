@@ -3,13 +3,7 @@
 	default_quest_shape: ""
 	filename: "the_drive_for_progress"
 	group: ""
-	icon: {
-		Count: 1
-		id: "mysticalagriculture:watering_can"
-		tag: {
-			Water: 0b
-		}
-	}
+	icon: "functionalstorage:copper_upgrade"
 	id: "2BE92FD1F7221D58"
 	order_index: 4
 	quest_links: [ ]
@@ -482,7 +476,8 @@
 		}
 		{
 			dependencies: ["7C79D5AC3635BBB6"]
-			description: ["Ever wanted to connect tens of drawers with just one pipe? A controller allows you to input and output items from all connected drawers."]
+			description: ["Ever wanted to access tens of drawers with just one pipe? A controller allows you to input and output items from all connected drawers."]
+			icon: "functionalstorage:storage_controller"
 			id: "11BA0DC282FAF4F4"
 			rewards: [{
 				count: 4
@@ -490,12 +485,23 @@
 				item: "functionalstorage:oak_1"
 				type: "item"
 			}]
-			tasks: [{
-				id: "77082AF146E085AC"
-				item: "functionalstorage:storage_controller"
-				type: "item"
-			}]
-			title: "Compact Drawers"
+			tasks: [
+				{
+					id: "77082AF146E085AC"
+					item: "functionalstorage:storage_controller"
+					type: "item"
+				}
+				{
+					id: "63C2EB496C6924EB"
+					item: {
+						Count: 1
+						id: "functionalstorage:linking_tool"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Full Control"
 			x: 3.0d
 			y: -3.0d
 		}
@@ -515,31 +521,6 @@
 			}]
 			x: 5.0d
 			y: -3.0d
-		}
-		{
-			dependencies: ["5F8393C6C51EFCD5"]
-			description: ["Crops are growing slowly? A watering can be filled and used to water your plants, causing them to grow waaay faster."]
-			id: "23DA908F48CC17CC"
-			rewards: [{
-				count: 32
-				id: "0CCA39DABB8C471A"
-				item: "minecraft:bone_meal"
-				type: "item"
-			}]
-			tasks: [{
-				id: "57E3641465CDEC18"
-				item: {
-					Count: 1
-					id: "mysticalagriculture:watering_can"
-					tag: {
-						Water: 0b
-					}
-				}
-				type: "item"
-			}]
-			title: "Crop Care"
-			x: 2.0d
-			y: -5.0d
 		}
 		{
 			dependencies: ["0F6072BA87FF228C"]
