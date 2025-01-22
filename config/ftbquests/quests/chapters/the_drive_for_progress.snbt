@@ -282,7 +282,11 @@
 		}
 		{
 			dependencies: ["62CF3B3B6E63FB1E"]
-			description: ["Now that you have an effective way to catch bees, it's time to get some useful ones! Many bees originate from the nether, so it's a good idea to get there."]
+			description: [
+				"Now that you have an effective way to catch bees, it's time to get some useful ones! Many bees originate from the nether, so it's a good idea to get there."
+				""
+				"Please note that nests do &eNOT&r spawn in the nether. You need to craft some yourself."
+			]
 			icon: "minecraft:netherrack"
 			id: "1692E52F82EDDF27"
 			rewards: [{

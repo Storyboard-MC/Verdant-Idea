@@ -50,8 +50,21 @@
 			]
 			tasks: [{
 				id: "243EB28800C90293"
-				item: "mysticalagriculture:coal_seeds"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "mysticalagriculture:coal"
+								rec: "mysticalagriculture:coal"
+							}
+						}
+					}
+				}
+				match_nbt: true
 				type: "item"
+				weak_nbt_match: true
 			}]
 			x: 2.5d
 			y: 2.0d
@@ -75,8 +88,21 @@
 			]
 			tasks: [{
 				id: "18FA381D7D5A6C04"
-				item: "mysticalagriculture:copper_seeds"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "mysticalagriculture:copper"
+								rec: "mysticalagriculture:copper"
+							}
+						}
+					}
+				}
+				match_nbt: true
 				type: "item"
+				weak_nbt_match: true
 			}]
 			x: 3.0d
 			y: -1.0d
@@ -100,8 +126,21 @@
 			]
 			tasks: [{
 				id: "6A4F2B80FDBED0BF"
-				item: "mysticalagriculture:iron_seeds"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "mysticalagriculture:iron"
+								rec: "mysticalagriculture:iron"
+							}
+						}
+					}
+				}
+				match_nbt: true
 				type: "item"
+				weak_nbt_match: true
 			}]
 			x: 3.0d
 			y: 1.0d
@@ -148,8 +187,21 @@
 			]
 			tasks: [{
 				id: "3F97395E097F9034"
-				item: "mysticalagriculture:aluminum_seeds"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "mysticalagriculture:aluminum"
+								rec: "mysticalagriculture:aluminum"
+							}
+						}
+					}
+				}
+				match_nbt: true
 				type: "item"
+				weak_nbt_match: true
 			}]
 			x: 18.0d
 			y: 1.0d
@@ -173,8 +225,21 @@
 			]
 			tasks: [{
 				id: "7591747FF9A7AC19"
-				item: "mysticalagriculture:fire_seeds"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "mysticalagriculture:fire"
+								rec: "mysticalagriculture:fire"
+							}
+						}
+					}
+				}
+				match_nbt: true
 				type: "item"
+				weak_nbt_match: true
 			}]
 			x: 5.0d
 			y: -1.0d
@@ -198,8 +263,21 @@
 			]
 			tasks: [{
 				id: "1167DC16A0E70F54"
-				item: "mysticalagriculture:water_seeds"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "mysticalagriculture:water"
+								rec: "mysticalagriculture:water"
+							}
+						}
+					}
+				}
+				match_nbt: true
 				type: "item"
+				weak_nbt_match: true
 			}]
 			x: 4.5d
 			y: 0.0d
@@ -223,8 +301,21 @@
 			]
 			tasks: [{
 				id: "67CF912E32A85BAA"
-				item: "mysticalagriculture:air_seeds"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "mysticalagriculture:air"
+								rec: "mysticalagriculture:air"
+							}
+						}
+					}
+				}
+				match_nbt: true
 				type: "item"
+				weak_nbt_match: true
 			}]
 			x: 8.0d
 			y: -1.0d
@@ -248,8 +339,21 @@
 			]
 			tasks: [{
 				id: "39C7422684F18CE7"
-				item: "mysticalagriculture:earth_seeds"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "mysticalagriculture:earth"
+								rec: "mysticalagriculture:earth"
+							}
+						}
+					}
+				}
+				match_nbt: true
 				type: "item"
+				weak_nbt_match: true
 			}]
 			x: 8.5d
 			y: 0.0d
@@ -273,8 +377,21 @@
 			]
 			tasks: [{
 				id: "3784ADDB14D0780F"
-				item: "mysticalagriculture:zombie_seeds"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "mysticalagriculture:zombie"
+								rec: "mysticalagriculture:zombie"
+							}
+						}
+					}
+				}
+				match_nbt: true
 				type: "item"
+				weak_nbt_match: true
 			}]
 			x: 1.5d
 			y: 0.0d
@@ -298,8 +415,21 @@
 			]
 			tasks: [{
 				id: "2F1EA40BC72ED515"
-				item: "mysticalagriculture:skeleton_seeds"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "mysticalagriculture:skeleton"
+								rec: "mysticalagriculture:skeleton"
+							}
+						}
+					}
+				}
+				match_nbt: true
 				type: "item"
+				weak_nbt_match: true
 			}]
 			x: 2.0d
 			y: 1.0d
@@ -370,8 +500,21 @@
 			]
 			tasks: [{
 				id: "29625DB04D9CA137"
-				item: "mysticalagriculture:osmium_seeds"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "mysticalagriculture:osmium"
+								rec: "mysticalagriculture:osmium"
+							}
+						}
+					}
+				}
+				match_nbt: true
 				type: "item"
+				weak_nbt_match: true
 			}]
 			x: 15.0d
 			y: -1.0d
@@ -396,8 +539,21 @@
 			]
 			tasks: [{
 				id: "6F33ACC6461C0027"
-				item: "mysticalagriculture:certus_quartz_seeds"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "mysticalagriculture:certus_quartz"
+								rec: "mysticalagriculture:certus_quartz"
+							}
+						}
+					}
+				}
+				match_nbt: true
 				type: "item"
+				weak_nbt_match: true
 			}]
 			x: 16.0d
 			y: -1.0d
@@ -421,8 +577,21 @@
 			]
 			tasks: [{
 				id: "034872F924B72370"
-				item: "mysticalagriculture:wither_skeleton_seeds"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "mysticalagriculture:wither_skeleton"
+								rec: "mysticalagriculture:wither_skeleton"
+							}
+						}
+					}
+				}
+				match_nbt: true
 				type: "item"
+				weak_nbt_match: true
 			}]
 			x: 16.5d
 			y: 2.0d
@@ -446,8 +615,21 @@
 			]
 			tasks: [{
 				id: "019618C4AD3D06A1"
-				item: "mysticalagriculture:nether_seeds"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "mysticalagriculture:nether"
+								rec: "mysticalagriculture:nether"
+							}
+						}
+					}
+				}
+				match_nbt: true
 				type: "item"
+				weak_nbt_match: true
 			}]
 			x: 2.5d
 			y: -2.0d
@@ -472,8 +654,21 @@
 			]
 			tasks: [{
 				id: "67EF4F2CE0A13F81"
-				item: "mysticalagriculture:lead_seeds"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "mysticalagriculture:lead"
+								rec: "mysticalagriculture:lead"
+							}
+						}
+					}
+				}
+				match_nbt: true
 				type: "item"
+				weak_nbt_match: true
 			}]
 			x: 15.5d
 			y: -2.0d
@@ -498,8 +693,21 @@
 			]
 			tasks: [{
 				id: "3154CEDE9260B8B7"
-				item: "mysticalagriculture:nickel_seeds"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "mysticalagriculture:nickel"
+								rec: "mysticalagriculture:nickel"
+							}
+						}
+					}
+				}
+				match_nbt: true
 				type: "item"
+				weak_nbt_match: true
 			}]
 			x: 10.0d
 			y: -1.0d
@@ -546,8 +754,21 @@
 			]
 			tasks: [{
 				id: "4EAF05BDC34E4DBB"
-				item: "mysticalagriculture:tin_seeds"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "mysticalagriculture:tin"
+								rec: "mysticalagriculture:tin"
+							}
+						}
+					}
+				}
+				match_nbt: true
 				type: "item"
+				weak_nbt_match: true
 			}]
 			x: 6.0d
 			y: 1.0d
@@ -571,8 +792,21 @@
 			]
 			tasks: [{
 				id: "599D3C804715A459"
-				item: "mysticalagriculture:nether_quartz_seeds"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "mysticalagriculture:nether_quartz"
+								rec: "mysticalagriculture:nether_quartz"
+							}
+						}
+					}
+				}
+				match_nbt: true
 				type: "item"
+				weak_nbt_match: true
 			}]
 			x: 7.0d
 			y: -1.0d
@@ -596,8 +830,21 @@
 			]
 			tasks: [{
 				id: "4B569B9201DC5651"
-				item: "mysticalagriculture:redstone_seeds"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "mysticalagriculture:redstone"
+								rec: "mysticalagriculture:redstone"
+							}
+						}
+					}
+				}
+				match_nbt: true
 				type: "item"
+				weak_nbt_match: true
 			}]
 			x: 6.0d
 			y: -1.0d
@@ -621,8 +868,21 @@
 			]
 			tasks: [{
 				id: "33D28D03195D06AE"
-				item: "mysticalagriculture:lapis_lazuli_seeds"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "mysticalagriculture:lapis_lazuli"
+								rec: "mysticalagriculture:lapis_lazuli"
+							}
+						}
+					}
+				}
+				match_nbt: true
 				type: "item"
+				weak_nbt_match: true
 			}]
 			x: 5.5d
 			y: 0.0d
@@ -646,8 +906,21 @@
 			]
 			tasks: [{
 				id: "09CE51CAD503A3B1"
-				item: "mysticalagriculture:silver_seeds"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "mysticalagriculture:silver"
+								rec: "mysticalagriculture:silver"
+							}
+						}
+					}
+				}
+				match_nbt: true
 				type: "item"
+				weak_nbt_match: true
 			}]
 			x: 12.0d
 			y: -1.0d
@@ -672,8 +945,21 @@
 			]
 			tasks: [{
 				id: "5EBBDA960416C183"
-				item: "mysticalagriculture:diamond_seeds"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "mysticalagriculture:diamond"
+								rec: "mysticalagriculture:diamond"
+							}
+						}
+					}
+				}
+				match_nbt: true
 				type: "item"
+				weak_nbt_match: true
 			}]
 			x: 13.0d
 			y: -1.0d
@@ -697,8 +983,21 @@
 			]
 			tasks: [{
 				id: "4A8FF72BEDB2B3DE"
-				item: "mysticalagriculture:gold_seeds"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "mysticalagriculture:gold"
+								rec: "mysticalagriculture:gold"
+							}
+						}
+					}
+				}
+				match_nbt: true
 				type: "item"
+				weak_nbt_match: true
 			}]
 			x: 10.0d
 			y: 1.0d
@@ -722,8 +1021,21 @@
 			]
 			tasks: [{
 				id: "612A9510482DE702"
-				item: "mysticalagriculture:emerald_seeds"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "mysticalagriculture:emerald"
+								rec: "mysticalagriculture:emerald"
+							}
+						}
+					}
+				}
+				match_nbt: true
 				type: "item"
+				weak_nbt_match: true
 			}]
 			x: 13.0d
 			y: 1.0d
@@ -747,8 +1059,21 @@
 			]
 			tasks: [{
 				id: "3BE025D243FCEBF3"
-				item: "mysticalagriculture:creeper_seeds"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "mysticalagriculture:creeper"
+								rec: "mysticalagriculture:creeper"
+							}
+						}
+					}
+				}
+				match_nbt: true
 				type: "item"
+				weak_nbt_match: true
 			}]
 			x: 12.0d
 			y: 1.0d
@@ -773,8 +1098,21 @@
 			]
 			tasks: [{
 				id: "55351DF35314C008"
-				item: "mysticalagriculture:enderman_seeds"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "mysticalagriculture:enderman"
+								rec: "mysticalagriculture:enderman"
+							}
+						}
+					}
+				}
+				match_nbt: true
 				type: "item"
+				weak_nbt_match: true
 			}]
 			x: 11.5d
 			y: -2.0d
@@ -1473,8 +1811,21 @@
 			]
 			tasks: [{
 				id: "07381FD1F25CFC3C"
-				item: "mysticalagriculture:blaze_seeds"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "mysticalagriculture:blaze"
+								rec: "mysticalagriculture:blaze"
+							}
+						}
+					}
+				}
+				match_nbt: true
 				type: "item"
+				weak_nbt_match: true
 			}]
 			x: 11.5d
 			y: 2.0d
@@ -1498,8 +1849,21 @@
 			]
 			tasks: [{
 				id: "6BB6AE05B063D9BE"
-				item: "mysticalagriculture:dye_seeds"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "mysticalagriculture:dye"
+								rec: "mysticalagriculture:dye"
+							}
+						}
+					}
+				}
+				match_nbt: true
 				type: "item"
+				weak_nbt_match: true
 			}]
 			x: 2.0d
 			y: -1.0d
@@ -1523,8 +1887,21 @@
 			]
 			tasks: [{
 				id: "29116E39208FDB9F"
-				item: "mysticalagriculture:experience_seeds"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "mysticalagriculture:experience"
+								rec: "mysticalagriculture:experience"
+							}
+						}
+					}
+				}
+				match_nbt: true
 				type: "item"
+				weak_nbt_match: true
 			}]
 			x: 7.5d
 			y: 0.0d
@@ -1548,8 +1925,21 @@
 			]
 			tasks: [{
 				id: "54A53CBD1F17A831"
-				item: "mysticalagriculture:fluorite_seeds"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "mysticalagriculture:fluorite"
+								rec: "mysticalagriculture:fluorite"
+							}
+						}
+					}
+				}
+				match_nbt: true
 				type: "item"
+				weak_nbt_match: true
 			}]
 			x: 16.5d
 			y: -2.0d
@@ -1573,8 +1963,21 @@
 			]
 			tasks: [{
 				id: "2D8AD3723B2DE6D4"
-				item: "mysticalagriculture:netherite_seeds"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "mysticalagriculture:netherite"
+								rec: "mysticalagriculture:netherite"
+							}
+						}
+					}
+				}
+				match_nbt: true
 				type: "item"
+				weak_nbt_match: true
 			}]
 			x: 17.0d
 			y: 1.0d
@@ -1598,8 +2001,21 @@
 			]
 			tasks: [{
 				id: "257C45322E13AD8E"
-				item: "mysticalagriculture:end_seeds"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "mysticalagriculture:end"
+								rec: "mysticalagriculture:end"
+							}
+						}
+					}
+				}
+				match_nbt: true
 				type: "item"
+				weak_nbt_match: true
 			}]
 			x: 10.5d
 			y: 0.0d
@@ -1623,8 +2039,21 @@
 			]
 			tasks: [{
 				id: "7E05121DCE7CC424"
-				item: "mysticalagriculture:slime_seeds"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "mysticalagriculture:slime"
+								rec: "mysticalagriculture:slime"
+							}
+						}
+					}
+				}
+				match_nbt: true
 				type: "item"
+				weak_nbt_match: true
 			}]
 			x: 17.5d
 			y: 2.0d
@@ -1649,8 +2078,21 @@
 			]
 			tasks: [{
 				id: "14B143BFB3A4DA84"
-				item: "mysticalagriculture:spider_seeds"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "mysticalagriculture:spider"
+								rec: "mysticalagriculture:spider"
+							}
+						}
+					}
+				}
+				match_nbt: true
 				type: "item"
+				weak_nbt_match: true
 			}]
 			x: 7.0d
 			y: 1.0d
@@ -1675,8 +2117,21 @@
 			]
 			tasks: [{
 				id: "298075D19EFABFEE"
-				item: "mysticalagriculture:ghast_seeds"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "mysticalagriculture:ghast"
+								rec: "mysticalagriculture:ghast"
+							}
+						}
+					}
+				}
+				match_nbt: true
 				type: "item"
+				weak_nbt_match: true
 			}]
 			x: 15.5d
 			y: 0.0d

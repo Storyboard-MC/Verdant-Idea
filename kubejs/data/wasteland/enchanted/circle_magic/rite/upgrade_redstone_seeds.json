@@ -1,0 +1,126 @@
+{
+    "items": [
+        {
+            "id": "mysticalagriculture:redstone_seeds",
+            "Count": 1
+        },
+        {
+            "id": "agricraft:seed",
+            "Count": 1,
+            "tag": {
+                "genes": {
+                    "fertility": {
+                        "dom": 10,
+                        "rec": 10
+                    },
+                    "gain": {
+                        "dom": 10,
+                        "rec": 10
+                    },
+                    "growth": {
+                        "dom": 10,
+                        "rec": 10
+                    },
+                    "mutativity": {
+                        "dom": 10,
+                        "rec": 10
+                    },
+                    "resistance": {
+                        "dom": 10,
+                        "rec": 10
+                    },
+                    "species": {
+                        "dom": "minecraft:red_tulip",
+                        "rec": "minecraft:red_tulip"
+                    },
+                    "strength": {
+                        "dom": 10,
+                        "rec": 10
+                    }
+                }
+            }
+        },
+        {
+            "id": "agricraft:seed",
+            "Count": 1,
+            "tag": {
+                "genes": {
+                    "fertility": {
+                        "dom": 10,
+                        "rec": 10
+                    },
+                    "gain": {
+                        "dom": 10,
+                        "rec": 10
+                    },
+                    "growth": {
+                        "dom": 10,
+                        "rec": 10
+                    },
+                    "mutativity": {
+                        "dom": 10,
+                        "rec": 10
+                    },
+                    "resistance": {
+                        "dom": 10,
+                        "rec": 10
+                    },
+                    "species": {
+                        "dom": "minecraft:poppy",
+                        "rec": "minecraft:poppy"
+                    },
+                    "strength": {
+                        "dom": 10,
+                        "rec": 10
+                    }
+                }
+            }
+        }
+    ],
+    "shapes": {
+        "enchanted:small_circle": "enchanted:ritual_chalk",
+        "enchanted:medium_circle": "enchanted:ritual_chalk"
+    },
+    "factory": {
+        "type": "enchanted:create_item",
+        "items": [
+            {
+                "id": "agricraft:seed",
+                "Count": 1,
+                "tag": {
+                    "genes": {
+                        "fertility": {
+                            "dom": 10,
+                            "rec": 10
+                        },
+                        "gain": {
+                            "dom": 10,
+                            "rec": 10
+                        },
+                        "growth": {
+                            "dom": 10,
+                            "rec": 10
+                        },
+                        "mutativity": {
+                            "dom": 10,
+                            "rec": 10
+                        },
+                        "resistance": {
+                            "dom": 10,
+                            "rec": 10
+                        },
+                        "species": {
+                            "dom": "mysticalagriculture:redstone",
+                            "rec": "mysticalagriculture:redstone"
+                        },
+                        "strength": {
+                            "dom": 10,
+                            "rec": 10
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "power": 3500
+}

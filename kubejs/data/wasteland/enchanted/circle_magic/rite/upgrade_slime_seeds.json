@@ -1,0 +1,126 @@
+{
+    "items": [
+        {
+            "id": "mysticalagriculture:slime_seeds",
+            "Count": 1
+        },
+        {
+            "id": "agricraft:seed",
+            "Count": 1,
+            "tag": {
+                "genes": {
+                    "fertility": {
+                        "dom": 10,
+                        "rec": 10
+                    },
+                    "gain": {
+                        "dom": 10,
+                        "rec": 10
+                    },
+                    "growth": {
+                        "dom": 10,
+                        "rec": 10
+                    },
+                    "mutativity": {
+                        "dom": 10,
+                        "rec": 10
+                    },
+                    "resistance": {
+                        "dom": 10,
+                        "rec": 10
+                    },
+                    "species": {
+                        "dom": "botania:lime_mystical_flower",
+                        "rec": "botania:lime_mystical_flower"
+                    },
+                    "strength": {
+                        "dom": 10,
+                        "rec": 10
+                    }
+                }
+            }
+        },
+        {
+            "id": "agricraft:seed",
+            "Count": 1,
+            "tag": {
+                "genes": {
+                    "fertility": {
+                        "dom": 10,
+                        "rec": 10
+                    },
+                    "gain": {
+                        "dom": 10,
+                        "rec": 10
+                    },
+                    "growth": {
+                        "dom": 10,
+                        "rec": 10
+                    },
+                    "mutativity": {
+                        "dom": 10,
+                        "rec": 10
+                    },
+                    "resistance": {
+                        "dom": 10,
+                        "rec": 10
+                    },
+                    "species": {
+                        "dom": "botania:green_mystical_flower",
+                        "rec": "botania:green_mystical_flower"
+                    },
+                    "strength": {
+                        "dom": 10,
+                        "rec": 10
+                    }
+                }
+            }
+        }
+    ],
+    "shapes": {
+        "enchanted:small_circle": "enchanted:ritual_chalk",
+        "enchanted:medium_circle": "enchanted:ritual_chalk"
+    },
+    "factory": {
+        "type": "enchanted:create_item",
+        "items": [
+            {
+                "id": "agricraft:seed",
+                "Count": 1,
+                "tag": {
+                    "genes": {
+                        "fertility": {
+                            "dom": 10,
+                            "rec": 10
+                        },
+                        "gain": {
+                            "dom": 10,
+                            "rec": 10
+                        },
+                        "growth": {
+                            "dom": 10,
+                            "rec": 10
+                        },
+                        "mutativity": {
+                            "dom": 10,
+                            "rec": 10
+                        },
+                        "resistance": {
+                            "dom": 10,
+                            "rec": 10
+                        },
+                        "species": {
+                            "dom": "mysticalagriculture:slime",
+                            "rec": "mysticalagriculture:slime"
+                        },
+                        "strength": {
+                            "dom": 10,
+                            "rec": 10
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "power": 7000
+}

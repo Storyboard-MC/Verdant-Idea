@@ -36,4 +36,20 @@ ServerEvents.recipes(event => {
       "item": "mekanism:ingot_refined_glowstone"
     }
   })
+
+  // Simplify configurator recipe
+  event.remove({id: 'mekanism:configurator'})
+  event.shaped(
+    'mekanism:configurator',
+    [
+      ' L ',
+      ' T ',
+      ' S '
+    ],
+    {
+      L: 'minecraft:lapis_lazuli',
+      T: '#forge:ingots/tin',
+      S: 'minecraft:stick'
+    }
+  )
 })

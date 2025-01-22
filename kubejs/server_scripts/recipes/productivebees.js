@@ -1,7 +1,5 @@
 ServerEvents.tags('item', event => {
-  event.add('wasteland:bee_flowering/coal', ['#forge:storage_blocks/coal', '#forge:storage_blocks/charcoal'])
-
-
+  event.add('wasteland:bee_flowering/coal', ['minecraft:torchflower'])
 })
 
 ServerEvents.recipes(event => {
@@ -142,4 +140,26 @@ ServerEvents.recipes(event => {
       T: 'thermal:machine_centrifuge'
     }
   )
+
+  // Add a recipe for the sturdy bee cage
+  event.custom({
+    type: "pneumaticcraft:amadron",
+    id: "pneumaticcraft:amadron/sturdy_bee_cage",
+    input: {
+      type: "ITEM",
+      amount: 18,
+      id: "minecraft:emerald"
+    },
+    level: 0,
+    output: {
+      type: "ITEM",
+      amount: 1,
+      id: 'productivebees:sturdy_bee_cage'
+    },
+    static: true
+  })
+
+  // Simplify the recipe for quartz nest
+  event.replaceInput({id: 'productivebees:nests/nether_quartz_nest_quartz_netherrack'}, 'minecraft:iron_sword', 'minecraft:stone_sword')
+  event.replaceInput({id: 'productivebees:nests/nether_quartz_nest'}, 'minecraft:iron_sword', 'minecraft:stone_sword')
 })

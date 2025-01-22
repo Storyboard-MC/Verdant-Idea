@@ -1,0 +1,126 @@
+{
+    "items": [
+        {
+            "id": "mysticalagriculture:lapis_lazuli_seeds",
+            "Count": 1
+        },
+        {
+            "id": "agricraft:seed",
+            "Count": 1,
+            "tag": {
+                "genes": {
+                    "fertility": {
+                        "dom": 10,
+                        "rec": 10
+                    },
+                    "gain": {
+                        "dom": 10,
+                        "rec": 10
+                    },
+                    "growth": {
+                        "dom": 10,
+                        "rec": 10
+                    },
+                    "mutativity": {
+                        "dom": 10,
+                        "rec": 10
+                    },
+                    "resistance": {
+                        "dom": 10,
+                        "rec": 10
+                    },
+                    "species": {
+                        "dom": "minecraft:blue_orchid",
+                        "rec": "minecraft:blue_orchid"
+                    },
+                    "strength": {
+                        "dom": 10,
+                        "rec": 10
+                    }
+                }
+            }
+        },
+        {
+            "id": "agricraft:seed",
+            "Count": 1,
+            "tag": {
+                "genes": {
+                    "fertility": {
+                        "dom": 10,
+                        "rec": 10
+                    },
+                    "gain": {
+                        "dom": 10,
+                        "rec": 10
+                    },
+                    "growth": {
+                        "dom": 10,
+                        "rec": 10
+                    },
+                    "mutativity": {
+                        "dom": 10,
+                        "rec": 10
+                    },
+                    "resistance": {
+                        "dom": 10,
+                        "rec": 10
+                    },
+                    "species": {
+                        "dom": "minecraft:cornflower",
+                        "rec": "minecraft:cornflower"
+                    },
+                    "strength": {
+                        "dom": 10,
+                        "rec": 10
+                    }
+                }
+            }
+        }
+    ],
+    "shapes": {
+        "enchanted:small_circle": "enchanted:ritual_chalk",
+        "enchanted:medium_circle": "enchanted:ritual_chalk"
+    },
+    "factory": {
+        "type": "enchanted:create_item",
+        "items": [
+            {
+                "id": "agricraft:seed",
+                "Count": 1,
+                "tag": {
+                    "genes": {
+                        "fertility": {
+                            "dom": 10,
+                            "rec": 10
+                        },
+                        "gain": {
+                            "dom": 10,
+                            "rec": 10
+                        },
+                        "growth": {
+                            "dom": 10,
+                            "rec": 10
+                        },
+                        "mutativity": {
+                            "dom": 10,
+                            "rec": 10
+                        },
+                        "resistance": {
+                            "dom": 10,
+                            "rec": 10
+                        },
+                        "species": {
+                            "dom": "mysticalagriculture:lapis_lazuli",
+                            "rec": "mysticalagriculture:lapis_lazuli"
+                        },
+                        "strength": {
+                            "dom": 10,
+                            "rec": 10
+                        }
+                    }
+                }
+            }
+        ]
+    },
+    "power": 3500
+}

@@ -30,7 +30,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "immersiveengineering:ingot_steel",
+          "name": "thermal:steel_ingot",
           "weight": 15,
           "functions": [
             {

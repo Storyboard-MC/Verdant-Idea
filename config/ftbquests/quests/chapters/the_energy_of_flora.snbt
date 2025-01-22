@@ -378,6 +378,85 @@
 			x: 3.0d
 			y: -2.0d
 		}
+		{
+			dependencies: ["35DAF111740A8579"]
+			description: [
+				"Plant mutations make it very easy to pass good genes from one plant to another, but it doesn't really work that well with seeds created in the runic altar."
+				""
+				"Because of that, every resource seed has a rite to max it. It uses 2 different pure 10/10 seeds (both dominant and recessive genes need to be maxed, and the species has to be the same). This should make maxing resource seeds much easier."
+			]
+			id: "0AAF1EF435A60AFC"
+			rewards: [{
+				count: 16
+				id: "7A2E5C0D3E50C061"
+				item: "mysticalagriculture:mystical_fertilizer"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1299E17A69C4FCFB"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							fertility: {
+								dom: 10
+								rec: 10
+							}
+							gain: {
+								dom: 10
+								rec: 10
+							}
+							growth: {
+								dom: 10
+								rec: 10
+							}
+							mutativity: {
+								dom: 10
+								rec: 10
+							}
+							resistance: {
+								dom: 10
+								rec: 10
+							}
+							species: {
+								dom: "mysticalagriculture:inferium"
+								rec: "mysticalagriculture:inferium"
+							}
+							strength: {
+								dom: 10
+								rec: 10
+							}
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			title: "Better Than Ever"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["76E6ADB613585553"]
+			description: ["You might think that a mix of redstone, wool and toxic flowers wouldn't be very good for your health, but it actually grants absorption for a bit. Moreover, it can be used to fill a chalice and is an important ingredient of multiple brews."]
+			id: "2E7009A872DA508F"
+			rewards: [{
+				count: 16
+				id: "772217C3EEAFC044"
+				item: "minecraft:redstone"
+				type: "item"
+			}]
+			tasks: [{
+				id: "154F26EA992259D2"
+				item: "enchanted:redstone_soup"
+				type: "item"
+			}]
+			title: "Actually Edible"
+			x: 1.0d
+			y: -2.0d
+		}
 	]
 	title: "The Energy of Flora"
 }

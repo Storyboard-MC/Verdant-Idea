@@ -296,6 +296,7 @@
 		{
 			dependencies: ["4E9941C3E2412FC3"]
 			description: ["Grown from &acornflower&r and &apoppy&r. Requires podzol to grow. Wither roses might be needed to create &ewither skeleton seeds&r."]
+			hide_dependent_lines: true
 			id: "2BB0BB9BDBF632FB"
 			rewards: [{
 				count: 4
@@ -320,8 +321,8 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 1.5d
-			y: -0.5d
+			x: 1.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["09AEA4429719C8AA"]
@@ -386,6 +387,7 @@
 		{
 			dependencies: ["5FE104AA67D14E69"]
 			description: ["Grown from &ablue orchid&r and &alily of the valley&r. Requires podzol to grow."]
+			hide_dependent_lines: true
 			id: "4E9941C3E2412FC3"
 			rewards: [{
 				count: 4
@@ -416,6 +418,7 @@
 		{
 			dependencies: ["5FE104AA67D14E69"]
 			description: ["Grown from &adandelion&r and &alily of the valley&r. Requires podzol to grow."]
+			hide_dependent_lines: true
 			id: "0A03EB6EE3AF7B86"
 			rewards: [{
 				count: 4
@@ -476,6 +479,7 @@
 		{
 			dependencies: ["7B2FB0AA057C4954"]
 			description: ["Grown from &apoppy&r and &aallium&r. Requires podzol to grow."]
+			hide_dependent_lines: true
 			id: "253AA5EBCFABB4D2"
 			rewards: [{
 				count: 4
@@ -506,6 +510,7 @@
 		{
 			dependencies: ["7B2FB0AA057C4954"]
 			description: ["Grown from &aallium&r and &adandelion&r. Requires podzol to grow."]
+			hide_dependent_lines: true
 			id: "13202540325838C6"
 			rewards: [{
 				count: 4
@@ -536,6 +541,7 @@
 		{
 			dependencies: ["09AEA4429719C8AA"]
 			description: ["Grown from &aoxeye daisy&r and &ablue orchid&r. Requires podzol to grow."]
+			hide_dependent_lines: true
 			id: "5E1C211774FA27C5"
 			rewards: [{
 				count: 4
@@ -1077,6 +1083,521 @@
 			}]
 			x: -3.0d
 			y: 2.5d
+		}
+		{
+			dependencies: ["4E9941C3E2412FC3"]
+			description: ["Grown from &ared tulip&r and &acornflower&r. Requires podzol to grow."]
+			id: "6A2F80C83B8B5F76"
+			rewards: [{
+				count: 4
+				id: "38E36599D10F929B"
+				item: "minecraft:orange_dye"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1EEFAB08E9B8B45D"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "minecraft:torchflower"
+							}
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: 1.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["2BB0BB9BDBF632FB"]
+			id: "4BB2CDE7624613F5"
+			rewards: [{
+				count: 8
+				id: "12F4DE983698847A"
+				item: "botania:black_petal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0D7110A2B218F12D"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "botania:black_mystical_flower"
+							}
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4E9941C3E2412FC3"]
+			id: "471EB91EB70CE57D"
+			rewards: [{
+				count: 8
+				id: "236E0F21DF955635"
+				item: "botania:blue_petal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "338C3B7416EAAA36"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "botania:blue_mystical_flower"
+							}
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"13711D2A5B9425C2"
+				"4DFEB060BDF9A2D7"
+			]
+			id: "3EA1E6A997B2FCC6"
+			rewards: [{
+				count: 8
+				id: "10DD13F21173B092"
+				item: "botania:brown_petal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2D87017D458918E7"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "botania:brown_mystical_flower"
+							}
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: 2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["146CB22E937AD544"]
+			id: "0B2B45B545CDCEE5"
+			rewards: [{
+				count: 8
+				id: "3720F370B3376372"
+				item: "botania:cyan_petal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "564025FAF698A00C"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "botania:cyan_mystical_flower"
+							}
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: 0.5d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"5E7E740B7A9FDEF7"
+				"4BB2CDE7624613F5"
+			]
+			id: "4DFEB060BDF9A2D7"
+			rewards: [{
+				count: 8
+				id: "511293926A692395"
+				item: "botania:gray_petal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0C758445EF690009"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "botania:gray_mystical_flower"
+							}
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: 2.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"5DDFA9FC8B67F075"
+				"471EB91EB70CE57D"
+			]
+			id: "146CB22E937AD544"
+			rewards: [{
+				count: 8
+				id: "2D2788C1AC7214C6"
+				item: "botania:green_petal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6D2E9E69B23082C9"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "botania:green_mystical_flower"
+							}
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: 1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"471EB91EB70CE57D"
+				"5E7E740B7A9FDEF7"
+			]
+			id: "5AE8C00E54733865"
+			rewards: [{
+				count: 8
+				id: "6319E892F004CAB2"
+				item: "botania:light_blue_petal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "43EE82A38C2819C1"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "botania:light_blue_mystical_flower"
+							}
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: 0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4DFEB060BDF9A2D7"]
+			id: "571CBCB9DB869E03"
+			rewards: [{
+				count: 8
+				id: "2F50F7595BF382BB"
+				item: "botania:light_gray_petal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "463722272B66E1F2"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "botania:light_gray_mystical_flower"
+							}
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: 3.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["146CB22E937AD544"]
+			id: "0CE57B7BA5872F4E"
+			rewards: [{
+				count: 8
+				id: "6CDAB31F6834827E"
+				item: "botania:lime_petal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4542CEFE49F903FA"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "botania:lime_mystical_flower"
+							}
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: 1.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["13202540325838C6"]
+			id: "3FF543EDCCD413B8"
+			rewards: [{
+				count: 8
+				id: "1DE034C81E1B5DF2"
+				item: "botania:magenta_petal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "14851EA757642312"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "botania:magenta_mystical_flower"
+							}
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: -0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"5DDFA9FC8B67F075"
+				"2E6CA8A2A55A9557"
+			]
+			id: "13711D2A5B9425C2"
+			rewards: [{
+				count: 8
+				id: "20BABA74F0DBEB44"
+				item: "botania:orange_petal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "32CEAF88DF8D899B"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "botania:orange_mystical_flower"
+							}
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"3FF543EDCCD413B8"
+				"5E7E740B7A9FDEF7"
+			]
+			id: "749996929B8F70EB"
+			rewards: [{
+				count: 8
+				id: "527AC20DC6AB4213"
+				item: "botania:pink_petal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "6F6D6AF17BCEB244"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "botania:pink_mystical_flower"
+							}
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"3FF543EDCCD413B8"
+				"471EB91EB70CE57D"
+			]
+			id: "6C265394EF99182E"
+			rewards: [{
+				count: 8
+				id: "037460E920D46F1F"
+				item: "botania:purple_petal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2FB46F0C0D34CF15"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "botania:purple_mystical_flower"
+							}
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: -1.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["253AA5EBCFABB4D2"]
+			id: "2E6CA8A2A55A9557"
+			rewards: [{
+				count: 8
+				id: "40154D84BE61E4BF"
+				item: "botania:red_petal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "76F44EA50DEC8E19"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "botania:red_mystical_flower"
+							}
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["0A03EB6EE3AF7B86"]
+			id: "5E7E740B7A9FDEF7"
+			rewards: [{
+				count: 8
+				id: "36BB1D40CB5E4B99"
+				item: "botania:white_petal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "462587AC0D1C8160"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "botania:white_mystical_flower"
+							}
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: 1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["5E1C211774FA27C5"]
+			id: "5DDFA9FC8B67F075"
+			rewards: [{
+				count: 8
+				id: "516E0418A1C40CBD"
+				item: "botania:yellow_petal"
+				type: "item"
+			}]
+			tasks: [{
+				id: "234881DB6D17E1E8"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "botania:yellow_mystical_flower"
+							}
+						}
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			x: 1.5d
+			y: 3.5d
 		}
 	]
 	title: "The Beauty of Botany"
