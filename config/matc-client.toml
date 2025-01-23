@@ -2,7 +2,7 @@
 #Whether or not crystals should display 'Uses Left' tooltips
 ["Uses Left Tooltips"]
 	#Should crystals display 'Uses Left' on their tooltips?
-	usesTooltip = true
+	usesTooltip = false
 
 #Whether or not crystals should display their upgrade tooltips
 ["Upgrade Tooltips"]

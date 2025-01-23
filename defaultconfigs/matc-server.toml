@@ -20,13 +20,13 @@
 #Whether or not crystals should have durability.
 ["Enable / Disable Durability"]
 	#Should the Inferium Crystal Have Durability?
-	inferiumDurabilityEnabled = true
+	inferiumDurabilityEnabled = false
 	#Should the Prudentium Crystal Have Durability?
-	prudentiumDurabilityEnabled = true
+	prudentiumDurabilityEnabled = false
 	#Should the Tertium Crystal Have Durability?
-	tertiumDurabilityEnabled = true
+	tertiumDurabilityEnabled = false
 	#Should the Imperium Crystal Have Durability?
-	imperiumDurabilityEnabled = true
+	imperiumDurabilityEnabled = false
 	#Should the Supremium Crystal Have Durability?
-	supremiumDurabilityEnabled = true
+	supremiumDurabilityEnabled = false
 
