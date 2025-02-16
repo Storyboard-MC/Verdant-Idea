@@ -1,0 +1,6 @@
+{
+  "type": "emi:world_interaction",
+  "left": "item:wasteland:cracked_sand",
+  "right": "item:minecraft:glass_bottle",
+  "output": "item:minecraft:sand"
+}

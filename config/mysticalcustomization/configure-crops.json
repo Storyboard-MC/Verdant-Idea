@@ -235,5 +235,29 @@
     },
     "mysticalagriculture:enderium": {
         "enabled": false
+    },
+    "mysticalagriculture:amethyst_bronze": {
+        "enabled": false
+    },
+    "mysticalagriculture:slimesteel": {
+        "enabled": false
+    },
+    "mysticalagriculture:pig_iron": {
+        "enabled": false
+    },
+    "mysticalagriculture:rose_gold": {
+        "enabled": false
+    },
+    "mysticalagriculture:manyullyn": {
+        "enabled": false
+    },
+    "mysticalagriculture:queens_slime": {
+        "enabled": false
+    },
+    "mysticalagriculture:hepatizon": {
+        "enabled": false
+    },
+    "mysticalagriculture:cobalt": {
+        "enabled": false
     }
 }

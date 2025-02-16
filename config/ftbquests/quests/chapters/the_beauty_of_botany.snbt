@@ -3671,6 +3671,7 @@
 		}
 		{
 			dependencies: ["2BB0BB9BDBF632FB"]
+			description: ["Grown from &acornflower&r and &awither rose&r. Requires rich soil to grow."]
 			icon: {
 				Count: 1
 				id: "agricraft:seed"
@@ -3774,6 +3775,7 @@
 		}
 		{
 			dependencies: ["4E9941C3E2412FC3"]
+			description: ["Grown from &ablue orchid&r and &acornflower&r. Requires rich soil to grow."]
 			icon: {
 				Count: 1
 				id: "agricraft:seed"
@@ -3880,6 +3882,7 @@
 				"13711D2A5B9425C2"
 				"4DFEB060BDF9A2D7"
 			]
+			description: ["Grown from &aorange&r and &agray mystical flowers&r. Requires rich soil to grow."]
 			icon: {
 				Count: 1
 				id: "agricraft:seed"
@@ -3983,6 +3986,7 @@
 		}
 		{
 			dependencies: ["146CB22E937AD544"]
+			description: ["Grown from &ablue&r and &agreen mystical flowers&r. Requires rich soil to grow."]
 			icon: {
 				Count: 1
 				id: "agricraft:seed"
@@ -4089,6 +4093,7 @@
 				"5E7E740B7A9FDEF7"
 				"4BB2CDE7624613F5"
 			]
+			description: ["Grown from &ablack&r and &awhite mystical flowers&r. Requires rich soil to grow."]
 			icon: {
 				Count: 1
 				id: "agricraft:seed"
@@ -4195,6 +4200,7 @@
 				"5DDFA9FC8B67F075"
 				"471EB91EB70CE57D"
 			]
+			description: ["Grown from &ablue&r and &ayellow mystical flowers&r. Requires rich soil to grow."]
 			icon: {
 				Count: 1
 				id: "agricraft:seed"
@@ -4301,6 +4307,7 @@
 				"471EB91EB70CE57D"
 				"5E7E740B7A9FDEF7"
 			]
+			description: ["Grown from &ablue&r and &awhite mystical flowers&r. Requires rich soil to grow."]
 			icon: {
 				Count: 1
 				id: "agricraft:seed"
@@ -4404,6 +4411,7 @@
 		}
 		{
 			dependencies: ["4DFEB060BDF9A2D7"]
+			description: ["Grown from &agray&r and &awhite mystical flowers&r. Requires rich soil to grow."]
 			icon: {
 				Count: 1
 				id: "agricraft:seed"
@@ -4507,6 +4515,7 @@
 		}
 		{
 			dependencies: ["146CB22E937AD544"]
+			description: ["Grown from &agreen&r and &ayellow mystical flowers&r. Requires rich soil to grow."]
 			icon: {
 				Count: 1
 				id: "agricraft:seed"
@@ -4610,6 +4619,7 @@
 		}
 		{
 			dependencies: ["13202540325838C6"]
+			description: ["Grown from &aallium&r and &apink tulip&r. Requires rich soil to grow."]
 			icon: {
 				Count: 1
 				id: "agricraft:seed"
@@ -4716,6 +4726,7 @@
 				"5DDFA9FC8B67F075"
 				"2E6CA8A2A55A9557"
 			]
+			description: ["Grown from &ared&r and &ayellow mystical flowers&r. Requires rich soil to grow."]
 			icon: {
 				Count: 1
 				id: "agricraft:seed"
@@ -4822,6 +4833,7 @@
 				"3FF543EDCCD413B8"
 				"5E7E740B7A9FDEF7"
 			]
+			description: ["Grown from &amagenta&r and &awhite mystical flowers&r. Requires rich soil to grow."]
 			icon: {
 				Count: 1
 				id: "agricraft:seed"
@@ -4928,6 +4940,7 @@
 				"3FF543EDCCD413B8"
 				"471EB91EB70CE57D"
 			]
+			description: ["Grown from &amagenta&r and &ablue mystical flowers&r. Requires rich soil to grow."]
 			icon: {
 				Count: 1
 				id: "agricraft:seed"
@@ -5031,6 +5044,7 @@
 		}
 		{
 			dependencies: ["253AA5EBCFABB4D2"]
+			description: ["Grown from &ared tulip&r and &apoppy&r. Requires rich soil to grow."]
 			icon: {
 				Count: 1
 				id: "agricraft:seed"
@@ -5134,6 +5148,7 @@
 		}
 		{
 			dependencies: ["0A03EB6EE3AF7B86"]
+			description: ["Grown from &aazure bluet&r and &aoxeye daisy&r. Requires rich soil to grow."]
 			icon: {
 				Count: 1
 				id: "agricraft:seed"
@@ -5237,6 +5252,7 @@
 		}
 		{
 			dependencies: ["5E1C211774FA27C5"]
+			description: ["Grown from &aorange tulip&r and &adandelion&r. Requires rich soil to grow."]
 			icon: {
 				Count: 1
 				id: "agricraft:seed"

@@ -1,0 +1,34 @@
+{
+  "type": "productivebees:centrifuge",
+  "ingredient": {
+    "type": "forge:nbt",
+    "item": "productivebees:configurable_honeycomb",
+    "nbt": {
+      "EntityTag": {
+        "type": "productivebees:sky_stone"
+      }
+    }
+  },
+  "outputs": [
+    {
+      "item": {
+        "item": "ae2:sky_stone_block"
+      },
+      "min": 1,
+      "max": 2,
+      "chance": 40
+    },
+    {
+      "item": {
+        "item": "minecraft:ice"
+      },
+      "chance": 40
+    },
+    {
+      "fluid": {
+        "fluid": "productivebees:honey"
+      },
+      "amount": 50
+    }
+  ]
+}

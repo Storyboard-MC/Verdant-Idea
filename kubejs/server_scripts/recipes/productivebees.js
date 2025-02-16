@@ -2,6 +2,33 @@ ServerEvents.tags('item', event => {
   event.add('wasteland:bee_flowering/coal', ['minecraft:torchflower'])
 })
 
+let quarry_flowers = [
+  'dirt',
+  'stone',
+  'cobblestone',
+  'diorite',
+  'granite',
+  'andesite',
+  'tuff',
+  'calcite',
+  'basalt',
+  'deepslate',
+  'cobbled_deepslate',
+  'blackstone',
+  'gravel',
+  'sand',
+  'red_sand',
+  'end_stone',
+  'netherrack'
+]
+
+ServerEvents.tags('block', event => {
+  event.removeAll('productivebees:flowers/quarry')
+  quarry_flowers.forEach(item => {
+    event.add('productivebees:flowers/quarry', `minecraft:${item}`)
+  });
+})
+
 ServerEvents.recipes(event => {
   let unused = [
     {
@@ -79,7 +106,19 @@ ServerEvents.recipes(event => {
     {
       namespace: 'tconstruct',
       honeycombs: [
-        'rose_gold'
+        'amethyst_bronze',
+        'cobalt',
+        'ender_slimy',
+        'hepatizon',
+        'ichor_slimy',
+        'knightslime',
+        'manyullyn',
+        'pig_iron',
+        'queens_slime',
+        'rose_gold',
+        'sky_slimy',
+        'slimesteel',
+        'soulsteel'
       ]
     },
     {

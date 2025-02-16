@@ -65,4 +65,21 @@ ServerEvents.recipes(event => {
 
   // Add an early game way to get charcoal
   event.smelting('minecraft:charcoal', 'farmersdelight:tree_bark')
+
+  // Add a recipe for sand from cracked sand in bottling machine
+  event.custom({
+    "type": "immersiveengineering:bottling_machine",
+    "fluid": {
+      "amount": 250,
+      "tag": "minecraft:water"
+    },
+    "input": {
+      "item": "wasteland:cracked_sand"
+    },
+    "results": [
+      {
+        "item": "minecraft:sand"
+      }
+    ]
+  })
 })

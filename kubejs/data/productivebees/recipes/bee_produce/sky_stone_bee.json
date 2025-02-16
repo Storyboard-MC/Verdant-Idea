@@ -1,0 +1,17 @@
+{
+  "type": "productivebees:advanced_beehive",
+  "ingredient": "productivebees:sky_stone",
+  "results": [
+    {
+      "item": {
+        "type": "forge:nbt",
+        "item": "productivebees:configurable_honeycomb",
+        "nbt": {
+          "EntityTag": {
+            "type": "productivebees:sky_stone"
+          }
+        }
+      }
+    }
+  ]
+}

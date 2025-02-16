@@ -1,0 +1,6 @@
+{
+  "type": "emi:world_interaction",
+  "left": "item:minecraft:dirt",
+  "right": "item:botania:grass_seeds",
+  "output": "item:minecraft:grass_block"
+}

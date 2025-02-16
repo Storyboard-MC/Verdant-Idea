@@ -173,5 +173,19 @@ global.removed_items = {
     'compost',
     'drill_head',
     'steel_coin'
+  ],
+  tconstruct: [
+    'plate_cast',
+    'plate_sand_cast',
+    'plate_red_sand_cast',
+    'gear_cast',
+    'gear_sand_cast',
+    'gear_red_sand_cast',
+    'wire_cast',
+    'wire_sand_cast',
+    'wire_red_sand_cast',
+    'coin_cast',
+    'coin_sand_cast',
+    'coin_red_sand_cast'
   ]
 }

@@ -1,0 +1,8 @@
+{
+  "type": "productivebees:bee_conversion",
+  "source": "productivebees:quarry_bee",
+  "result": "productivebees:sky_stone",
+  "item": {
+    "item": "ae2:sky_dust"
+  }
+}
