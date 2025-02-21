@@ -52,4 +52,21 @@ ServerEvents.recipes(event => {
       S: 'minecraft:stick'
     }
   )
+
+  // Rework metallurgic infuser recipe
+  event.remove({id: 'mekanism:metallurgic_infuser'})
+  event.shaped(
+    'mekanism:metallurgic_infuser',
+    [
+      'POP',
+      'RCR',
+      'POP'
+    ],
+    {
+      C: 'thermal:upgrade_augment_3',
+      O: 'mekanism:ingot_osmium',
+      P: '#forge:plates/steel',
+      R: 'thermal:rf_coil'
+    }
+  )
 })

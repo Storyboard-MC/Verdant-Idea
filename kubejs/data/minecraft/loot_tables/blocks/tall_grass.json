@@ -1,0 +1,278 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "block": "minecraft:tall_grass",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "half": "lower"
+          }
+        },
+        {
+          "condition": "minecraft:location_check",
+          "offsetY": 1,
+          "predicate": {
+            "block": {
+              "blocks": [
+                "minecraft:tall_grass"
+              ],
+              "state": {
+                "half": "upper"
+              }
+            }
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "items": [
+                      "minecraft:shears"
+                    ]
+                  }
+                }
+              ],
+              "functions": [
+                {
+                  "add": false,
+                  "count": 2.0,
+                  "function": "minecraft:set_count"
+                }
+              ],
+              "name": "minecraft:grass"
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.125
+                }
+              ],
+              "functions": [
+                {
+                  "function": "minecraft:apply_bonus",
+                  "enchantment": "minecraft:fortune",
+                  "formula": "minecraft:uniform_bonus_count",
+                  "parameters": {
+                    "bonusMultiplier": 2
+                  }
+                },
+                {
+                  "function": "minecraft:explosion_decay"
+                },
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{\"genes\": {\"fertility\": {\"dom\": 1, \"rec\": 1}, \"gain\": {\"dom\": 1, \"rec\": 1}, \"growth\": {\"dom\": 1, \"rec\": 1}, \"mutativity\": {\"dom\": 1, \"rec\": 1}, \"resistance\": {\"dom\": 1, \"rec\": 1}, \"species\": {\"dom\": \"minecraft:beetroot\", \"rec\": \"minecraft:beetroot\"}, \"strength\": {\"dom\": 1, \"rec\": 1}}}"
+                }
+              ],
+              "name": "agricraft:seed"
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.14
+                }
+              ],
+              "functions": [
+                {
+                  "function": "minecraft:apply_bonus",
+                  "enchantment": "minecraft:fortune",
+                  "formula": "minecraft:uniform_bonus_count",
+                  "parameters": {
+                    "bonusMultiplier": 2
+                  }
+                },
+                {
+                  "function": "minecraft:explosion_decay"
+                },
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{\"genes\": {\"fertility\": {\"dom\": 1, \"rec\": 1}, \"gain\": {\"dom\": 1, \"rec\": 1}, \"growth\": {\"dom\": 1, \"rec\": 1}, \"mutativity\": {\"dom\": 1, \"rec\": 1}, \"resistance\": {\"dom\": 1, \"rec\": 1}, \"species\": {\"dom\": \"minecraft:potato\", \"rec\": \"minecraft:potato\"}, \"strength\": {\"dom\": 1, \"rec\": 1}}}"
+                }
+              ],
+              "name": "agricraft:seed"
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.175
+                }
+              ],
+              "functions": [
+                {
+                  "function": "minecraft:apply_bonus",
+                  "enchantment": "minecraft:fortune",
+                  "formula": "minecraft:uniform_bonus_count",
+                  "parameters": {
+                    "bonusMultiplier": 2
+                  }
+                },
+                {
+                  "function": "minecraft:explosion_decay"
+                },
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{\"genes\": {\"fertility\": {\"dom\": 1, \"rec\": 1}, \"gain\": {\"dom\": 1, \"rec\": 1}, \"growth\": {\"dom\": 1, \"rec\": 1}, \"mutativity\": {\"dom\": 1, \"rec\": 1}, \"resistance\": {\"dom\": 1, \"rec\": 1}, \"species\": {\"dom\": \"minecraft:wheat\", \"rec\": \"minecraft:wheat\"}, \"strength\": {\"dom\": 1, \"rec\": 1}}}"
+                }
+              ],
+              "name": "agricraft:seed"
+            }
+          ]
+        }
+      ],
+      "rolls": 1.0
+    },
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "block": "minecraft:tall_grass",
+          "condition": "minecraft:block_state_property",
+          "properties": {
+            "half": "upper"
+          }
+        },
+        {
+          "condition": "minecraft:location_check",
+          "offsetY": -1,
+          "predicate": {
+            "block": {
+              "blocks": [
+                "minecraft:tall_grass"
+              ],
+              "state": {
+                "half": "lower"
+              }
+            }
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "items": [
+                      "minecraft:shears"
+                    ]
+                  }
+                }
+              ],
+              "functions": [
+                {
+                  "add": false,
+                  "count": 2.0,
+                  "function": "minecraft:set_count"
+                }
+              ],
+              "name": "minecraft:grass"
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.125
+                }
+              ],
+              "functions": [
+                {
+                  "function": "minecraft:apply_bonus",
+                  "enchantment": "minecraft:fortune",
+                  "formula": "minecraft:uniform_bonus_count",
+                  "parameters": {
+                    "bonusMultiplier": 2
+                  }
+                },
+                {
+                  "function": "minecraft:explosion_decay"
+                },
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{\"genes\": {\"fertility\": {\"dom\": 1, \"rec\": 1}, \"gain\": {\"dom\": 1, \"rec\": 1}, \"growth\": {\"dom\": 1, \"rec\": 1}, \"mutativity\": {\"dom\": 1, \"rec\": 1}, \"resistance\": {\"dom\": 1, \"rec\": 1}, \"species\": {\"dom\": \"minecraft:beetroot\", \"rec\": \"minecraft:beetroot\"}, \"strength\": {\"dom\": 1, \"rec\": 1}}}"
+                }
+              ],
+              "name": "agricraft:seed"
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.14
+                }
+              ],
+              "functions": [
+                {
+                  "function": "minecraft:apply_bonus",
+                  "enchantment": "minecraft:fortune",
+                  "formula": "minecraft:uniform_bonus_count",
+                  "parameters": {
+                    "bonusMultiplier": 2
+                  }
+                },
+                {
+                  "function": "minecraft:explosion_decay"
+                },
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{\"genes\": {\"fertility\": {\"dom\": 1, \"rec\": 1}, \"gain\": {\"dom\": 1, \"rec\": 1}, \"growth\": {\"dom\": 1, \"rec\": 1}, \"mutativity\": {\"dom\": 1, \"rec\": 1}, \"resistance\": {\"dom\": 1, \"rec\": 1}, \"species\": {\"dom\": \"minecraft:potato\", \"rec\": \"minecraft:potato\"}, \"strength\": {\"dom\": 1, \"rec\": 1}}}"
+                }
+              ],
+              "name": "agricraft:seed"
+            },
+            {
+              "type": "minecraft:item",
+              "conditions": [
+                {
+                  "condition": "minecraft:random_chance",
+                  "chance": 0.175
+                }
+              ],
+              "functions": [
+                {
+                  "function": "minecraft:apply_bonus",
+                  "enchantment": "minecraft:fortune",
+                  "formula": "minecraft:uniform_bonus_count",
+                  "parameters": {
+                    "bonusMultiplier": 2
+                  }
+                },
+                {
+                  "function": "minecraft:explosion_decay"
+                },
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{\"genes\": {\"fertility\": {\"dom\": 1, \"rec\": 1}, \"gain\": {\"dom\": 1, \"rec\": 1}, \"growth\": {\"dom\": 1, \"rec\": 1}, \"mutativity\": {\"dom\": 1, \"rec\": 1}, \"resistance\": {\"dom\": 1, \"rec\": 1}, \"species\": {\"dom\": \"minecraft:wheat\", \"rec\": \"minecraft:wheat\"}, \"strength\": {\"dom\": 1, \"rec\": 1}}}"
+                }
+              ],
+              "name": "agricraft:seed"
+            }
+          ]
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "minecraft:blocks/tall_grass"
+}

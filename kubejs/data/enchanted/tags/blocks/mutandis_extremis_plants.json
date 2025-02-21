@@ -1,7 +1,16 @@
 {
   "replace": true,
   "values": [
-    "#enchanted:mutandis_plants",
+    "#wasteland:compost_growable",
+    "minecraft:grass",
+    "minecraft:brown_mushroom",
+    "minecraft:red_mushroom",
+    "enchanted:ember_moss",
+    "enchanted:glint_weed",
+    "enchanted:spanish_moss",
+    "enchanted:alder_sapling",
+    "enchanted:hawthorn_sapling",
+    "enchanted:rowan_sapling",
     "minecraft:sugar_cane",
     "minecraft:cactus",
     "enchanted:blood_poppy"

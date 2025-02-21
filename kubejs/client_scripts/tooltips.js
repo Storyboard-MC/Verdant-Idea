@@ -3,7 +3,7 @@ ItemEvents.tooltip(event => {
     const cropRegistry = Java.loadClass("com.blakebr0.mysticalagriculture.api.MysticalAgricultureAPI").getCropRegistry()
 
     event.addAdvanced(Item.of('agricraft:seed'), (item, advanced, text) => {
-        if (item.nbt.genes.species.dom == undefined) 
+        if (!item?.nbt?.genes?.species?.dom) 
             return
 
         let namespace = item.nbt.genes.species.dom.split(':')[0]

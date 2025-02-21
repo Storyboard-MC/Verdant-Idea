@@ -1,4 +1,11 @@
 global.removed_items = {
+  enchanted: [
+    'water_artichoke_seeds',
+    'belladonna_seeds',
+    'mandrake_seeds',
+    'snowbell_seeds',
+    'wolfsbane_seeds'
+  ],
   farmersdelight: [
     'organic_compost'
   ],

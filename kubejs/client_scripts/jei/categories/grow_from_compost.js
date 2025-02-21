@@ -1,6 +1,6 @@
 JEIAddedEvents.registerCategories((event) => {
     const guiHelper = event.data.jeiHelpers.guiHelper
-    event.custom("wasteland:compost", (category) => {
+    event.custom("wasteland:grow_from_compost", (category) => {
         category.title("Compost")
                 .background(guiHelper.createBlankDrawable(120, 68))
                 .icon(guiHelper.createDrawableItemStack(Item.of('wasteland:compost')))
@@ -51,6 +51,6 @@ let compost_growable = [
 
 JEIAddedEvents.registerRecipes((event) => {
     compost_growable.forEach(block => {
-        event.custom("wasteland:compost").add({item: block})
+        event.custom("wasteland:grow_from_compost").add({item: block})
     })
 })
