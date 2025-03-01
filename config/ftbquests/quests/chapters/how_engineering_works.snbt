@@ -305,12 +305,11 @@
 			rewards: [{
 				count: 4
 				id: "19485EDDBACC801E"
-				item: "pneumaticcraft:unassembled_pcb"
+				item: "pneumaticcraft:printed_circuit_board"
 				type: "item"
 			}]
 			size: 1.25d
 			tasks: [{
-				count: 4L
 				id: "765896F201A8C5F0"
 				item: "pneumaticcraft:printed_circuit_board"
 				type: "item"

@@ -7,4 +7,5 @@ ServerEvents.compostableRecipes(event => {
   event.add('minecraft:spider_eye', 0.5)
   event.add('minecraft:poisonous_potato', 0.3)
   event.add('thermal:sawdust', 0.3)
+  event.add('chipped:muddy_mangrove_roots', 0.3)
 })

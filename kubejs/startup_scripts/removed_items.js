@@ -1,4 +1,18 @@
 global.removed_items = {
+  agricraft: [
+    'coal_pebble',
+    'diamond_shard',
+    'emerald_shard',
+    'quartz_shard',
+    'netherite_sliver',
+    'amathyllis_petal',
+    'wooden_rake',
+    'iron_rake'
+  ],
+  botania: [
+    'living_root',
+    'pebble'
+  ],
   enchanted: [
     'water_artichoke_seeds',
     'belladonna_seeds',
@@ -45,7 +59,19 @@ global.removed_items = {
     'imperium_sickle',
     'supremium_sickle',
     'awakened_supremium_sickle',
-    'soul_jar'
+    'soul_jar',
+    'upgrade_base',
+    'inferium_upgrade',
+    'prudentium_upgrade',
+    'tertium_upgrade',
+    'imperium_upgrade',
+    'supremium_upgrade',
+    'awakened_supremium_upgrade',
+    'fertilized_essence',
+    'soulium_dagger',
+    'passive_soulium_dagger',
+    'hostile_soulium_dagger',
+    'creative_soulium_dagger'
   ],
   pncepcb: [
     'primitive_unassembled_pcb',

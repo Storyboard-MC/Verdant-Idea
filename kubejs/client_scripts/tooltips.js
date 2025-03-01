@@ -20,4 +20,8 @@ ItemEvents.tooltip(event => {
             ])
         }
     })
+
+    event.addAdvanced('farmersdelight:tree_bark', (item, advanced, text) => {
+        text.add(1, Text.gray('Can be used as planks!'))
+      })
 })

@@ -5,6 +5,18 @@
     },
     {
       "category": "farmersdelight:decomposition"
+    },
+    {
+      "category": "thermal:disenchantment_fuel"
+    },
+    {
+      "category": "thermal:gourmand_fuel"
+    },
+    {
+      "category": "thermal:lapidary_fuel"
+    },
+    {
+      "category": "thermal:numismatic_fuel"
     }
   ]
 }
