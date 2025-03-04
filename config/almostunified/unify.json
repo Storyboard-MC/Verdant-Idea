@@ -31,7 +31,8 @@
     "forge:storage_blocks/raw_{material}",
     "forge:coal_coke",
     "forge:sawdust",
-    "forge:milk/milk_bottle"
+    "forge:milk/milk_bottle",
+    "forge:slag"
   ],
   "materials": [
     "aeternium",

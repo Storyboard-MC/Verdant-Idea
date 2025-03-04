@@ -1,5 +1,5 @@
 ServerEvents.tags('item', event => {
-  event.add('wasteland:coal_blocks', ['minecraft:coal_block', 'mekanism:block_charcoal', 'immersiveengineering:coke'])
+  event.add('wasteland:coal_blocks', ['minecraft:coal_block', 'thermal:charcoal_block', 'immersiveengineering:coke'])
   event.add('wasteland:cakes', ['minecraft:cake', 'farmersdelight:sweet_berry_cheesecake', 'farmersdelight:apple_pie', 'farmersdelight:chocolate_pie'])
 
   event.remove('minecraft:small_flowers', ['#botania:mystical_flowers', '#botania:special_flowers', 'botania:hydroangeas_motif', 'farmersdelight:wild_cabbages', 'farmersdelight:wild_onions', 'farmersdelight:wild_tomatoes', 'farmersdelight:wild_carrots', 'farmersdelight:wild_potatoes', 'farmersdelight:wild_beetroots'])

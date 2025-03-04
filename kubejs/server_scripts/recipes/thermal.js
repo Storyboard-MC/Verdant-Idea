@@ -171,4 +171,8 @@ ServerEvents.recipes(event => {
   // Replace unused gears
   event.replaceInput({id: 'thermal:device_xp_condenser'}, '#forge:gears/lapis', '#forge:gears/iron')
   event.replaceInput({id: 'thermal:press_gear_die'}, '#forge:gears/diamond', '#forge:gears/steel')
+
+  // Remove slag from smelting
+  event.remove({id: 'thermal:smelting/slag_from_smelting'})
+  event.remove({id: 'thermal:machines/smelter/smelter_gravel'})
 })

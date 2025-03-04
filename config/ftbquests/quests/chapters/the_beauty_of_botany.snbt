@@ -49,7 +49,11 @@
 		}
 		{
 			dependencies: ["5FE7D72FB427E5EB"]
-			description: ["To create carrot seeds, simply plant &awheat&r and &apotato&r, keeping one block space between them. When both plants mature, &eplace double crop sticks&r in the middle. After some time, the plants will create an &eoffspring&r. There is no guarantee for a mutation though, so you might have to replace the crop sticks &eseveral&r times."]
+			description: [
+				"To create carrot seeds, simply plant &awheat&r and &apotato&r. When both plants mature, &eplace double crop sticks&r between them. After some time, the plants will create an &eoffspring&r, which has a chance to be a &enew plant&r!"
+				""
+				"Since crossbreeding process can be &cextremely slow&r, it's recommended to use a &ewatering can&r."
+			]
 			icon: {
 				Count: 1
 				id: "agricraft:seed"
@@ -153,7 +157,13 @@
 		}
 		{
 			dependencies: ["1A4855EEF1FDDD65"]
-			description: ["Grown from &acarrot&r and &apotato&r."]
+			description: [
+				"Grown from &acarrot&r and &apotato&r."
+				""
+				"To make crossbreeding quicker, check with a &emagnifying glass&r if both seeds are &epure&r (eg. carrot-carrot). If not, it might be worth &ecrossbreeding&r 2 carrots until you get a pure seed."
+				""
+				"Even though &6recessive&r genes &edo not&r affect the plant, they &ecan be passed&r during &ecrossbreeding&r!"
+			]
 			icon: {
 				Count: 1
 				id: "agricraft:seed"
@@ -257,7 +267,11 @@
 		}
 		{
 			dependencies: ["5FE7D72FB427E5EB"]
-			description: ["To create sugar cane seeds, simply plant &awheat&r and &abeetroot&r, keeping one block space between them. When both plants mature, &eplace double crop sticks&r in the middle. After some time, the plants will create an &eoffspring&r. There is no guarantee for a mutation though, so you might have to replace the crop sticks &eseveral&r times."]
+			description: [
+				"To create sugar cane seeds, simply plant &awheat&r and &abeetroot&r. When both plants mature, &eplace double crop sticks&r between them. After some time, the plants will create an &eoffspring&r, which has a chance to be a &enew plant&r!"
+				""
+				"Since crossbreeding process can be &cextremely slow&r, it's recommended to use a &ewatering can&r."
+			]
 			icon: {
 				Count: 1
 				id: "agricraft:seed"
@@ -1829,7 +1843,13 @@
 		}
 		{
 			dependencies: ["5F740F8A702AEFAD"]
-			description: ["Grown from &asugar cane&r and &apotato&r. Requires sand to grow."]
+			description: [
+				"Grown from &asugar cane&r and &apotato&r. Requires sand to grow."
+				""
+				"To make crossbreeding quicker, check with a &emagnifying glass&r if both seeds are &epure&r (eg. sugar cane-sugar cane). If not, it might be worth &ecrossbreeding&r 2 sugar canes until you get a pure seed."
+				""
+				"Even though &6recessive&r genes &edo not&r affect the plant, they &ecan be passed&r during &ecrossbreeding&r!"
+			]
 			icon: {
 				Count: 1
 				id: "agricraft:seed"
@@ -2526,7 +2546,11 @@
 		}
 		{
 			dependencies: ["5FE7D72FB427E5EB"]
-			description: ["To create tomato seeds, simply plant &awheat&r and &abeetroot&r, keeping one block space between them. When both plants mature, &eplace double crop sticks&r in the middle. After some time, the plants will create an &eoffspring&r. There is no guarantee for a mutation though, so you might have to replace the crop sticks &eseveral&r times."]
+			description: [
+				"To create tomato seeds, simply plant &awheat&r and &abeetroot&r. When both plants mature, &eplace double crop sticks&r between them. After some time, the plants will create an &eoffspring&r, which has a chance to be a &enew plant&r!"
+				""
+				"Since crossbreeding process can be &cextremely slow&r, it's recommended to use a &ewatering can&r."
+			]
 			icon: {
 				Count: 1
 				id: "agricraft:seed"
@@ -2838,7 +2862,13 @@
 		}
 		{
 			dependencies: ["5F740F8A702AEFAD"]
-			description: ["Grown from &asugar cane&r and &abeetroot&r. Requires podzol to grow."]
+			description: [
+				"Grown from &asugar cane&r and &abeetroot&r. Requires podzol to grow."
+				""
+				"To make crossbreeding quicker, check with a &emagnifying glass&r if both seeds are &epure&r (eg. sugar cane-sugar cane). If not, it might be worth &ecrossbreeding&r 2 sugar canes until you get a pure seed."
+				""
+				"Even though &6recessive&r genes &edo not&r affect the plant, they &ecan be passed&r during &ecrossbreeding&r!"
+			]
 			icon: {
 				Count: 1
 				id: "agricraft:seed"

@@ -45,7 +45,7 @@ ServerEvents.recipes(event => {
     ],
     {
       E: 'mysticalagriculture:inferium_essence',
-      P: 'botania:mana_pearl'
+      P: 'mysticalagriculture:prosperity_block'
     }
   )
   event.recipes.botania.runic_altar('matc:prudentium_crystal', ['mysticalagriculture:coal_essence', 'mysticalagriculture:copper_essence', 'mysticalagriculture:iron_essence', 'mysticalagriculture:nether_essence', 'mysticalagriculture:dye_essence'].concat(multi('mysticalagriculture:prudentium_essence', 4)), 12500)
