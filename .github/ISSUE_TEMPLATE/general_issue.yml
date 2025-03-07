@@ -1,0 +1,31 @@
+name: General Issue
+description: Report a bug or a problem with Verdant Idea.
+body:
+  - type: markdown
+    attributes:
+      value: "*Please check known issues and the FAQ on the [modpack page](https://www.curseforge.com/minecraft/modpacks/verdant-idea) before opening a bug report!*"
+  - type: textarea
+    attributes:
+      label: Issue description
+      description: A clear description of what happened and what was the expected behavior.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Steps to reproduce
+      description: If there are specific steps that need to be taken to reproduce this issue, list them here.
+      placeholder: |
+        1. Start by doing ...
+        2. Next do ...
+        3. See the result described above
+  - type: input
+    attributes:
+      label: Verdant Idea version
+      description: What version of the modpack are you using?
+      placeholder: e.g. 0.5
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: "If there is a relevant log or a crash report, please provide a link to it here."
+      description: "You can add a link to [pastebin](https://pastebin.com/)."
