@@ -3,7 +3,7 @@
     {
       "chance": 0.95,
       "item": "botania:light_blue_mystical_flower",
-      "max": 3,
+      "max": 1,
       "min": 1,
       "required": true
     }

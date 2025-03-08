@@ -7,4 +7,8 @@ ServerEvents.recipes(event => {
   event.remove({mod: 'tconstruct', output: '#forge:gears'})
   event.remove({mod: 'tconstruct', output: '#forge:wires'})
   event.remove({mod: 'tconstruct', output: '#forge:coins'})
+
+  // Remove skeletons to milk recipes
+  event.remove({id: 'tconstruct:smeltery/entity_melting/skeletons'})
+  event.remove({id: 'tconstruct:smeltery/entity_melting/heads/skeleton'})
 })

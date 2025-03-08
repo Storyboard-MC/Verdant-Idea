@@ -1154,6 +1154,25 @@
 			x: -6.0d
 			y: -3.0d
 		}
+		{
+			dependencies: ["5D2285F05FE77C44"]
+			description: ["Almost every type of bee needs a different flower. A &efeeding slab&r provides &emultiple slots&r in a single block, making feeding bees much easier. "]
+			id: "0F473BBFCA83CAA4"
+			rewards: [{
+				count: 4
+				id: "1C5A64988158F0CC"
+				item: "productivebees:honey_treat"
+				type: "item"
+			}]
+			tasks: [{
+				id: "4D8F3D4CA463DA4D"
+				item: "productivebees:feeder"
+				type: "item"
+			}]
+			title: "Bee Diner"
+			x: -3.0d
+			y: -1.0d
+		}
 	]
 	title: "The Drive for Progress"
 }
